@@ -1,0 +1,404 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    justify-content: center;
+    padding: 30px 0;
+    .container{
+        padding: 0 15px;
+        margin: 0 30px;
+        .logo{
+            justify-content: flex-start;
+            img{
+                width: 200px;
+                height: 35px;
+            }
+        }
+        .nav-bar{
+            justify-content: center;
+            padding-right: 60px;
+            nav{
+                justify-content: center;
+                ul{
+                    justify-content: center;
+                    align-items: center;
+                    list-style: none;
+                    margin: 0px;
+                    padding: 0px;
+                    li{
+                        position: relative;
+                        a{
+                            display: block;
+                            padding:15px;
+                            text-decoration: none;
+                            color: white;
+                            transition: 0.5s;
+                            &:hover{
+                                color: black;
+                            }
+                        }
+                    }
+                    li.accesories{
+                        .drop-down{
+                            width: 420px;
+                        }
+                    }
+                    li{
+                        .drop-down{
+                            position: absolute;
+                            left: 20px;
+                            width: 630px;
+                            padding: 15px;
+                            border: solid 0.5px rgb(200, 200, 200);
+                            background-color: white;
+                            .drop-title{
+                                text-align: left;
+                                position: relative;
+                                padding: 0px;
+                                span::after{
+                                    border-top: 1px solid #ddd;
+                                    bottom: -10px;
+                                    content: "";
+                                    position: absolute;
+                                    left: 0;
+                                    width: 50%;
+                                }
+                            }
+                            .drop-list{
+                                ul{
+                                    li{
+                                        line-height: 30px;
+                                        a{
+                                            font-size: 14px;
+                                            color: gray;
+                                            padding: 0px;
+                                            &:hover{
+                                                color: black;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .search-cart-login{
+            justify-content: flex-end;
+            div{
+                position: relative;
+                width: 40px;
+                height: 40px;
+                svg{
+                    fill: white;
+                    transition: 0.5s;
+                    cursor: pointer;
+                    &:hover{
+                        fill: black;
+                    }
+                }
+            }
+            .search{
+                input{
+                    position: absolute;
+                    top: 45px;
+                    padding: 0 15px;
+                    right: 0;
+                    outline: none;
+                    width: 340px;
+                    height: 40px;
+                    border: solid 0.3px rgb(220, 220, 220);
+                    &::placeholder{
+                        color: #adadad;
+                    }
+                }
+            }
+            .login{
+                .login-drop{
+                    position: absolute;
+                    right: 0;
+                    top: 45px;
+                    width: 310px;
+                    height: max-content;
+                    padding: 10px 20px;
+                    background-color: white;
+                    border: solid 0.5px rgb(200, 200, 200);
+                    box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.40);
+                    ul{
+                        padding: 0px;
+                        margin: 0px;
+                        width: 100%;
+                        height: max-content;
+                        border-bottom: solid 1px rgb(230, 230, 230);
+                        li{
+                            line-height: 30px;
+                            a{
+                                font-size: 13px;
+                                color: gray;
+                                padding: 0px;
+                                &:hover{
+                                    color: black;
+                                }
+                            }
+                        }
+                    }
+                    .languages{
+                        width: 100%;
+                        height: max-content;
+                        border-bottom: solid 1px rgb(230, 230, 230);
+                        ul{
+                            padding: 0px;
+                            border: 0px;
+                            li{
+                                padding: 0 10px;
+                                margin-right: 20px;
+                                a{
+                                    text-decoration: none;
+                                    img{
+                                        object-fit: contain;
+                                        margin-right: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .cart{
+                sup{
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 15px;
+                    height: 15px;
+                    background-color: #EB4D50;
+                    color: white;
+                    border-radius: 50%;
+                    top: 2px;
+                    right: 2px;
+                }
+                .cart-drop{
+                    position: fixed;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    width: 400px;
+                    background-color: white;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+.scroll-header{
+    position: sticky;
+    background-color: white;
+    height: 70px;
+    justify-content: center;
+    padding: 10px 0;
+    display: none;
+    box-shadow: 0px 0px 7px rgba(128, 128, 128, 0.50);
+    .container{
+        padding: 0 15px;
+        margin: 0 30px;
+        .logo{
+            justify-content: flex-start;
+            align-items: center;
+            img{
+                width: 200px;
+                height: 35px;
+            }
+        }
+        .nav-bar{
+            justify-content: center;
+            padding-right: 60px;
+            nav{
+                justify-content: center;
+                ul{
+                    justify-content: center;
+                    align-items: center;
+                    list-style: none;
+                    margin: 0px;
+                    padding: 0px;
+                    li{
+                        position: relative;
+                        a{
+                            display: block;
+                            padding:15px;
+                            text-decoration: none;
+                            color: rgb(0, 0, 0);
+                            transition: 0.5s;
+                            &:hover{
+                                color: black;
+                            }
+                        }
+                    }
+                    li.accesories{
+                        .drop-down{
+                            width: 420px;
+                        }
+                    }
+                    li{
+                        .drop-down{
+                            position: absolute;
+                            left: 20px;
+                            width: 630px;
+                            padding: 15px;
+                            border: solid 0.5px rgb(200, 200, 200);
+                            background-color: white;
+                            .drop-title{
+                                text-align: left;
+                                position: relative;
+                                padding: 0px;
+                                span::after{
+                                    border-top: 1px solid #ddd;
+                                    bottom: -10px;
+                                    content: "";
+                                    position: absolute;
+                                    left: 0;
+                                    width: 50%;
+                                }
+                            }
+                            .drop-list{
+                                ul{
+                                    li{
+                                        line-height: 30px;
+                                        a{
+                                            font-size: 14px;
+                                            color: gray;
+                                            padding: 0px;
+                                            &:hover{
+                                                color: black;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .search-cart-login{
+            justify-content: flex-end;
+            align-items: center;
+            div{
+                position: relative;
+                width: 40px;
+                height: 40px;
+                svg{
+                    fill: rgb(0, 0, 0);
+                    transition: 0.5s;
+                    cursor: pointer;
+                    &:hover{
+                        fill: black;
+                    }
+                }
+            }
+            .search{
+                input{
+                    position: absolute;
+                    top: 45px;
+                    padding: 0 15px;
+                    right: 0;
+                    outline: none;
+                    width: 340px;
+                    height: 40px;
+                    border: solid 0.3px rgb(220, 220, 220);
+                    &::placeholder{
+                        color: #adadad;
+                    }
+                }
+            }
+            .login{
+                .login-drop{
+                    position: absolute;
+                    right: 0;
+                    top: 45px;
+                    width: 310px;
+                    height: max-content;
+                    padding: 10px 20px;
+                    background-color: white;
+                    border: solid 0.5px rgb(200, 200, 200);
+                    box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.40);
+                    ul{
+                        padding: 0px;
+                        margin: 0px;
+                        width: 100%;
+                        height: max-content;
+                        border-bottom: solid 1px rgb(230, 230, 230);
+                        li{
+                            line-height: 30px;
+                            a{
+                                font-size: 13px;
+                                color: gray;
+                                padding: 0px;
+                                &:hover{
+                                    color: black;
+                                }
+                            }
+                        }
+                    }
+                    .languages{
+                        width: 100%;
+                        height: max-content;
+                        border-bottom: solid 1px rgb(230, 230, 230);
+                        ul{
+                            padding: 0px;
+                            border: 0px;
+                            li{
+                                padding: 0 10px;
+                                margin-right: 20px;
+                                a{
+                                    text-decoration: none;
+                                    img{
+                                        object-fit: contain;
+                                        margin-right: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .cart{
+                sup{
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 15px;
+                    height: 15px;
+                    background-color: #EB4D50;
+                    color: white;
+                    border-radius: 50%;
+                    top: 2px;
+                    right: 2px;
+                }
+                .cart-drop{
+                    position: fixed;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    width: 400px;
+                    background-color: white;
+                }
+            }
+        }
+    }
+}

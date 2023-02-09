@@ -1,59 +1,406 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="/assets/fontawesome/css/fontawesome.min.css">
-    <link rel="stylesheet" href="/assets/fontawesome/css/solid.min.css">
-    <link rel="stylesheet" href="/assets/BootstrapV5.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="/assets/css/homeStyle.css">
-    <link rel="stylesheet" href="/assets/css/header.css">
-    <link rel="stylesheet" href="/assets/css/footer.css">
-    <link rel="icon" href="/assets/images/cart.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="/assets/fontawesome/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="/assets/fontawesome/css/solid.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="/assets/css/homeStyle.css" />
+    <link rel="stylesheet" href="/assets/css/header.css" />
+    <link rel="stylesheet" href="/assets/css/footer.css" />
+    <link rel="icon" href="/assets/images/cart.png" />
     <title>Your Store</title>
-</head>
-<body>
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="logo col-lg-3">
-
-                </div>
-                <div class="nav-bar col-lg-7">
-                    <nav>
+  </head>
+  <body style="overflow-y: scroll;">
+    <header class="d-flex">
+      <div class="container">
+        <div class="row">
+          <div class="logo col-lg-3 d-flex">
+            <img src="/assets/images/Logo.png" alt="logo" />
+          </div>
+          <div class="nav-bar col-lg-7 d-flex">
+            <nav class="d-flex">
+              <ul class="d-flex">
+                <li class="drone">
+                  <a href="">Drone</a>
+                  <div class="drop-down drone-drop row" style="display: none">
+                    <div style="width: 30%">
+                      <div class="drop-title">
+                        <span>Indoor Toy</span>
+                      </div>
+                      <div class="drop-list" style="margin-top: 15px">
                         <ul>
-                            <li>
-                                <a href="">Drone</a>
-                            </li>
-                            <li>
-                                <a href="">Accesories</a>
-                            </li>
-                            <li>
-                                <a href="">Collection</a>
-                            </li>
-                            <li>
-                                <a href="">Components</a>
-                            </li>
-                            <li>
-                                <a href="">Outfits</a>
-                            </li>
+                          <li><a href="">Parrot Mambo</a></li>
+                          <li><a href="">Potensic A20W</a></li>
+                          <li><a href="">Ryze Tello</a></li>
                         </ul>
-                    </nav>
-                </div>
-                <div class="search-cart-login col-lg-2">
-
-                </div>
+                      </div>
+                    </div>
+                    <div style="width: 30%">
+                      <div class="drop-title">
+                        <span>Kids Entertainment</span>
+                      </div>
+                      <div class="drop-list" style="margin-top: 15px">
+                        <ul>
+                          <li><a href="">Holy Stone</a></li>
+                          <li><a href="">Hubsan Toy</a></li>
+                          <li><a href="">Motion Controlled</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div style="width: 30%">
+                      <div class="drop-title">
+                        <span>Photography</span>
+                      </div>
+                      <div class="drop-list" style="margin-top: 15px">
+                        <ul>
+                          <li><a href="">Autel EVO</a></li>
+                          <li><a href="">DJI Mavic</a></li>
+                          <li><a href="">PowerEgg X Wizard</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="accesories">
+                  <a href="">Accesories</a>
+                  <div
+                    class="drop-down accesories-drop row"
+                    style="display: none"
+                  >
+                    <div style="width: 50%">
+                      <div class="drop-title">
+                        <span>Ryze Tello</span>
+                      </div>
+                      <div class="drop-list" style="margin-top: 15px">
+                        <ul>
+                          <li><a href="">PowerVision</a></li>
+                          <li><a href="">PowerVision Wizard</a></li>
+                          <li><a href="">Snaptain SP500</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div style="width: 50%">
+                      <div class="drop-title">
+                        <span>Force 1 Scoot LED</span>
+                      </div>
+                      <div class="drop-list" style="margin-top: 15px">
+                        <ul>
+                          <li><a href="">DJI Mini 2</a></li>
+                          <li><a href="">EMAX TinyHawk</a></li>
+                          <li><a href="">Potensic A20</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="">Collection</a>
+                </li>
+                <li>
+                  <a href="">Components</a>
+                </li>
+                <li>
+                  <a href="">Outfits</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="search-cart-login col-lg-2 d-flex">
+            <div class="search">
+              <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+                <symbol id="magnifying-desktop" viewBox="0 0 1200 1200">
+                  <title>magnifying-desktop</title>
+                  <path
+                    d="M606.209,578.714L448.198,423.228C489.576,378.272,515,318.817,515,253.393C514.98,113.439,399.704,0,257.493,0
+                           C115.282,0,0.006,113.439,0.006,253.393s115.276,253.393,257.487,253.393c61.445,0,117.801-21.253,162.068-56.586
+                           l158.624,156.099c7.729,7.614,20.277,7.614,28.006,0C613.938,598.686,613.938,586.328,606.209,578.714z M257.493,467.8
+                           c-120.326,0-217.869-95.993-217.869-214.407S137.167,38.986,257.493,38.986c120.327,0,217.869,95.993,217.869,214.407
+                           S377.82,467.8,257.493,467.8z"
+                  ></path>
+                </symbol>
+              </svg>
+              <svg class="icon" viewBox="0 0 40 40">
+                <use xlink:href="#magnifying-desktop" x="18%" y="25%"></use>
+              </svg>
+              <input
+                type="search"
+                placeholder="Search Our Catalog"
+                style="display: none"
+              />
             </div>
+            <div class="login">
+              <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+                <symbol id="user-desktop" viewBox="0 0 480 480">
+                  <title>user-desktop</title>
+                  <path
+                    d="M187.497,152.427H73.974c-38.111,0-69.117,31.006-69.117,69.117v39.928h251.758v-39.928
+                         C256.614,183.433,225.608,152.427,187.497,152.427z M241.614,246.473H19.856v-24.928c0-29.84,24.277-54.117,54.117-54.117h113.523
+                         c29.84,0,54.117,24.277,54.117,54.117L241.614,246.473L241.614,246.473z"
+                  ></path>
+                  <path
+                    d="M130.735,145.326c40.066,0,72.663-32.597,72.663-72.663S170.802,0,130.735,0S58.072,32.596,58.072,72.663
+                         S90.669,145.326,130.735,145.326z M130.735,15c31.796,0,57.663,25.867,57.663,57.663s-25.867,57.663-57.663,57.663
+                         s-57.663-25.868-57.663-57.663S98.939,15,130.735,15z"
+                  ></path>
+                </symbol>
+              </svg>
+              <svg class="icon" viewBox="0 0 40 40">
+                <use xlink:href="#user-desktop" x="19%" y="19%"></use>
+              </svg>
+              <div class="login-drop" style="display: none">
+                <ul style="list-style: none">
+                  <li><a href="" style="text-decoration: none">Register</a></li>
+                  <li><a href="" style="text-decoration: none">Login</a></li>
+                  <li>
+                    <a href="" style="text-decoration: none">Wishlist(0)</a>
+                  </li>
+                </ul>
+                <div class="languages">
+                  <span>Language:</span>
+                  <ul style="list-style: none" class="d-flex">
+                    <li>
+                      <a href="" class="d-flex">
+                        <img
+                          src="/assets/images/home/languages/en-gb.png"
+                          alt="eng"
+                        />
+                        <span>English</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="d-flex">
+                        <img
+                          src="/assets/images/home/languages/ar.png"
+                          alt="arab"
+                        />
+                        <span>Arabic</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="cart">
+              <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+                <symbol id="shopping-cart" viewBox="0 0 700 700">
+                  <title>shopping-cart</title>
+                  <path
+                    d="m150.355469 322.332031c-30.046875 0-54.402344 24.355469-54.402344 54.402344 0 30.042969 24.355469 54.398437 54.402344 54.398437 30.042969 0 54.398437-24.355468 54.398437-54.398437-.03125-30.03125-24.367187-54.371094-54.398437-54.402344zm0 88.800781c-19 0-34.402344-15.402343-34.402344-34.398437 0-19 15.402344-34.402344 34.402344-34.402344 18.996093 0 34.398437 15.402344 34.398437 34.402344 0 18.996094-15.402344 34.398437-34.398437 34.398437zm0 0"
+                  ></path>
+                  <path
+                    d="m446.855469 94.035156h-353.101563l-7.199218-40.300781c-4.4375-24.808594-23.882813-44.214844-48.699219-48.601563l-26.101563-4.597656c-5.441406-.96875-10.632812 2.660156-11.601562 8.097656-.964844 5.441407 2.660156 10.632813 8.101562 11.601563l26.199219 4.597656c16.53125 2.929688 29.472656 15.871094 32.402344 32.402344l35.398437 199.699219c4.179688 23.894531 24.941406 41.324218 49.199219 41.300781h210c22.0625.066406 41.546875-14.375 47.902344-35.5l47-155.800781c.871093-3.039063.320312-6.3125-1.5-8.898438-1.902344-2.503906-4.859375-3.980468-8-4zm-56.601563 162.796875c-3.773437 12.6875-15.464844 21.367188-28.699218 21.300781h-210c-14.566407.039063-27.035157-10.441406-29.5-24.800781l-24.699219-139.398437h336.097656zm0 0"
+                  ></path>
+                  <path
+                    d="m360.355469 322.332031c-30.046875 0-54.402344 24.355469-54.402344 54.402344 0 30.042969 24.355469 54.398437 54.402344 54.398437 30.042969 0 54.398437-24.355468 54.398437-54.398437-.03125-30.03125-24.367187-54.371094-54.398437-54.402344zm0 88.800781c-19 0-34.402344-15.402343-34.402344-34.398437 0-19 15.402344-34.402344 34.402344-34.402344 18.996093 0 34.398437 15.402344 34.398437 34.402344 0 18.996094-15.402344 34.398437-34.398437 34.398437zm0 0"
+                  ></path>
+                </symbol>
+              </svg>
+              <svg class="icon" viewBox="0 0 40 40">
+                <use xlink:href="#shopping-cart" x="12%" y="16%"></use>
+              </svg>
+              <sup>0</sup>
+              <!-- <div class="cart-drop"></div> -->
+            </div>
+          </div>
         </div>
+      </div>
     </header>
-<!-- js sources -->
-<script src="/assets/BootstrapV5.3/js/bootstrap.min.js"></script>
-<script src="/assets/jQuery/jquery-3.6.3.min.js"></script>
-<script src="/assets/js/owl.carousel.min.js"></script>
-<script src="/assets/js/header.js"></script>
-</body>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quia ea
+    tenetur repellat cum saepe consequuntur fugiat. Modi aspernatur commodi
+    praesentium ipsum sint quisquam repellat facere doloribus itaque inventore
+    ducimus quaerat perspiciatis natus fuga in eligendi, eum deleniti ab fugiat
+    qui quos porro. Iure, distinctio! Atque porro quod, fugit ratione dolorum
+    nam ducimus culpa sequi provident voluptate dolorem repellendus modi nulla
+    rem, quae unde vitae doloribus, molestiae aspernatur in neque reiciendis
+    harum? Harum, unde numquam culpa, delectus animi fugit iure odit sunt vero
+    deserunt ullam veritatis ratione dolorem quibusdam aut natus quisquam quos
+    aperiam beatae! Blanditiis aliquid distinctio sed nulla in vitae, fuga,
+    molestiae a odio iure fugiat harum doloremque similique odit qui autem?
+    Similique totam quia perspiciatis aliquam error ipsam, velit voluptatibus ad
+    iusto sapiente fugit. Dolore alias sint dolor, sunt dolorem rem fugiat
+    consectetur, optio omnis dignissimos inventore officia odit, ullam fuga
+    consequuntur vitae corporis saepe perferendis hic dolores beatae autem sed
+    nostrum! Et dolore expedita aspernatur, voluptatum odio sequi debitis optio,
+    aliquid quis, dolores maxime vel? Eum omnis assumenda earum corrupti. Vitae,
+    iste! Minus illum, velit nulla, inventore nesciunt laudantium quibusdam
+    voluptatem expedita praesentium itaque iure, fugit reprehenderit ex amet
+    numquam deleniti molestias laborum! Est placeat ab quas tempora, maiores ut
+    voluptatem totam incidunt voluptate! Atque assumenda magnam accusamus
+    exercitationem numquam ad, veritatis molestiae sint ducimus inventore
+    excepturi voluptatem similique sapiente ullam neque pariatur voluptas esse
+    nostrum placeat dolorum deleniti vero suscipit fuga! Assumenda nihil cumque
+    sint optio molestias mollitia fugit tempore officia! Repudiandae, ullam
+    rerum, aliquam atque ut consequuntur, reiciendis saepe architecto adipisci
+    neque optio mollitia voluptatibus quis nisi dolor accusamus deleniti culpa
+    velit voluptatem dignissimos. Aut perspiciatis dolore corrupti eum tempore
+    voluptates beatae voluptate praesentium. Fugiat consequatur nihil, itaque ex
+    rerum enim eos atque? Aut adipisci neque, non reiciendis laboriosam commodi
+    porro corrupti fugiat iusto eveniet vitae. Eos soluta, non sequi rerum hic
+    neque aspernatur labore incidunt dolorum quisquam veniam? Itaque, non quasi
+    atque beatae reiciendis quam, doloremque laboriosam reprehenderit
+    accusantium magni ut neque officiis qui nisi deleniti repellendus
+    perferendis cupiditate dolore illo, id soluta. Illo hic, voluptate assumenda
+    sequi doloribus voluptatum totam quis sunt eligendi esse veniam aliquid
+    ipsam a error, vitae atque saepe exercitationem itaque harum consectetur
+    necessitatibus cupiditate possimus. Exercitationem alias sed est quam autem
+    eveniet, neque quae, hic dicta cum eius debitis dolores dolorum labore quod
+    animi. Explicabo, amet? Nobis quasi veniam maiores inventore atque,
+    provident optio ullam tenetur illum similique placeat architecto reiciendis
+    unde animi ipsam odit! Atque, asperiores sint nisi dolorum odit quod
+    quibusdam placeat eligendi illo, nesciunt aliquid aspernatur exercitationem,
+    iusto fugit magni. Fugit possimus ullam veritatis, debitis assumenda
+    laudantium est a omnis molestias libero. Magnam, explicabo ratione dolorem
+    ullam voluptatem minus? Recusandae veniam eos eligendi quae impedit
+    architecto possimus sed iusto assumenda quaerat nobis amet, eum repudiandae
+    repellendus, ut error nam tempora itaque magni ipsa molestias. Quos corrupti
+    voluptate deleniti ipsa esse eligendi ratione sed hic iure quis, voluptates
+    veritatis explicabo architecto, eaque adipisci harum minus accusamus a odit
+    impedit recusandae? Aperiam, a assumenda architecto voluptatibus rem
+    aspernatur harum nostrum quibusdam corporis temporibus est soluta
+    consequatur culpa eligendi tenetur, error distinctio. At eveniet error
+    exercitationem sed dolores voluptas odit quod sapiente, illum fugiat saepe
+    fugit facilis excepturi repellat doloribus praesentium atque optio odio?
+    Numquam provident fugiat, sint ullam delectus, expedita reprehenderit quam
+    quae cumque aperiam error soluta esse similique quas quasi alias animi
+    voluptas sit voluptatem sapiente eaque ipsa, recusandae iste? Nobis
+    praesentium molestias debitis repellat eligendi quis sequi, quas animi
+    ducimus deserunt quisquam totam voluptate exercitationem autem culpa neque
+    libero corrupti? Corrupti, vitae delectus. Accusamus totam architecto
+    commodi, libero, deserunt hic repellat laboriosam eum iusto cum et soluta
+    ullam ipsum cumque id rem ex aspernatur nesciunt. Dolores recusandae,
+    tempora debitis nobis aliquid corrupti maiores. Numquam iure alias odio enim
+    expedita, distinctio accusamus dolor nemo ullam eaque eligendi debitis
+    ducimus quod doloremque, dignissimos culpa. Culpa facere rerum, alias
+    nesciunt sunt ab minima perferendis fuga ut numquam! Architecto laboriosam,
+    quia expedita odio magnam temporibus ratione, assumenda ipsam corporis
+    molestiae obcaecati itaque, dolorum consequatur est non quasi omnis
+    recusandae vel dolore culpa! Placeat doloremque amet quos rem pariatur unde
+    ratione ea facere, hic accusantium voluptates obcaecati autem eveniet veniam
+    ducimus aperiam laboriosam iste magni earum provident. Earum numquam, labore
+    debitis provident quibusdam, expedita facilis quidem aut iste et consequatur
+    ipsam accusantium aliquid nemo? Officiis nemo porro laboriosam consequuntur
+    laudantium sequi adipisci. Atque, hic. Corrupti quo repellat, atque magni at
+    fugiat illum ducimus, itaque amet neque soluta earum suscipit, eaque cum.
+    Saepe adipisci provident eos, ipsa, pariatur nostrum nobis optio rerum velit
+    consectetur sequi fugit ducimus ipsam quidem eaque mollitia cupiditate
+    vitae, architecto blanditiis sint iste sunt. Neque labore aspernatur
+    quisquam incidunt eius eos quidem inventore culpa? Est molestiae corporis
+    illo maiores quod, blanditiis ex, nostrum fugit ducimus placeat cumque nemo?
+    Repellat officiis necessitatibus odio molestiae quod! Architecto
+    repellendus, totam ab a at molestias molestiae quia eligendi debitis magnam
+    quaerat officia saepe dolorum accusamus asperiores fugit quam rerum
+    necessitatibus sit non consequuntur voluptatum. Molestias quod provident
+    praesentium at vel, ratione eveniet, obcaecati ipsa iure necessitatibus quae
+    corporis voluptatibus beatae eum culpa! Illum maxime praesentium veniam,
+    deleniti, incidunt nobis ipsam tenetur beatae, ratione soluta earum nemo
+    quidem illo possimus velit expedita officiis aperiam sint ad aut ex. Magni,
+    corrupti quos! Nihil natus, quasi eveniet cum laborum dolores aspernatur.
+    Vitae saepe reiciendis ea quas. Esse obcaecati exercitationem aliquam
+    necessitatibus autem porro ipsum ipsam, libero in ullam nesciunt quos
+    reiciendis ea nobis provident doloribus vero cupiditate temporibus dolor et
+    debitis. Similique cumque quasi perferendis tempore facilis aspernatur
+    inventore cum nisi consequuntur velit, ipsa facere voluptatum omnis
+    accusamus ea laudantium magnam? Odio facere adipisci dicta id reprehenderit
+    quis, eveniet libero, itaque tempore rerum sit ratione quas? Omnis velit
+    nesciunt officia ipsa ipsum pariatur obcaecati perferendis eos, aperiam
+    nobis incidunt, eaque autem quasi magni! Sunt consequuntur repellat aliquid
+    nisi doloremque, exercitationem quisquam fugiat commodi pariatur consequatur
+    similique obcaecati libero unde ipsam, adipisci, vitae repudiandae
+    necessitatibus. Officiis, commodi expedita. Aliquam optio ducimus vitae
+    nobis obcaecati unde voluptate aliquid expedita reiciendis incidunt, hic
+    debitis repellendus impedit et.
+    <footer>
+      <div class="footer-top">
+        <div class="container">
+          <div class="row justify-content-around">
+            <div class="contact">
+              <div class="title">
+                <div>
+                    <h5>Contact</h5>
+                    <h1>Contact Us</h1>
+                </div>
+              </div>
+              <form action="">
+                <div class="name-email">
+                  <input type="text" placeholder="Name"/>
+                  <input type="email" placeholder="Email"/>
+                </div>
+                <div class="message">
+                  <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+              </form>
+            </div>
+            <div class="subscribe">
+              <div class="title">
+                <h5>subscribe</h5>
+                <h1>Newsletter</h1>
+              </div>
+              <div class="letter-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+                  <symbol id="news-icon" viewBox="0 0 500 500">
+                    <title>news-icon</title>
+                    <path
+                      d="m494.2,488c0,0 0-225.8 0-301 0-3.1-3.9-7-7.7-9.9l-78.7-57.1v-63.1c0-6.2-5.2-10.4-10.4-10.4h-89.7l-45.7-33.3c-3.1-2.1-8.3-2.1-11.5,0l-45.7,33.3h-89.7c-6.2,0-10.4,5.2-10.4,10.4v62.4l-79.7,57.9c-4.7,2.9-7.7,6.7-7.7,9.9 0,75.7 0,303 0,303 0,5.9 4.7,10 9.6,10.4 0.3,0 0.5,0 0.8,0h456c6.7-0.1 10.5-5.3 10.5-12.5zm-19.8-282.3v263.6l-172.1-137.8 172.1-125.8zm-7.7-18.3l-58.9,42.9v-86.2l58.9,43.3zm-210.9-154.5l18.3,13.5h-36.7l18.4-13.5zm131.2,34.4v178.2l-131.2,95.6-131.2-95.6v-178.2h262.4zm-349.8,138.4l172.1,125.8-172.1,138.6v-264.4zm67.6,25.4l-60.4-44 60.4-43.9v87.9zm-48.9,249.5l170.1-136.9 23.5,17.2c4.5,3.4 7.9,3.4 12.5,0l23.5-17.2 171.1,136.9h-400.7z"
+                    ></path>
+                    <rect
+                      width="140.5"
+                      x="186.1"
+                      y="118.3"
+                      height="19.8"
+                    ></rect>
+                    <rect
+                      width="140.5"
+                      x="186.1"
+                      y="181.8"
+                      height="19.8"
+                    ></rect>
+                    <rect
+                      width="140.5"
+                      x="186.1"
+                      y="245.3"
+                      height="19.8"
+                    ></rect>
+                  </symbol></svg
+                ><svg class="icon" viewBox="0 0 30 30">
+                  <use xlink:href="#news-icon" x="0%" y="0%"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom"></div>
+    </footer>
+    <!-- js sources -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/assets/js/owl.carousel.min.js"></script>
+    <script src="/assets/js/header.js"></script>
+  </body>
 </html>

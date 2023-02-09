@@ -1,1 +1,387 @@
-/*# sourceMappingURL=header.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  justify-content: center;
+  padding: 30px 0;
+}
+header .container {
+  padding: 0 15px;
+  margin: 0 30px;
+}
+header .container .logo {
+  justify-content: flex-start;
+}
+header .container .logo img {
+  width: 200px;
+  height: 35px;
+}
+header .container .nav-bar {
+  justify-content: center;
+  padding-right: 60px;
+}
+header .container .nav-bar nav {
+  justify-content: center;
+}
+header .container .nav-bar nav ul {
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+header .container .nav-bar nav ul li {
+  position: relative;
+}
+header .container .nav-bar nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+}
+header .container .nav-bar nav ul li a:hover {
+  color: black;
+}
+header .container .nav-bar nav ul li.accesories .drop-down {
+  width: 420px;
+}
+header .container .nav-bar nav ul li .drop-down {
+  position: absolute;
+  left: 20px;
+  width: 630px;
+  padding: 15px;
+  border: solid 0.5px rgb(200, 200, 200);
+  background-color: white;
+}
+header .container .nav-bar nav ul li .drop-down .drop-title {
+  text-align: left;
+  position: relative;
+  padding: 0px;
+}
+header .container .nav-bar nav ul li .drop-down .drop-title span::after {
+  border-top: 1px solid #ddd;
+  bottom: -10px;
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 50%;
+}
+header .container .nav-bar nav ul li .drop-down .drop-list ul li {
+  line-height: 30px;
+}
+header .container .nav-bar nav ul li .drop-down .drop-list ul li a {
+  font-size: 14px;
+  color: gray;
+  padding: 0px;
+}
+header .container .nav-bar nav ul li .drop-down .drop-list ul li a:hover {
+  color: black;
+}
+header .container .search-cart-login {
+  justify-content: flex-end;
+}
+header .container .search-cart-login div {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+header .container .search-cart-login div svg {
+  fill: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+header .container .search-cart-login div svg:hover {
+  fill: black;
+}
+header .container .search-cart-login .search input {
+  position: absolute;
+  top: 45px;
+  padding: 0 15px;
+  right: 0;
+  outline: none;
+  width: 340px;
+  height: 40px;
+  border: solid 0.3px rgb(220, 220, 220);
+}
+header .container .search-cart-login .search input::-moz-placeholder {
+  color: #adadad;
+}
+header .container .search-cart-login .search input::placeholder {
+  color: #adadad;
+}
+header .container .search-cart-login .login .login-drop {
+  position: absolute;
+  right: 0;
+  top: 45px;
+  width: 310px;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 10px 20px;
+  background-color: white;
+  border: solid 0.5px rgb(200, 200, 200);
+  box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.4);
+}
+header .container .search-cart-login .login .login-drop ul {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  border-bottom: solid 1px rgb(230, 230, 230);
+}
+header .container .search-cart-login .login .login-drop ul li {
+  line-height: 30px;
+}
+header .container .search-cart-login .login .login-drop ul li a {
+  font-size: 13px;
+  color: gray;
+  padding: 0px;
+}
+header .container .search-cart-login .login .login-drop ul li a:hover {
+  color: black;
+}
+header .container .search-cart-login .login .login-drop .languages {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  border-bottom: solid 1px rgb(230, 230, 230);
+}
+header .container .search-cart-login .login .login-drop .languages ul {
+  padding: 0px;
+  border: 0px;
+}
+header .container .search-cart-login .login .login-drop .languages ul li {
+  padding: 0 10px;
+  margin-right: 20px;
+}
+header .container .search-cart-login .login .login-drop .languages ul li a {
+  text-decoration: none;
+}
+header .container .search-cart-login .login .login-drop .languages ul li a img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 10px;
+}
+header .container .search-cart-login .cart sup {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  background-color: #EB4D50;
+  color: white;
+  border-radius: 50%;
+  top: 2px;
+  right: 2px;
+}
+header .container .search-cart-login .cart .cart-drop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 400px;
+  background-color: white;
+}
+
+.scroll-header {
+  position: sticky;
+  background-color: white;
+  height: 70px;
+  justify-content: center;
+  padding: 10px 0;
+  display: none;
+  box-shadow: 0px 0px 7px rgba(128, 128, 128, 0.5);
+}
+.scroll-header .container {
+  padding: 0 15px;
+  margin: 0 30px;
+}
+.scroll-header .container .logo {
+  justify-content: flex-start;
+  align-items: center;
+}
+.scroll-header .container .logo img {
+  width: 200px;
+  height: 35px;
+}
+.scroll-header .container .nav-bar {
+  justify-content: center;
+  padding-right: 60px;
+}
+.scroll-header .container .nav-bar nav {
+  justify-content: center;
+}
+.scroll-header .container .nav-bar nav ul {
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.scroll-header .container .nav-bar nav ul li {
+  position: relative;
+}
+.scroll-header .container .nav-bar nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  transition: 0.5s;
+}
+.scroll-header .container .nav-bar nav ul li a:hover {
+  color: black;
+}
+.scroll-header .container .nav-bar nav ul li.accesories .drop-down {
+  width: 420px;
+}
+.scroll-header .container .nav-bar nav ul li .drop-down {
+  position: absolute;
+  left: 20px;
+  width: 630px;
+  padding: 15px;
+  border: solid 0.5px rgb(200, 200, 200);
+  background-color: white;
+}
+.scroll-header .container .nav-bar nav ul li .drop-down .drop-title {
+  text-align: left;
+  position: relative;
+  padding: 0px;
+}
+.scroll-header .container .nav-bar nav ul li .drop-down .drop-title span::after {
+  border-top: 1px solid #ddd;
+  bottom: -10px;
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 50%;
+}
+.scroll-header .container .nav-bar nav ul li .drop-down .drop-list ul li {
+  line-height: 30px;
+}
+.scroll-header .container .nav-bar nav ul li .drop-down .drop-list ul li a {
+  font-size: 14px;
+  color: gray;
+  padding: 0px;
+}
+.scroll-header .container .nav-bar nav ul li .drop-down .drop-list ul li a:hover {
+  color: black;
+}
+.scroll-header .container .search-cart-login {
+  justify-content: flex-end;
+  align-items: center;
+}
+.scroll-header .container .search-cart-login div {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+.scroll-header .container .search-cart-login div svg {
+  fill: rgb(0, 0, 0);
+  transition: 0.5s;
+  cursor: pointer;
+}
+.scroll-header .container .search-cart-login div svg:hover {
+  fill: black;
+}
+.scroll-header .container .search-cart-login .search input {
+  position: absolute;
+  top: 45px;
+  padding: 0 15px;
+  right: 0;
+  outline: none;
+  width: 340px;
+  height: 40px;
+  border: solid 0.3px rgb(220, 220, 220);
+}
+.scroll-header .container .search-cart-login .search input::-moz-placeholder {
+  color: #adadad;
+}
+.scroll-header .container .search-cart-login .search input::placeholder {
+  color: #adadad;
+}
+.scroll-header .container .search-cart-login .login .login-drop {
+  position: absolute;
+  right: 0;
+  top: 45px;
+  width: 310px;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 10px 20px;
+  background-color: white;
+  border: solid 0.5px rgb(200, 200, 200);
+  box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.4);
+}
+.scroll-header .container .search-cart-login .login .login-drop ul {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  border-bottom: solid 1px rgb(230, 230, 230);
+}
+.scroll-header .container .search-cart-login .login .login-drop ul li {
+  line-height: 30px;
+}
+.scroll-header .container .search-cart-login .login .login-drop ul li a {
+  font-size: 13px;
+  color: gray;
+  padding: 0px;
+}
+.scroll-header .container .search-cart-login .login .login-drop ul li a:hover {
+  color: black;
+}
+.scroll-header .container .search-cart-login .login .login-drop .languages {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  border-bottom: solid 1px rgb(230, 230, 230);
+}
+.scroll-header .container .search-cart-login .login .login-drop .languages ul {
+  padding: 0px;
+  border: 0px;
+}
+.scroll-header .container .search-cart-login .login .login-drop .languages ul li {
+  padding: 0 10px;
+  margin-right: 20px;
+}
+.scroll-header .container .search-cart-login .login .login-drop .languages ul li a {
+  text-decoration: none;
+}
+.scroll-header .container .search-cart-login .login .login-drop .languages ul li a img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 10px;
+}
+.scroll-header .container .search-cart-login .cart sup {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  background-color: #EB4D50;
+  color: white;
+  border-radius: 50%;
+  top: 2px;
+  right: 2px;
+}
+.scroll-header .container .search-cart-login .cart .cart-drop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 400px;
+  background-color: white;
+}/*# sourceMappingURL=header.css.map */

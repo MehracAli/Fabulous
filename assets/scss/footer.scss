@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer{
+    background-color: #F2F6FA;
+    .footer-top{
+        padding: 70px 0 50px;
+        .container{
+            text-align: center;
+            padding: 0 15px;
+            h5{
+                text-transform: uppercase;
+                color: #eb4d4b;
+                font-size: 16px;
+                letter-spacing: 8px;
+                font-weight: 500;
+                margin: 0;
+                margin-bottom: 12px;
+            }
+            h1{
+                position: relative;
+                font-weight: 600;
+                margin-bottom: 25px;
+                padding-bottom: 25px;
+                &::after{
+                    border-top: 4px solid #eb4d4b;
+                    bottom: 0px;
+                    content: "";
+                    position: absolute;
+                    left: 42%;
+                    right: 42%;
+                    width: 16%;
+                }
+            }
+            .contact{
+                border: solid 0.5px rgb(210, 210, 210);
+                padding: 30px;
+                width: 47.5%;
+                form{
+                    .name-email{
+                        display: flex;
+                        justify-content: space-between;
+                        input{
+                            width: 47%;
+                            height: 40px;
+                            border: solid 0.5px rgb(210, 210, 210);
+                            border-radius: 10px;
+                            padding-left: 20px;
+                            ::placeholder{
+                                color: gray;
+                            }
+                        }
+                    }
+                }
+            }
+            .subscribe{       
+                border: solid 0.5px rgb(210, 210, 210);
+                padding: 30px;
+                width: 47.5%;
+                .letter-icon{
+                    width: 50px;
+                    height: 50px;
+                    margin: 0 auto;
+                    svg{
+                        fill: #EB4D50;
+                    }
+                }
+            }
+        }
+    }
+}

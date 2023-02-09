@@ -1,1 +1,75 @@
-/*# sourceMappingURL=footer.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+footer {
+  background-color: #F2F6FA;
+}
+footer .footer-top {
+  padding: 70px 0 50px;
+}
+footer .footer-top .container {
+  text-align: center;
+  padding: 0 15px;
+}
+footer .footer-top .container h5 {
+  text-transform: uppercase;
+  color: #eb4d4b;
+  font-size: 16px;
+  letter-spacing: 8px;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 12px;
+}
+footer .footer-top .container h1 {
+  position: relative;
+  font-weight: 600;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+}
+footer .footer-top .container h1::after {
+  border-top: 4px solid #eb4d4b;
+  bottom: 0px;
+  content: "";
+  position: absolute;
+  left: 42%;
+  right: 42%;
+  width: 16%;
+}
+footer .footer-top .container .contact {
+  border: solid 0.5px rgb(210, 210, 210);
+  padding: 30px;
+  width: 47.5%;
+}
+footer .footer-top .container .contact form .name-email {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-top .container .contact form .name-email input {
+  width: 47%;
+  height: 40px;
+  border: solid 0.5px rgb(210, 210, 210);
+  border-radius: 10px;
+  padding-left: 20px;
+}
+footer .footer-top .container .contact form .name-email input ::-moz-placeholder {
+  color: gray;
+}
+footer .footer-top .container .contact form .name-email input ::placeholder {
+  color: gray;
+}
+footer .footer-top .container .subscribe {
+  border: solid 0.5px rgb(210, 210, 210);
+  padding: 30px;
+  width: 47.5%;
+}
+footer .footer-top .container .subscribe .letter-icon {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+}
+footer .footer-top .container .subscribe .letter-icon svg {
+  fill: #EB4D50;
+}/*# sourceMappingURL=footer.css.map */
