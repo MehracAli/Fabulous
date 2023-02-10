@@ -27,15 +27,26 @@ $(document).ready(function () {
         let drop = $(".login-drop")
         drop.slideToggle()
     })
-
+    // cart
+    $(".cart svg").on("click",()=>{
+        let drop = $(".cart-drop")
+        drop.removeClass("d-none")
+        setTimeout(
+            drop.addClass("animate__slideInRight")
+        ,1000)
+    })
+    $(".cart-drop svg").on("click",()=>{
+        let drop = $(".cart-drop")
+        drop.addClass("d-none")
+    })
+    // scroll
     $(window).on('scroll',function(){
         if($(window).scrollTop() > 100){
             let scroll = $('header').addClass('scroll-header')
-            scroll.slideDown("low")
+
         }
         else{
             let scroll =  $('header').removeClass('scroll-header')
-            scroll.slideUp()
         }
     })
 })

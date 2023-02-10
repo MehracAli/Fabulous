@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,15 +23,16 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/assets/css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/homeStyle.css" />
     <link rel="stylesheet" href="/assets/css/header.css" />
     <link rel="stylesheet" href="/assets/css/footer.css" />
+    <link rel="stylesheet" href="/assets/css/slide.css">
     <link rel="icon" href="/assets/images/cart.png" />
     <title>Your Store</title>
   </head>
   <body style="overflow-y: scroll">
+    <div class="on-cart d-none"></div>
     <header class="d-flex">
       <div class="container">
         <div class="row" style="width: 100%;">
@@ -224,117 +229,143 @@
                 <use xlink:href="#shopping-cart" x="12%" y="16%"></use>
               </svg>
               <sup>0</sup>
+              <div class="cart-drop animate__animated d-none">
+                <div class="cart-top d-flex">
+                  <span>CART</span>
+                  <svg width="800px" height="800px" viewBox="0 0 1024 1024" fill="#000000" class="icon"  version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M176.662 817.173c-8.19 8.471-7.96 21.977 0.51 30.165 8.472 8.19 21.978 7.96 30.166-0.51l618.667-640c8.189-8.472 7.96-21.978-0.511-30.166-8.471-8.19-21.977-7.96-30.166 0.51l-618.666 640z" fill="" /><path d="M795.328 846.827c8.19 8.471 21.695 8.7 30.166 0.511 8.471-8.188 8.7-21.694 0.511-30.165l-618.667-640c-8.188-8.471-21.694-8.7-30.165-0.511-8.471 8.188-8.7 21.694-0.511 30.165l618.666 640z" fill="" /></svg>
+                </div>
+                <div class="cart-list">
+                  <ul class="product-list">
+                    <li>
+                      <p>Your shopping cart is empty!</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="cart-bottom">
+                  <ul>
+                    <li>
+                      <span>Sub-Total</span>
+                      <span>$<span>0</span></span>
+                    </li>
+                    <li>
+                      <span>Eco Tax (-2)</span>
+                      <span>$<span>0</span></span>
+                    </li>
+                    <li>
+                      <span>VAT (20%)</span>
+                      <span>$<span>0</span></span>
+                    </li>
+                    <li>
+                      <span>Total</span>
+                      <span>$<span>0</span></span>
+                    </li>
+                  </ul>
+                  <div class="buttons">
+                    <button>VIEW CART</button>
+                    <button>CHECKOUT</button>
+                  </div>
+                </div>
+              </div>
               <!-- <div class="cart-drop"></div> -->
             </div>
           </div>
         </div>
       </div>
     </header>
-    <section class="container">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quia ea
-        tenetur repellat cum saepe consequuntur fugiat. Modi aspernatur commodi
-        praesentium ipsum sint quisquam repellat facere doloribus itaque inventore
-        ducimus quaerat perspiciatis natus fuga in eligendi, eum deleniti ab fugiat
-        qui quos porro. Iure, distinctio! Atque porro quod, fugit ratione dolorum
-        nam ducimus culpa sequi provident voluptate dolorem repellendus modi nulla
-        rem, quae unde vitae doloribus, molestiae aspernatur in neque reiciendis
-        harum? Harum, unde numquam culpa, delectus animi fugit iure odit sunt vero
-        deserunt ullam veritatis ratione dolorem quibusdam aut natus quisquam quos
-        aperiam beatae! Blanditiis aliquid distinctio sed nulla in vitae, fuga,
-        molestiae a odio iure fugiat harum doloremque similique odit qui autem?
-        Similique totam quia perspiciatis aliquam error ipsam, velit voluptatibus ad
-        iusto sapiente fugit. Dolore alias sint dolor, sunt dolorem rem fugiat
-        consectetur, optio omnis dignissimos inventore officia odit, ullam fuga
-        consequuntur vitae corporis saepe perferendis hic dolores beatae autem sed
-        nostrum! Et dolore expedita aspernatur, voluptatum odio sequi debitis optio,
-        aliquid quis, dolores maxime vel? Eum omnis assumenda earum corrupti. Vitae,
-        iste! Minus illum, velit nulla, inventore nesciunt laudantium quibusdam
-        voluptatem expedita praesentium itaque iure, fugit reprehenderit ex amet
-        numquam deleniti molestias laborum! Est placeat ab quas tempora, maiores ut
-        voluptatem totam incidunt voluptate! Atque assumenda magnam accusamus
-        exercitationem numquam ad, veritatis molestiae sint ducimus inventore
-        excepturi voluptatem similique sapiente ullam neque pariatur voluptas esse
-        nostrum placeat dolorum deleniti vero suscipit fuga! Assumenda nihil cumque
-        sint optio molestias mollitia fugit tempore officia! Repudiandae, ullam
-        rerum, aliquam atque ut consequuntur, reiciendis saepe architecto adipisci
-        neque optio mollitia voluptatibus quis nisi dolor accusamus deleniti culpa
-        velit voluptatem dignissimos. Aut perspiciatis dolore corrupti eum tempore
-        voluptates beatae voluptate praesentium. Fugiat consequatur nihil, itaque ex
-        rerum enim eos atque? Aut adipisci neque, non reiciendis laboriosam commodi
-        porro corrupti fugiat iusto eveniet vitae. Eos soluta, non sequi rerum hic
-        neque aspernatur labore incidunt dolorum quisquam veniam? Itaque, non quasi
-        atque beatae reiciendis quam, doloremque laboriosam reprehenderit
-        accusantium magni ut neque officiis qui nisi deleniti repellendus
-        perferendis cupiditate dolore illo, id soluta. Illo hic, voluptate assumenda
-        sequi doloribus voluptatum totam quis sunt eligendi esse veniam aliquid
-        ipsam a error, vitae atque saepe exercitationem itaque harum consectetur
-        necessitatibus cupiditate possimus. Exercitationem alias sed est quam autem
-        eveniet, neque quae, hic dicta cum eius debitis dolores dolorum labore quod
-        animi. Explicabo, amet? Nobis quasi veniam maiores inventore atque,
-        provident optio ullam tenetur illum similique placeat architecto reiciendis
-        unde animi ipsam odit! Atque, asperiores sint nisi dolorum odit quod
-        quibusdam placeat eligendi illo, nesciunt aliquid aspernatur exercitationem,
-        iusto fugit magni. Fugit possimus ullam veritatis, debitis assumenda
-        laudantium est a omnis molestias libero. Magnam, explicabo ratione dolorem
-        ullam voluptatem minus? Recusandae veniam eos eligendi quae impedit
-        architecto possimus sed iusto assumenda quaerat nobis amet, eum repudiandae
-        repellendus, ut error nam tempora itaque magni ipsa molestias. Quos corrupti
-        voluptate deleniti ipsa esse eligendi ratione sed hic iure quis, voluptates
-        veritatis explicabo architecto, eaque adipisci harum minus accusamus a odit
-        impedit recusandae? Aperiam, a assumenda architecto voluptatibus rem
-        aspernatur harum nostrum quibusdam corporis temporibus est soluta
-        consequatur culpa eligendi tenetur, error distinctio. At eveniet error
-        exercitationem sed dolores voluptas odit quod sapiente, illum fugiat saepe
-        fugit facilis excepturi repellat doloribus praesentium atque optio odio?
-        Numquam provident fugiat, sint ullam delectus, expedita reprehenderit quam
-        quae cumque aperiam error soluta esse similique quas quasi alias animi
-        voluptas sit voluptatem sapiente eaque ipsa, recusandae iste? Nobis
-        praesentium molestias debitis repellat eligendi quis sequi, quas animi
-        ducimus deserunt quisquam totam voluptate exercitationem autem culpa neque
-        libero corrupti? Corrupti, vitae delectus. Accusamus totam architecto
-        commodi, libero, deserunt hic repellat laboriosam eum iusto cum et soluta
-        ullam ipsum cumque id rem ex aspernatur nesciunt. Dolores recusandae,
-        tempora debitis nobis aliquid corrupti maiores. Numquam iure alias odio enim
-        expedita, distinctio accusamus dolor nemo ullam eaque eligendi debitis
-        ducimus quod doloremque, dignissimos culpa. Culpa facere rerum, alias
-        nesciunt sunt ab minima perferendis fuga ut numquam! Architecto laboriosam,
-        quia expedita odio magnam temporibus ratione, assumenda ipsam corporis
-        molestiae obcaecati itaque, dolorum consequatur est non quasi omnis
-        recusandae vel dolore culpa! Placeat doloremque amet quos rem pariatur unde
-        ratione ea facere, hic accusantium voluptates obcaecati autem eveniet veniam
-        ducimus aperiam laboriosam iste magni earum provident. Earum numquam, labore
-        debitis provident quibusdam, expedita facilis quidem aut iste et consequatur
-        ipsam accusantium aliquid nemo? Officiis nemo porro laboriosam consequuntur
-        laudantium sequi adipisci. Atque, hic. Corrupti quo repellat, atque magni at
-        fugiat illum ducimus, itaque amet neque soluta earum suscipit, eaque cum.
-        Saepe adipisci provident eos, ipsa, pariatur nostrum nobis optio rerum velit
-        consectetur sequi fugit ducimus ipsam quidem eaque mollitia cupiditate
-        vitae, architecto blanditiis sint iste sunt. Neque labore aspernatur
-        quisquam incidunt eius eos quidem inventore culpa? Est molestiae corporis
-        illo maiores quod, blanditiis ex, nostrum fugit ducimus placeat cumque nemo?
-        Repellat officiis necessitatibus odio molestiae quod! Architecto
-        repellendus, totam ab a at molestias molestiae quia eligendi debitis magnam
-        quaerat officia saepe dolorum accusamus asperiores fugit quam rerum
-        necessitatibus sit non consequuntur voluptatum. Molestias quod provident
-        praesentium at vel, ratione eveniet, obcaecati ipsa iure necessitatibus quae
-        corporis voluptatibus beatae eum culpa! Illum maxime praesentium veniam,
-        deleniti, incidunt nobis ipsam tenetur beatae, ratione soluta earum nemo
-        quidem illo possimus velit expedita officiis aperiam sint ad aut ex. Magni,
-        corrupti quos! Nihil natus, quasi eveniet cum laborum dolores aspernatur.
-        Vitae saepe reiciendis ea quas. Esse obcaecati exercitationem aliquam
-        necessitatibus autem porro ipsum ipsam, libero in ullam nesciunt quos
-        reiciendis ea nobis provident doloribus vero cupiditate temporibus dolor et
-        debitis. Similique cumque quasi perferendis tempore facilis aspernatur
-        inventore cum nisi consequuntur velit, ipsa facere voluptatum omnis
-        accusamus ea laudantium magnam? Odio facere adipisci dicta id reprehenderit
-        quis, eveniet libero, itaque tempore rerum sit ratione quas? Omnis velit
-        nesciunt officia ipsa ipsum pariatur obcaecati perferendis eos, aperiam
-        nobis incidunt, eaque autem quasi magni! Sunt consequuntur repellat aliquid
-        nisi doloremque, exercitationem quisquam fugiat commodi pariatur consequatur
-        similique obcaecati libero unde ipsam, adipisci, vitae repudiandae
-        necessitatibus. Officiis, commodi expedita. Aliquam optio ducimus vitae
-        nobis obcaecati unde voluptate aliquid expedita reiciendis incidunt, hic
-        debitis repellendus impedit et.
+    <section id="slider">
+      <div class="slide">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active a" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/assets/images/home/homeSlide/Slider-1-1920x925.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/assets/images/home/homeSlide/Slider-2-1920x925.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="service col-lg-3">
+            <a href="#">
+              <div class="service-image">
+                <img class="image" src="/assets/images/home/homeService/Services-1-50x50.png" alt="">
+              </div>
+              <div class="describtion">
+                <span>Free Delivery</span>
+                <p>Lorem Ipsum is simply dummy text of the Testing online.</p>
+              </div>
+            </a>
+          </div>
+          <div class="service col-lg-3">
+            <a href="#">
+              <div class="service-image">
+                <img class="image" src="/assets/images/home/homeService/Services-2-50x50.png" alt="">
+              </div>
+              <div class="describtion">
+                <span>Way To Buy</span>
+                <p>Lorem Ipsum is simply dummy text of the Testing online.</p>
+              </div>
+            </a>
+          </div>
+          <div class="service col-lg-3">
+            <a href="#">
+              <div class="service-image">
+                <img class="image" src="/assets/images/home/homeService/Services-3-50x50.png" alt="">
+              </div>
+              <div class="describtion">
+                <span>Personal Session</span>
+                <p>Lorem Ipsum is simply dummy text of the Testing online.</p>
+              </div>
+            </a>
+          </div>
+          <div class="service col-lg-3">
+            <a href="#">
+              <div class="service-image">
+                <img class="image" src="/assets/images/home/homeService/Services-4-50x50.png" alt="">
+              </div>
+              <div class="describtion">
+                <span>Gift Voucher</span>
+                <p>Lorem Ipsum is simply dummy text of the Testing online.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="products">
+      <div class="container">
+        <div class="row">
+          <div class="image col-lg-7">
+            <img src="/assets/images/home/storyblock.png" alt="">
+          </div>
+          <div class="about col-lg-5">
+            <div class="contact">
+              <div class="title">
+                <div>
+                  <h5>THE PRODUCTS</h5>
+                  <h1>All About Fabulous</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <footer>
       <div class="footer-top">
@@ -555,8 +586,10 @@
             </div>
         </div>
       </div>
+      <a class="go-top" href="" target="_top"><i class="fa-solid fa-chevron-up"></i></a>
     </footer>
     <!-- js sources -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
@@ -567,7 +600,7 @@
       integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
       crossorigin="anonymous"
     ></script>
-    <script src="/assets/js/owl.carousel.min.js"></script>
+    <script src="/assets/js/home.js"></script>
     <script src="/assets/js/header.js"></script>
   </body>
 </html>

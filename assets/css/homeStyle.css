@@ -2,4 +2,57 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+section#services {
+  background-color: #fbfbfb;
+  margin-bottom: 70px;
+}
+section#services .row {
+  padding: 70px 0;
+  align-items: center;
+}
+section#services .row .service {
+  text-align: center;
+  padding: 0 20px;
+}
+section#services .row .service a {
+  text-decoration: none;
+  color: black;
+}
+section#services .row .service a .service-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+section#services .row .service a .service-image img {
+  width: 55px;
+  height: 55px;
+}
+section#services .row .service a .describtion span {
+  font-size: 18px;
+  font-weight: 500;
+}
+section#services .row .service a .describtion p {
+  font-size: 14px;
+  color: gray;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+
+section#products {
+  margin-bottom: 70px;
+}
+section#products .container {
+  max-width: 1200px;
+}
+section#products .about .title h5 {
+  text-transform: uppercase;
+  color: #eb4d4b;
+  font-size: 16px;
+  letter-spacing: 8px;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 12px;
 }/*# sourceMappingURL=homeStyle.css.map */

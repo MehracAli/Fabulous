@@ -204,6 +204,7 @@ footer .footer-bottom span {
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.5px;
+  padding: 0;
 }
 footer .footer-bottom span a {
   text-decoration: none;
@@ -217,4 +218,23 @@ footer .footer-bottom .pay-cards {
 }
 footer .footer-bottom .pay-cards img {
   margin-left: 10px;
+}
+footer .go-top {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #eb4d4b;
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+}
+footer .go-top:hover {
+  background-color: #232323;
 }/*# sourceMappingURL=footer.css.map */

@@ -3,3 +3,66 @@
     padding: 0;
     box-sizing: border-box;
 }
+// services
+section#services{
+    background-color: #fbfbfb;
+    margin-bottom: 70px;
+    .row{
+        padding: 70px 0;
+        align-items: center;
+        .service {
+            text-align: center;
+            padding: 0 20px;
+            a{
+                text-decoration: none;
+                color: black;
+                .service-image{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        width: 55px;
+                        height: 55px;
+                    }
+                    margin-bottom: 10px;
+                } 
+                .describtion{
+                    span{
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+                    p{
+                        font-size: 14px;
+                        color: gray;
+                        letter-spacing: 1px;
+                        line-height: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+// products
+
+section#products{
+    margin-bottom: 70px;
+    .container{
+        max-width: 1200px;
+    }
+    .about{
+        .title{
+            h5{
+                text-transform: uppercase;
+                color: #eb4d4b;
+                font-size: 16px;
+                letter-spacing: 8px;
+                font-weight: 500;
+                margin: 0;
+                margin-bottom: 12px;
+            }
+            h1{
+
+            }
+        }
+    }
+}

@@ -6,6 +6,18 @@
   font-family: "Poppins", sans-serif;
 }
 
+.on-cart {
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 2;
+}
+
 header {
   position: absolute;
   top: 0;
@@ -16,7 +28,9 @@ header {
   padding: 30px 0;
 }
 header .container {
+  max-width: 1200px;
   display: flex;
+  justify-content: center;
   align-items: center;
   padding: 0 15px;
   margin: 0 30px;
@@ -221,12 +235,99 @@ header .container .search-cart-login .cart sup {
   right: 2px;
 }
 header .container .search-cart-login .cart .cart-drop {
+  animation-duration: 0.5s;
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
+  height: auto;
   width: 400px;
   background-color: white;
+  border: 1px solid #e9e9e9;
+  padding: 0 10px;
+  z-index: 3;
+  transition: 0.5s;
+}
+header .container .search-cart-login .cart .cart-drop .cart-top {
+  padding: 30px 0;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+header .container .search-cart-login .cart .cart-drop .cart-top span {
+  font-size: 14px;
+}
+header .container .search-cart-login .cart .cart-drop .cart-top svg {
+  width: 20px;
+  height: 20px;
+  fill: gray;
+}
+header .container .search-cart-login .cart .cart-drop .cart-list {
+  width: 100%;
+  height: 100%;
+}
+header .container .search-cart-login .cart .cart-drop .cart-list .product-list {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+header .container .search-cart-login .cart .cart-drop .cart-list .product-list li {
+  margin: 0;
+}
+header .container .search-cart-login .cart .cart-drop .cart-list .product-list li p {
+  margin: 50% auto;
+  text-align: center;
+  color: #adadad;
+}
+header .container .search-cart-login .cart .cart-drop .cart-bottom {
+  position: sticky;
+  bottom: 0px;
+  width: 100%;
+  height: 30%;
+  border-top: 1px solid #eee;
+  background-color: white;
+}
+header .container .search-cart-login .cart .cart-drop .cart-bottom ul {
+  line-height: 30px;
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+}
+header .container .search-cart-login .cart .cart-drop .cart-bottom ul li {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+header .container .search-cart-login .cart .cart-drop .cart-bottom ul li span:nth-child(even) {
+  font-weight: 500;
+}
+header .container .search-cart-login .cart .cart-drop .cart-bottom .buttons {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .search-cart-login .cart .cart-drop .cart-bottom .buttons button {
+  font-size: 14px;
+  height: 40px;
+  width: 49%;
+  border: none;
+  background-color: #EB4D50;
+  color: white;
+  transition: 0.5s;
+}
+header .container .search-cart-login .cart .cart-drop .cart-bottom .buttons button:hover {
+  background-color: #232323;
+}
+header .container .search-cart-login .cart .cart-drop .cart-bottom .buttons button:nth-child(2) {
+  background-color: #232323;
+}
+header .container .search-cart-login .cart .cart-drop .cart-bottom .buttons button:nth-child(2):hover {
+  background-color: #EB4D50;
 }
 
 .scroll-header {
@@ -234,11 +335,15 @@ header .container .search-cart-login .cart .cart-drop {
   background-color: white;
   height: 70px;
   justify-content: center;
+  align-items: center;
   padding: 10px 0;
   display: none;
   box-shadow: 0px 0px 7px rgba(128, 128, 128, 0.5);
+  transition: 0.5s;
 }
 .scroll-header .container {
+  justify-content: center;
+  max-width: 1200px;
   padding: 0 15px;
   margin: 0 30px;
 }
