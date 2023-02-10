@@ -1,8 +1,52 @@
 $(document).ready(function () {
-  $('.owl-carousel').owlCarousel({
+  // service
+  $(".service").on("mouseenter", function () {
+    let image = $(this).find("img");
+    image.removeClass("service-rotate")
+    setTimeout(() => {
+      image.addClass("service-rotate")
+    }, 200);
+  });
+  $(".service").on("mouseleave", function () {
+    let image = $(this).find("img");
+    image.removeClass("service-rotate")
+    setTimeout(() => {
+      image.addClass("service-rotate")
+    }, 200);
+  });
+
+  //customers
+  $('#customers .owl-carousel').owlCarousel({
+    loop:false,
+    margin:10,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+    }
+})
+
+  //faq
+  $(".sect").on("click", function () {
+    let next = $(this).next();
+    let icon = $(this).find("i");
+
+    next.slideToggle();
+    icon.toggleClass("active-i");
+
+    $(".sect-p").not(next).slideUp()
+    $(".sect i").not(icon).removeClass("active-i")
+  });
+
+  //brands
+  $('#brands .owl-carousel').owlCarousel({
     loop:true,
     margin:10,
-    nav:true,
+    nav:false,
+    responsiveClass: true,
     responsive:{
         0:{
             items:1
@@ -15,33 +59,9 @@ $(document).ready(function () {
         }
     }
 })
-  // service
-  $(".service").on("mouseover", function () {
-    let image = $(`${this} .image`);
-    image.attr("data-aos", "flip-right");
-    setTimeout(() => {
-      image.attr("data-aos", "flip-right");
-      image.removeAttr("data-aos", "flip-right");
-    }, 1000);
-  });
-  // $(".service").on("mouseleave", ()=>{
-  //     let image = $(".service .image")
-  //     image.removeAttr("data-aos","flip-right")
-  //     image.attr("data-aos","flip-left")
-  //     setTimeout(() => {
-  //         image.removeAttr("data-aos","flip-left")
-  //     }, 1000);
-  //  })
 
-  //FAQ's
-  $(".sect").on("click", function () {
-    let next = $(this).next();
-    let icon = $(this).find("i");
-
-    next.slideToggle();
-    icon.toggleClass("active-i");
-
-    $(".sect-p").not(next).slideUp()
-    $(".sect i").not(icon).removeClass("active-i")
-  });
+  $("#brands .item img").on("click", function(){
+    let img = $(this).find("img")
+    img.addClass("img-rotate")
+  })
 });

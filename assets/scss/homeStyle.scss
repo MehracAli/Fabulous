@@ -3,12 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+body::-webkit-scrollbar{
+    display: none;
+}
 // services
 section#services{
     background-color: #fbfbfb;
     margin-bottom: 70px;
     .container{
-        max-width: 1200px;
+        width: 1200px;
+        max-width: 100%;
     }
     .row{
         padding: 70px 0;
@@ -26,6 +30,9 @@ section#services{
                     img{
                         width: 55px;
                         height: 55px;
+                    }
+                    .service-rotate{
+                        animation: mymove 0.5s;
                     }
                     margin-bottom: 10px;
                 } 
@@ -45,12 +52,19 @@ section#services{
         }
     }
 }
+@keyframes mymove {
+    25% {transform: rotateY(90deg);}
+    50% {transform: rotateY(180deg);}
+    75% {transform: rotateY(270deg);}
+    100% {transform: rotateY(360deg);}
+}
 
 // products
 section#products{
     margin-bottom: 70px;
     .container{
-        max-width: 1200px;
+        width: 1200px;
+        max-width: 100%;
     }
     .about{
         .title{
@@ -119,7 +133,8 @@ section#customers{
     background-image: url(/assets/images/home/testimonialbackground.png);
     padding: 80px 0;
     .container{
-        max-width: 1200px;
+        width: 1200px;
+        max-width: 100%;
         .title{
             text-align: center;
             padding-bottom: 25px;
@@ -148,6 +163,47 @@ section#customers{
                 }
             }
         }
+        .customer{
+            position: relative;
+            background-color: white;
+            width: 97%;
+            padding: 65px 50px 40px;
+            .avatar{
+                position: absolute;
+                top: -60px;
+                left: 50px;
+                width: 100px;
+                height: 100px;
+                border: solid 5px  rgb(235, 77, 75);
+                border-radius: 50%;
+                overflow: hidden;
+                img{
+                    object-fit: contain;
+                }
+            }
+            .about{
+                p{
+                    font-size: 14px;
+                    color: rgb(100, 100, 100);
+                    line-height: 25px;
+                    letter-spacing: 0.5px;
+                }
+            }
+            .name-prof{
+                span{
+                    font-size: 24px;
+                    font-weight: 500;
+                    color: #232323;
+                    &:nth-child(2){
+                        margin-left: 8px;
+                        font-size: 14px;
+                        color: #eb4d4b;
+                        letter-spacing: 1px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -155,7 +211,8 @@ section#customers{
 section#latest{
     padding: 80px 0;
     .container{
-        max-width: 1200px;
+        width: 1200px;
+        max-width: 100%;
         .title{
             text-align: center;
             padding-bottom: 25px;
@@ -195,7 +252,8 @@ section#faq{
     margin-bottom: 60px;
     padding: 140px 0;
     .container{
-        max-width: 1200px;
+        width: 1200px;
+        max-width: 100%;
         padding: 0 9%;
         .title{
             text-align: center;
@@ -260,6 +318,7 @@ section#faq{
                     border-bottom: solid 0.1px rgb(220, 220, 220);
                 }
                 .sect{
+                    cursor: pointer;
                     padding: 25px 0;
                     display: flex;
                     justify-content: space-between;
@@ -295,6 +354,14 @@ section#faq{
 section#brands{
     margin-bottom: 70px;
     .container{
-        max-width: 1200px;
+        width: 1200px;
+        max-width: 100%;
+        img{
+            width: 200px;
+            height: 60px;
+        }
+        .img-rotate{
+            transform: rotateZ(180deg);
+        }
     }
 }

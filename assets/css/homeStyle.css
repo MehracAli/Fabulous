@@ -4,12 +4,17 @@
   box-sizing: border-box;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 section#services {
   background-color: #fbfbfb;
   margin-bottom: 70px;
 }
 section#services .container {
-  max-width: 1200px;
+  width: 1200px;
+  max-width: 100%;
 }
 section#services .row {
   padding: 70px 0;
@@ -33,6 +38,9 @@ section#services .row .service a .service-image img {
   width: 55px;
   height: 55px;
 }
+section#services .row .service a .service-image .service-rotate {
+  animation: mymove 0.5s;
+}
 section#services .row .service a .describtion span {
   font-size: 18px;
   font-weight: 500;
@@ -44,11 +52,26 @@ section#services .row .service a .describtion p {
   line-height: 25px;
 }
 
+@keyframes mymove {
+  25% {
+    transform: rotateY(90deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  75% {
+    transform: rotateY(270deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
 section#products {
   margin-bottom: 70px;
 }
 section#products .container {
-  max-width: 1200px;
+  width: 1200px;
+  max-width: 100%;
 }
 section#products .about .title {
   text-align: left;
@@ -110,7 +133,8 @@ section#customers {
   padding: 80px 0;
 }
 section#customers .container {
-  max-width: 1200px;
+  width: 1200px;
+  max-width: 100%;
 }
 section#customers .container .title {
   text-align: center;
@@ -140,12 +164,51 @@ section#customers .container .title h1::after {
   position: absolute;
   width: 7%;
 }
+section#customers .container .customer {
+  position: relative;
+  background-color: white;
+  width: 97%;
+  padding: 65px 50px 40px;
+}
+section#customers .container .customer .avatar {
+  position: absolute;
+  top: -60px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+  border: solid 5px rgb(235, 77, 75);
+  border-radius: 50%;
+  overflow: hidden;
+}
+section#customers .container .customer .avatar img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+section#customers .container .customer .about p {
+  font-size: 14px;
+  color: rgb(100, 100, 100);
+  line-height: 25px;
+  letter-spacing: 0.5px;
+}
+section#customers .container .customer .name-prof span {
+  font-size: 24px;
+  font-weight: 500;
+  color: #232323;
+}
+section#customers .container .customer .name-prof span:nth-child(2) {
+  margin-left: 8px;
+  font-size: 14px;
+  color: #eb4d4b;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
 
 section#latest {
   padding: 80px 0;
 }
 section#latest .container {
-  max-width: 1200px;
+  width: 1200px;
+  max-width: 100%;
 }
 section#latest .container .title {
   text-align: center;
@@ -183,7 +246,8 @@ section#faq {
   padding: 140px 0;
 }
 section#faq .container {
-  max-width: 1200px;
+  width: 1200px;
+  max-width: 100%;
   padding: 0 9%;
 }
 section#faq .container .title {
@@ -245,6 +309,7 @@ section#faq .container .accordion .steps .step-item {
   border-bottom: solid 0.1px rgb(220, 220, 220);
 }
 section#faq .container .accordion .steps .sect {
+  cursor: pointer;
   padding: 25px 0;
   display: flex;
   justify-content: space-between;
@@ -274,5 +339,13 @@ section#brands {
   margin-bottom: 70px;
 }
 section#brands .container {
-  max-width: 1200px;
+  width: 1200px;
+  max-width: 100%;
+}
+section#brands .container img {
+  width: 200px;
+  height: 60px;
+}
+section#brands .container .img-rotate {
+  transform: rotateZ(180deg);
 }/*# sourceMappingURL=homeStyle.css.map */
