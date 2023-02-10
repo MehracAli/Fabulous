@@ -2,7 +2,7 @@ $(document).ready(function () {
     // nav-bar
     $(".accesories").on("mouseover",()=>{
         let drop = $(".accesories-drop")
-        drop.slideDown()
+        drop.slideDown("fast")
     })
     $(".accesories").on("mouseleave",()=>{
         let drop = $(".accesories-drop")
@@ -10,7 +10,7 @@ $(document).ready(function () {
     })
     $(".drone").on("mouseover",()=>{
         let drop = $(".drone-drop")
-        drop.slideDown()
+        drop.slideDown("fast")
     })
     $(".drone").on("mouseleave",()=>{
         let drop = $(".drone-drop")
