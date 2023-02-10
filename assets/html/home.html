@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,23 +23,25 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="/assets/css/owl.theme.default.css">
     <link rel="stylesheet" href="/assets/css/homeStyle.css" />
     <link rel="stylesheet" href="/assets/css/header.css" />
     <link rel="stylesheet" href="/assets/css/footer.css" />
-    <link rel="stylesheet" href="/assets/css/slide.css">
+    <link rel="stylesheet" href="/assets/css/slide.css" />
     <link rel="icon" href="/assets/images/cart.png" />
     <title>Your Store</title>
   </head>
   <body style="overflow-y: scroll">
     <div class="on-cart d-none"></div>
-    <header class="d-flex">
+    <header class="d-flex animate__animated">
       <div class="container">
-        <div class="row" style="width: 100%;">
-          <div class="logo col-lg-3 d-flex">
+        <div class="row" style="width: 100%">
+          <div class="logo col-lg-3 col-md-3 col-sm-3 d-flex">
             <img src="/assets/images/Logo.png" alt="logo" />
           </div>
-          <div class="nav-bar col-lg-7 d-flex">
+          <div class="nav-bar col-lg-7 col-md-7 col-sm-12 d-flex col-md-">
             <nav class="d-flex">
               <ul class="d-flex">
                 <li class="drone">
@@ -179,34 +181,34 @@
                 </ul>
                 <div class="languages">
                   <span>Language:</span>
-                    <ul style="list-style: none" class="d-flex">
-                        <li>
-                        <a href="" class="d-flex">
-                            <img
-                            src="/assets/images/home/languages/en-gb.png"
-                            alt="eng"
-                            />
-                            <span>English</span>
-                        </a>
-                        </li>
-                        <li>
-                        <a href="" class="d-flex">
-                            <img
-                            src="/assets/images/home/languages/ar.png"
-                            alt="arab"
-                            />
-                            <span>Arabic</span>
-                        </a>
-                        </li>
-                    </ul>
+                  <ul style="list-style: none" class="d-flex">
+                    <li>
+                      <a href="" class="d-flex">
+                        <img
+                          src="/assets/images/home/languages/en-gb.png"
+                          alt="eng"
+                        />
+                        <span>English</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="d-flex">
+                        <img
+                          src="/assets/images/home/languages/ar.png"
+                          alt="arab"
+                        />
+                        <span>Arabic</span>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
                 <div class="currency">
-                    <span>Currency:</span>
-                    <ul class="d-flex">
-                        <li><a href="">€ Euro</a></li>
-                        <li><a href="">£ Pound Sterling</a></li>
-                        <li><a href="">$ US Dollar</a></li>
-                    </ul>
+                  <span>Currency:</span>
+                  <ul class="d-flex">
+                    <li><a href="">€ Euro</a></li>
+                    <li><a href="">£ Pound Sterling</a></li>
+                    <li><a href="">$ US Dollar</a></li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -232,7 +234,24 @@
               <div class="cart-drop animate__animated d-none">
                 <div class="cart-top d-flex">
                   <span>CART</span>
-                  <svg width="800px" height="800px" viewBox="0 0 1024 1024" fill="#000000" class="icon"  version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M176.662 817.173c-8.19 8.471-7.96 21.977 0.51 30.165 8.472 8.19 21.978 7.96 30.166-0.51l618.667-640c8.189-8.472 7.96-21.978-0.511-30.166-8.471-8.19-21.977-7.96-30.166 0.51l-618.666 640z" fill="" /><path d="M795.328 846.827c8.19 8.471 21.695 8.7 30.166 0.511 8.471-8.188 8.7-21.694 0.511-30.165l-618.667-640c-8.188-8.471-21.694-8.7-30.165-0.511-8.471 8.188-8.7 21.694-0.511 30.165l618.666 640z" fill="" /></svg>
+                  <svg
+                    width="800px"
+                    height="800px"
+                    viewBox="0 0 1024 1024"
+                    fill="#000000"
+                    class="icon"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M176.662 817.173c-8.19 8.471-7.96 21.977 0.51 30.165 8.472 8.19 21.978 7.96 30.166-0.51l618.667-640c8.189-8.472 7.96-21.978-0.511-30.166-8.471-8.19-21.977-7.96-30.166 0.51l-618.666 640z"
+                      fill=""
+                    />
+                    <path
+                      d="M795.328 846.827c8.19 8.471 21.695 8.7 30.166 0.511 8.471-8.188 8.7-21.694 0.511-30.165l-618.667-640c-8.188-8.471-21.694-8.7-30.165-0.511-8.471 8.188-8.7 21.694-0.511 30.165l618.666 640z"
+                      fill=""
+                    />
+                  </svg>
                 </div>
                 <div class="cart-list">
                   <ul class="product-list">
@@ -276,22 +295,52 @@
       <div class="slide">
         <div id="carouselExampleIndicators" class="carousel slide">
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active a" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active a"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="/assets/images/home/homeSlide/Slider-1-1920x925.png" class="d-block w-100" alt="...">
+              <img
+                src="/assets/images/home/homeSlide/Slider-1-1920x925.png"
+                class="d-block w-100"
+                alt="..."
+              />
             </div>
             <div class="carousel-item">
-              <img src="/assets/images/home/homeSlide/Slider-2-1920x925.png" class="d-block w-100" alt="...">
+              <img
+                src="/assets/images/home/homeSlide/Slider-2-1920x925.png"
+                class="d-block w-100"
+                alt="..."
+              />
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
@@ -304,7 +353,11 @@
           <div class="service col-lg-3">
             <a href="#">
               <div class="service-image">
-                <img class="image" src="/assets/images/home/homeService/Services-1-50x50.png" alt="">
+                <img
+                  class="image"
+                  src="/assets/images/home/homeService/Services-1-50x50.png"
+                  alt=""
+                />
               </div>
               <div class="describtion">
                 <span>Free Delivery</span>
@@ -315,7 +368,11 @@
           <div class="service col-lg-3">
             <a href="#">
               <div class="service-image">
-                <img class="image" src="/assets/images/home/homeService/Services-2-50x50.png" alt="">
+                <img
+                  class="image"
+                  src="/assets/images/home/homeService/Services-2-50x50.png"
+                  alt=""
+                />
               </div>
               <div class="describtion">
                 <span>Way To Buy</span>
@@ -326,7 +383,11 @@
           <div class="service col-lg-3">
             <a href="#">
               <div class="service-image">
-                <img class="image" src="/assets/images/home/homeService/Services-3-50x50.png" alt="">
+                <img
+                  class="image"
+                  src="/assets/images/home/homeService/Services-3-50x50.png"
+                  alt=""
+                />
               </div>
               <div class="describtion">
                 <span>Personal Session</span>
@@ -337,7 +398,11 @@
           <div class="service col-lg-3">
             <a href="#">
               <div class="service-image">
-                <img class="image" src="/assets/images/home/homeService/Services-4-50x50.png" alt="">
+                <img
+                  class="image"
+                  src="/assets/images/home/homeService/Services-4-50x50.png"
+                  alt=""
+                />
               </div>
               <div class="describtion">
                 <span>Gift Voucher</span>
@@ -352,18 +417,194 @@
       <div class="container">
         <div class="row">
           <div class="image col-lg-7">
-            <img src="/assets/images/home/storyblock.png" alt="">
+            <img src="/assets/images/home/storyblock.png" alt="" />
           </div>
           <div class="about col-lg-5">
-            <div class="contact">
-              <div class="title">
-                <div>
-                  <h5>THE PRODUCTS</h5>
-                  <h1>All About Fabulous</h1>
-                </div>
+            <div class="title">
+              <h5>THE PRODUCTS</h5>
+              <h1>All About Fabulous</h1>
+            </div>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, to make a type specimen book.
+            </p>
+            <div class="about-list d-flex">
+              <ul>
+                <li>Eye and facial makeup</li>
+                <li>Hair Serum</li>
+                <li>Makeup Brush</li>
+                <li>Professional Powder</li>
+              </ul>
+              <ul>
+                <li>Lipstick Nail Art</li>
+                <li>Skincare Cream</li>
+                <li>Hair Shampoo</li>
+                <li>facial Kit</li>
+              </ul>
+            </div>
+            <button>VIEW MORE</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="customers">
+      <div class="container">
+        <div class="title">
+          <h5>THE PRODUCTS</h5>
+          <h1>Customer Review</h1>
+        </div>
+      </div>
+    </section>
+    <section id="latest">
+      <div class="container">
+        <div class="title">
+          <h5>THE LATEST</h5>
+          <h1>Fabulous Products</h1>
+        </div>
+      </div>
+    </section>
+    <section id="faq">
+      <div class="container">
+        <div class="title">
+          <h5>THE PRODUCTS</h5>
+          <h1>FAQ'S</h1>
+        </div>
+        <div class="accordion col-lg-12">
+          <div class="steps">
+            <div class="step-1 step-item">
+              <div class="sect" id="sect-1">
+                <h3><span>01</span>How to use Drone Product?</h3>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div class="sect-p">
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book
+                </p>
+              </div>
+            </div>
+            <div class="step-2 step-item">
+              <div class="sect" id="sect-2">
+                <h3><span>02</span>What is a Lorem Ipsum generator?</h3>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div class="sect-p p-none">
+                <p>
+                  Derived from Latin dolorem ipsum (“pain itself”), Lorem Ipsum
+                  is filler text used by publishers and graphic designers used
+                  to demonstrate graphic elements. Let's say you're drafting the
+                  ultimate content marketing strategy.
+                </p>
+              </div>
+            </div>
+            <div class="step-3 step-item">
+              <div class="sect" id="sect-3">
+                <h3><span>03</span>Ut enim ad minim veniam quis nostrud?</h3>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div class="sect-p p-none">
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book
+                </p>
+              </div>
+            </div>
+            <div class="step-4 step-item">
+              <div class="sect" id="sect-4">
+                <h3>
+                  <span>04</span>Who is thought to have scrambled parts of
+                  Cicero?
+                </h3>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div class="sect-p p-none">
+                <p>
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                  minim veniam, quis nostrud exercitation ullamco laboris nisi
+                  ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                  reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                  nulla pariatur. Excepteur sint occaecat cupidatat non
+                  proident, sunt in culpa qui officia deserunt mollit anim id
+                  est laborum.
+                </p>
+              </div>
+            </div>
+            <div class="step-5 step-item">
+              <div class="sect" id="sect-5">
+                <h3><span>05</span>What is the use of Lorem Ipsum?</h3>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div class="sect-p p-none">
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book
+                </p>
+              </div>
+            </div>
+            <div class="step-6 step-item">
+              <div class="sect" id="sect-6">
+                <h3><span>06</span>Minim veniam quis enim?</h3>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div class="sect-p p-none">
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book
+                </p>
+              </div>
+            </div>
+            <div class="step-7 step-item">
+              <div class="sect" id="sect-7">
+                <h3><span>07</span>How do I get Lorem Ipsum text in?</h3>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div class="sect-p p-none">
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book
+                </p>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+    <section id="brands">
+      <div class="container">
+        <div class="row">
+          <div class="owl-carousel owl-theme" style="z-index: 0;">
+            <div class="item">
+              <img src="/assets/images/home/brands/Brand-Logo-1-200x60.png" alt="">
+            </div>
+            <div class="item">
+              <img src="/assets/images/home/brands/Brand-Logo-2-200x60.png" alt="">
+            </div>
+            <div class="item">
+              <img src="/assets/images/home/brands/Brand-Logo-3-200x60.png" alt="">
+            </div>
+            <div class="item">
+              <img src="/assets/images/home/brands/Brand-Logo-4-200x60.png" alt="">
+            </div>
+            <div class="item">
+              <img src="/assets/images/home/brands/Brand-Logo-5-200x60.png" alt="">
+            </div>
+        </div>
         </div>
       </div>
     </section>
@@ -371,7 +612,7 @@
       <div class="footer-top">
         <div class="container">
           <div class="row justify-content-between">
-            <div class="contact">
+            <div class="contact col-lg-6 col-sm-12">
               <div class="title">
                 <div>
                   <h5>Contact</h5>
@@ -395,7 +636,7 @@
                 <button type="submit">SEND MESSAGE</button>
               </form>
             </div>
-            <div class="subscribe">
+            <div class="subscribe col-lg-6 col-sm-12">
               <div class="title">
                 <h5>subscribe</h5>
                 <h1>Newsletter</h1>
@@ -534,14 +775,31 @@
                       </svg>
                     </a>
                   </li>
-                  <li><a href="">
-                    <svg width="800px" height="800px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="24" cy="24" r="20" fill="#C13584"/>
-                        <path d="M24 14.1622C27.2041 14.1622 27.5837 14.1744 28.849 14.2321C30.019 14.2855 30.6544 14.481 31.0773 14.6453C31.6374 14.863 32.0371 15.123 32.457 15.5429C32.877 15.9629 33.137 16.3626 33.3547 16.9227C33.519 17.3456 33.7145 17.981 33.7679 19.1509C33.8256 20.4163 33.8378 20.7958 33.8378 23.9999C33.8378 27.2041 33.8256 27.5836 33.7679 28.849C33.7145 30.019 33.519 30.6543 33.3547 31.0772C33.137 31.6373 32.877 32.0371 32.4571 32.457C32.0371 32.8769 31.6374 33.1369 31.0773 33.3546C30.6544 33.519 30.019 33.7144 28.849 33.7678C27.5839 33.8255 27.2044 33.8378 24 33.8378C20.7956 33.8378 20.4162 33.8255 19.151 33.7678C17.981 33.7144 17.3456 33.519 16.9227 33.3546C16.3626 33.1369 15.9629 32.8769 15.543 32.457C15.1231 32.0371 14.863 31.6373 14.6453 31.0772C14.481 30.6543 14.2855 30.019 14.2321 28.849C14.1744 27.5836 14.1622 27.2041 14.1622 23.9999C14.1622 20.7958 14.1744 20.4163 14.2321 19.1509C14.2855 17.981 14.481 17.3456 14.6453 16.9227C14.863 16.3626 15.123 15.9629 15.543 15.543C15.9629 15.123 16.3626 14.863 16.9227 14.6453C17.3456 14.481 17.981 14.2855 19.151 14.2321C20.4163 14.1744 20.7959 14.1622 24 14.1622ZM24 12C20.741 12 20.3323 12.0138 19.0524 12.0722C17.7752 12.1305 16.9028 12.3333 16.1395 12.63C15.3504 12.9366 14.6812 13.3469 14.0141 14.0141C13.3469 14.6812 12.9366 15.3504 12.63 16.1395C12.3333 16.9028 12.1305 17.7751 12.0722 19.0524C12.0138 20.3323 12 20.741 12 23.9999C12 27.259 12.0138 27.6676 12.0722 28.9475C12.1305 30.2248 12.3333 31.0971 12.63 31.8604C12.9366 32.6495 13.3469 33.3187 14.0141 33.9859C14.6812 34.653 15.3504 35.0633 16.1395 35.3699C16.9028 35.6666 17.7752 35.8694 19.0524 35.9277C20.3323 35.9861 20.741 35.9999 24 35.9999C27.259 35.9999 27.6677 35.9861 28.9476 35.9277C30.2248 35.8694 31.0972 35.6666 31.8605 35.3699C32.6496 35.0633 33.3188 34.653 33.9859 33.9859C34.653 33.3187 35.0634 32.6495 35.37 31.8604C35.6667 31.0971 35.8695 30.2248 35.9278 28.9475C35.9862 27.6676 36 27.259 36 23.9999C36 20.741 35.9862 20.3323 35.9278 19.0524C35.8695 17.7751 35.6667 16.9028 35.37 16.1395C35.0634 15.3504 34.653 14.6812 33.9859 14.0141C33.3188 13.3469 32.6496 12.9366 31.8605 12.63C31.0972 12.3333 30.2248 12.1305 28.9476 12.0722C27.6677 12.0138 27.259 12 24 12Z" fill="white"/>
-                        <path d="M24.0059 17.8433C20.6026 17.8433 17.8438 20.6021 17.8438 24.0054C17.8438 27.4087 20.6026 30.1675 24.0059 30.1675C27.4092 30.1675 30.1681 27.4087 30.1681 24.0054C30.1681 20.6021 27.4092 17.8433 24.0059 17.8433ZM24.0059 28.0054C21.7968 28.0054 20.0059 26.2145 20.0059 24.0054C20.0059 21.7963 21.7968 20.0054 24.0059 20.0054C26.2151 20.0054 28.0059 21.7963 28.0059 24.0054C28.0059 26.2145 26.2151 28.0054 24.0059 28.0054Z" fill="white"/>
-                        <path d="M31.8507 17.5963C31.8507 18.3915 31.206 19.0363 30.4107 19.0363C29.6154 19.0363 28.9707 18.3915 28.9707 17.5963C28.9707 16.801 29.6154 16.1562 30.4107 16.1562C31.206 16.1562 31.8507 16.801 31.8507 17.5963Z" fill="white"/>
-                        </svg>
-                  </a></li>
+                  <li>
+                    <a href="">
+                      <svg
+                        width="800px"
+                        height="800px"
+                        viewBox="0 0 48 48"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="24" cy="24" r="20" fill="#C13584" />
+                        <path
+                          d="M24 14.1622C27.2041 14.1622 27.5837 14.1744 28.849 14.2321C30.019 14.2855 30.6544 14.481 31.0773 14.6453C31.6374 14.863 32.0371 15.123 32.457 15.5429C32.877 15.9629 33.137 16.3626 33.3547 16.9227C33.519 17.3456 33.7145 17.981 33.7679 19.1509C33.8256 20.4163 33.8378 20.7958 33.8378 23.9999C33.8378 27.2041 33.8256 27.5836 33.7679 28.849C33.7145 30.019 33.519 30.6543 33.3547 31.0772C33.137 31.6373 32.877 32.0371 32.4571 32.457C32.0371 32.8769 31.6374 33.1369 31.0773 33.3546C30.6544 33.519 30.019 33.7144 28.849 33.7678C27.5839 33.8255 27.2044 33.8378 24 33.8378C20.7956 33.8378 20.4162 33.8255 19.151 33.7678C17.981 33.7144 17.3456 33.519 16.9227 33.3546C16.3626 33.1369 15.9629 32.8769 15.543 32.457C15.1231 32.0371 14.863 31.6373 14.6453 31.0772C14.481 30.6543 14.2855 30.019 14.2321 28.849C14.1744 27.5836 14.1622 27.2041 14.1622 23.9999C14.1622 20.7958 14.1744 20.4163 14.2321 19.1509C14.2855 17.981 14.481 17.3456 14.6453 16.9227C14.863 16.3626 15.123 15.9629 15.543 15.543C15.9629 15.123 16.3626 14.863 16.9227 14.6453C17.3456 14.481 17.981 14.2855 19.151 14.2321C20.4163 14.1744 20.7959 14.1622 24 14.1622ZM24 12C20.741 12 20.3323 12.0138 19.0524 12.0722C17.7752 12.1305 16.9028 12.3333 16.1395 12.63C15.3504 12.9366 14.6812 13.3469 14.0141 14.0141C13.3469 14.6812 12.9366 15.3504 12.63 16.1395C12.3333 16.9028 12.1305 17.7751 12.0722 19.0524C12.0138 20.3323 12 20.741 12 23.9999C12 27.259 12.0138 27.6676 12.0722 28.9475C12.1305 30.2248 12.3333 31.0971 12.63 31.8604C12.9366 32.6495 13.3469 33.3187 14.0141 33.9859C14.6812 34.653 15.3504 35.0633 16.1395 35.3699C16.9028 35.6666 17.7752 35.8694 19.0524 35.9277C20.3323 35.9861 20.741 35.9999 24 35.9999C27.259 35.9999 27.6677 35.9861 28.9476 35.9277C30.2248 35.8694 31.0972 35.6666 31.8605 35.3699C32.6496 35.0633 33.3188 34.653 33.9859 33.9859C34.653 33.3187 35.0634 32.6495 35.37 31.8604C35.6667 31.0971 35.8695 30.2248 35.9278 28.9475C35.9862 27.6676 36 27.259 36 23.9999C36 20.741 35.9862 20.3323 35.9278 19.0524C35.8695 17.7751 35.6667 16.9028 35.37 16.1395C35.0634 15.3504 34.653 14.6812 33.9859 14.0141C33.3188 13.3469 32.6496 12.9366 31.8605 12.63C31.0972 12.3333 30.2248 12.1305 28.9476 12.0722C27.6677 12.0138 27.259 12 24 12Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M24.0059 17.8433C20.6026 17.8433 17.8438 20.6021 17.8438 24.0054C17.8438 27.4087 20.6026 30.1675 24.0059 30.1675C27.4092 30.1675 30.1681 27.4087 30.1681 24.0054C30.1681 20.6021 27.4092 17.8433 24.0059 17.8433ZM24.0059 28.0054C21.7968 28.0054 20.0059 26.2145 20.0059 24.0054C20.0059 21.7963 21.7968 20.0054 24.0059 20.0054C26.2151 20.0054 28.0059 21.7963 28.0059 24.0054C28.0059 26.2145 26.2151 28.0054 24.0059 28.0054Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M31.8507 17.5963C31.8507 18.3915 31.206 19.0363 30.4107 19.0363C29.6154 19.0363 28.9707 18.3915 28.9707 17.5963C28.9707 16.801 29.6154 16.1562 30.4107 16.1562C31.206 16.1562 31.8507 16.801 31.8507 17.5963Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -550,43 +808,59 @@
       </div>
       <div class="footer-mid">
         <ul>
-            <li><a href="">Brands</a></li>
-            <li>|</li>
-            <li><a href="">Gift Certificates</a></li>
-            <li>|</li>
-            <li><a href="">Affiliate</a></li>
-            <li>|</li>
-            <li><a href="">Specials</a></li>
-            <li>|</li>
-            <li><a href="">Site Map</a></li>
+          <li><a href="">Brands</a></li>
+          <li>|</li>
+          <li><a href="">Gift Certificates</a></li>
+          <li>|</li>
+          <li><a href="">Affiliate</a></li>
+          <li>|</li>
+          <li><a href="">Specials</a></li>
+          <li>|</li>
+          <li><a href="">Site Map</a></li>
         </ul>
         <ul>
-            <li><a href="">My Account</a></li>
-            <li>|</li>
-            <li><a href="">Specials</a></li>
-            <li>|</li>
-            <li><a href="">Brands</a></li>
-            <li>|</li>
-            <li><a href="">Order History</a></li>
-            <li>|</li>
-            <li><a href="">Contact Us</a></li>
+          <li><a href="">My Account</a></li>
+          <li>|</li>
+          <li><a href="">Specials</a></li>
+          <li>|</li>
+          <li><a href="">Brands</a></li>
+          <li>|</li>
+          <li><a href="">Order History</a></li>
+          <li>|</li>
+          <li><a href="">Contact Us</a></li>
         </ul>
       </div>
       <div class="footer-bottom">
         <div class="container">
-            <div class="row align-items-center">
-                <span>Powered By <a href="#">OpenCart</a> Your Store © 2023</span>
-                <div class="pay-cards">
-                    <img src="/assets/images/home/payCards/american-express-44x30.png" alt="">
-                    <img src="/assets/images/home/payCards/discover-44x30.png" alt="">
-                    <img src="/assets/images/home/payCards/google-wallet-44x30.png" alt="">
-                    <img src="/assets/images/home/payCards/mastercard-44x30.png" alt="">
-                    <img src="/assets/images/home/payCards/paypal-44x30.png" alt="">
-                </div>
+          <div class="row align-items-center">
+            <span class="col-lg-6 col-sm-12"
+              >Powered By <a href="#">OpenCart</a> Your Store © 2023</span
+            >
+            <div class="pay-cards col-lg-6 col-sm-12">
+              <img
+                src="/assets/images/home/payCards/american-express-44x30.png"
+                alt=""
+              />
+              <img
+                src="/assets/images/home/payCards/discover-44x30.png"
+                alt=""
+              />
+              <img
+                src="/assets/images/home/payCards/google-wallet-44x30.png"
+                alt=""
+              />
+              <img
+                src="/assets/images/home/payCards/mastercard-44x30.png"
+                alt=""
+              />
+              <img src="/assets/images/home/payCards/paypal-44x30.png" alt="" />
             </div>
+          </div>
         </div>
       </div>
-      <a class="go-top" href="" target="_top"><i class="fa-solid fa-chevron-up"></i></a>
+      <a class="go-top" href="" target="_top"
+        ><i class="fa-solid fa-chevron-up"></i
+      ></a>
     </footer>
     <!-- js sources -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -600,6 +874,7 @@
       integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
       crossorigin="anonymous"
     ></script>
+    <script src="/assets/js/owl.carousel.js"></script>
     <script src="/assets/js/home.js"></script>
     <script src="/assets/js/header.js"></script>
   </body>

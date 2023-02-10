@@ -8,6 +8,9 @@ section#services {
   background-color: #fbfbfb;
   margin-bottom: 70px;
 }
+section#services .container {
+  max-width: 1200px;
+}
 section#services .row {
   padding: 70px 0;
   align-items: center;
@@ -47,6 +50,11 @@ section#products {
 section#products .container {
   max-width: 1200px;
 }
+section#products .about .title {
+  text-align: left;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
 section#products .about .title h5 {
   text-transform: uppercase;
   color: #eb4d4b;
@@ -55,4 +63,216 @@ section#products .about .title h5 {
   font-weight: 500;
   margin: 0;
   margin-bottom: 12px;
+}
+section#products .about .title h1 {
+  font-size: 40px;
+  font-weight: 600;
+  position: relative;
+}
+section#products .about .title h1::after {
+  border-top: 4px solid #eb4d4b;
+  bottom: -20px;
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 16%;
+}
+section#products .about p {
+  font-size: 14px;
+  color: gray;
+  letter-spacing: 1px;
+}
+section#products .about .about-list ul li {
+  color: rgb(110, 110, 110);
+  font-size: 15px;
+  line-height: 30px;
+}
+section#products .about .about-list ul li::marker {
+  font-size: 20px;
+  color: #eb4d4b;
+}
+section#products .about .about-list ul:nth-child(2) {
+  margin-left: 30px;
+}
+section#products .about button {
+  background-color: #eb4d4b;
+  height: 45px;
+  padding: 8px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 14px;
+  color: white;
+  transition: 0.5s;
+}
+
+section#customers {
+  background-image: url(/assets/images/home/testimonialbackground.png);
+  padding: 80px 0;
+}
+section#customers .container {
+  max-width: 1200px;
+}
+section#customers .container .title {
+  text-align: center;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+section#customers .container .title h5 {
+  text-transform: uppercase;
+  color: #eb4d4b;
+  font-size: 16px;
+  letter-spacing: 8px;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 12px;
+}
+section#customers .container .title h1 {
+  font-size: 40px;
+  font-weight: 600;
+  position: relative;
+}
+section#customers .container .title h1::after {
+  border-top: 4px solid rgb(235, 77, 75);
+  left: 46.5%;
+  right: 46.5%;
+  bottom: -20px;
+  content: "";
+  position: absolute;
+  width: 7%;
+}
+
+section#latest {
+  padding: 80px 0;
+}
+section#latest .container {
+  max-width: 1200px;
+}
+section#latest .container .title {
+  text-align: center;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+section#latest .container .title h5 {
+  text-transform: uppercase;
+  color: #eb4d4b;
+  font-size: 16px;
+  letter-spacing: 8px;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 12px;
+}
+section#latest .container .title h1 {
+  font-size: 40px;
+  font-weight: 600;
+  position: relative;
+}
+section#latest .container .title h1::after {
+  border-top: 4px solid rgb(235, 77, 75);
+  left: 46.5%;
+  right: 46.5%;
+  bottom: -20px;
+  content: "";
+  position: absolute;
+  width: 7%;
+}
+
+section#faq {
+  background-color: #F2F6FA;
+  padding: 80px 0;
+  margin-bottom: 60px;
+  padding: 140px 0;
+}
+section#faq .container {
+  max-width: 1200px;
+  padding: 0 9%;
+}
+section#faq .container .title {
+  text-align: center;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+section#faq .container .title h5 {
+  text-transform: uppercase;
+  color: #eb4d4b;
+  font-size: 16px;
+  letter-spacing: 8px;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 12px;
+}
+section#faq .container .title h1 {
+  font-size: 40px;
+  font-weight: 600;
+  position: relative;
+}
+section#faq .container .title h1::after {
+  border-top: 4px solid rgb(235, 77, 75);
+  left: 46.5%;
+  right: 46.5%;
+  bottom: -20px;
+  content: "";
+  position: absolute;
+  width: 7%;
+}
+section#faq .container .title .accordion {
+  display: flex;
+  justify-content: center;
+}
+section#faq .container .title .accordion .steps {
+  width: 100%;
+}
+section#faq .container .title .accordion .steps .sect {
+  width: 100%;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(230, 230, 230);
+  border-bottom: solid white;
+  cursor: pointer;
+}
+section#faq .container .title .accordion .steps .sect-p {
+  background-color: rgb(245, 245, 245);
+  padding: 20px 50px;
+  display: none;
+}
+section#faq .container .title .accordion .steps .sect-p p {
+  margin-bottom: 0px;
+  height: 70px;
+}
+section#faq .container .accordion .steps .step-item {
+  border-bottom: solid 0.1px rgb(220, 220, 220);
+}
+section#faq .container .accordion .steps .sect {
+  padding: 25px 0;
+  display: flex;
+  justify-content: space-between;
+}
+section#faq .container .accordion .steps .sect h3 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  margin: 0;
+}
+section#faq .container .accordion .steps .sect h3 span {
+  font-weight: 600;
+  margin-right: 8px;
+}
+section#faq .container .accordion .steps .sect i {
+  transition: 0.5s;
+}
+section#faq .container .accordion .steps .sect .active-i {
+  transform: rotateZ(180deg);
+}
+section#faq .container .accordion .steps .sect-p p {
+  font-size: 14px;
+  color: gray;
+}
+
+section#brands {
+  margin-bottom: 70px;
+}
+section#brands .container {
+  max-width: 1200px;
 }/*# sourceMappingURL=homeStyle.css.map */

@@ -41,7 +41,6 @@ footer .footer-top .container h1::after {
 footer .footer-top .container .contact {
   border: solid 0.5px rgb(230, 230, 230);
   padding: 30px 15px;
-  width: 49%;
 }
 footer .footer-top .container .contact form .name-email {
   display: flex;
@@ -97,7 +96,6 @@ footer .footer-top .container .contact form button:hover {
 footer .footer-top .container .subscribe {
   border: solid 0.5px rgb(230, 230, 230);
   padding: 30px 15px;
-  width: 49%;
 }
 footer .footer-top .container .subscribe .letter-icon {
   width: 50px;
@@ -199,7 +197,6 @@ footer .footer-bottom {
   background-color: #151515;
 }
 footer .footer-bottom span {
-  width: 50%;
   color: white;
   font-size: 14px;
   font-weight: 400;
@@ -214,7 +211,6 @@ footer .footer-bottom .pay-cards {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: 50%;
 }
 footer .footer-bottom .pay-cards img {
   margin-left: 10px;

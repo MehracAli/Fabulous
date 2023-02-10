@@ -43,7 +43,7 @@ $(document).ready(function () {
     $(window).on('scroll',function(){
         if($(window).scrollTop() > 100){
             let scroll = $('header').addClass('scroll-header')
-
+            scroll.addClass("animate__slideInDown")
         }
         else{
             let scroll =  $('header').removeClass('scroll-header')

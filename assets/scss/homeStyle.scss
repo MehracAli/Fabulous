@@ -7,6 +7,9 @@
 section#services{
     background-color: #fbfbfb;
     margin-bottom: 70px;
+    .container{
+        max-width: 1200px;
+    }
     .row{
         padding: 70px 0;
         align-items: center;
@@ -42,8 +45,8 @@ section#services{
         }
     }
 }
-// products
 
+// products
 section#products{
     margin-bottom: 70px;
     .container{
@@ -51,6 +54,9 @@ section#products{
     }
     .about{
         .title{
+            text-align: left;
+            padding-bottom: 25px;
+            margin-bottom: 25px;
             h5{
                 text-transform: uppercase;
                 color: #eb4d4b;
@@ -61,8 +67,234 @@ section#products{
                 margin-bottom: 12px;
             }
             h1{
-
+                font-size: 40px;
+                font-weight: 600;
+                position: relative;
+                &::after{
+                    border-top: 4px solid #eb4d4b;
+                    bottom: -20px;
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    width: 16%;
+                }
             }
         }
+        p{
+            font-size: 14px;
+            color: gray;
+            letter-spacing: 1px;
+        }
+        .about-list{
+            ul{
+                li{
+                    color: rgb(110, 110, 110);
+                    font-size: 15px;
+                    line-height: 30px;
+                }
+                li::marker{
+                    font-size: 20px;
+                    color: #eb4d4b;
+                }
+                &:nth-child(2){
+                    margin-left: 30px;
+                }
+            }
+        }
+        button{
+            background-color: #eb4d4b;
+            height: 45px;
+            padding: 8px 30px;
+            border: none;
+            border-radius: 30px;
+            font-size: 14px;
+            color: white;
+            transition: 0.5s;
+        }
+    }
+}
+
+//customers
+section#customers{
+    background-image: url(/assets/images/home/testimonialbackground.png);
+    padding: 80px 0;
+    .container{
+        max-width: 1200px;
+        .title{
+            text-align: center;
+            padding-bottom: 25px;
+            margin-bottom: 25px;
+            h5{
+                text-transform: uppercase;
+                color: #eb4d4b;
+                font-size: 16px;
+                letter-spacing: 8px;
+                font-weight: 500;
+                margin: 0;
+                margin-bottom: 12px;
+            }
+            h1{
+                font-size: 40px;
+                font-weight: 600;
+                position: relative;
+                &::after{
+                    border-top: 4px solid rgb(235, 77, 75);
+                    left: 46.5%;
+                    right: 46.5%;
+                    bottom: -20px;
+                    content: "";
+                    position: absolute;
+                    width: 7%;
+                }
+            }
+        }
+    }
+}
+
+//latest
+section#latest{
+    padding: 80px 0;
+    .container{
+        max-width: 1200px;
+        .title{
+            text-align: center;
+            padding-bottom: 25px;
+            margin-bottom: 25px;
+            h5{
+                text-transform: uppercase;
+                color: #eb4d4b;
+                font-size: 16px;
+                letter-spacing: 8px;
+                font-weight: 500;
+                margin: 0;
+                margin-bottom: 12px;
+            }
+            h1{
+                font-size: 40px;
+                font-weight: 600;
+                position: relative;
+                &::after{
+                    border-top: 4px solid rgb(235, 77, 75);
+                    left: 46.5%;
+                    right: 46.5%;
+                    bottom: -20px;
+                    content: "";
+                    position: absolute;
+                    width: 7%;
+                }
+            }
+        }
+    }
+}
+
+//faq
+section#faq{
+
+    background-color: #F2F6FA;
+    padding: 80px 0;
+    margin-bottom: 60px;
+    padding: 140px 0;
+    .container{
+        max-width: 1200px;
+        padding: 0 9%;
+        .title{
+            text-align: center;
+            padding-bottom: 25px;
+            margin-bottom: 25px;
+            h5{
+                text-transform: uppercase;
+                color: #eb4d4b;
+                font-size: 16px;
+                letter-spacing: 8px;
+                font-weight: 500;
+                margin: 0;
+                margin-bottom: 12px;
+            }
+            h1{
+                font-size: 40px;
+                font-weight: 600;
+                position: relative;
+                &::after{
+                    border-top: 4px solid rgb(235, 77, 75);
+                    left: 46.5%;
+                    right: 46.5%;
+                    bottom: -20px;
+                    content: "";
+                    position: absolute;
+                    width: 7%;
+                }
+            }
+            .accordion {
+                display: flex;
+                justify-content: center;
+                .steps {
+                    width: 100%;
+                    .sect {
+                        width: 100%;
+                        padding: 0 50px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 50px;
+                        background-color: rgb(230, 230, 230);
+                        border-bottom: solid white;
+                        cursor: pointer;
+                    }
+            
+                    .sect-p {
+                        background-color: rgb(245, 245, 245);
+                        padding: 20px 50px;
+                        display: none;
+            
+                        p {
+                            margin-bottom: 0px;
+                            height: 70px;
+                        }
+                    }
+                }
+            }
+        }
+        .accordion{
+            .steps{
+                .step-item{
+                    border-bottom: solid 0.1px rgb(220, 220, 220);
+                }
+                .sect{
+                    padding: 25px 0;
+                    display: flex;
+                    justify-content: space-between;
+                    h3{
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 20px;
+                        margin: 0;
+                        span{
+                            font-weight: 600;
+                            margin-right: 8px;
+                        }
+                    }
+                    i{
+                        transition: 0.5s;
+                    }
+                    .active-i{
+                        transform: rotateZ(180deg);
+                    }
+                }
+                .sect-p{
+                    p{
+                        font-size: 14px;
+                        color: gray;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//brands
+section#brands{
+    margin-bottom: 70px;
+    .container{
+        max-width: 1200px;
     }
 }

@@ -38,7 +38,6 @@ footer{
             .contact{
                 border: solid 0.5px rgb(230, 230, 230);
                 padding: 30px 15px;
-                width: 49%;
                 form{
                     .name-email{
                         display: flex;
@@ -90,7 +89,6 @@ footer{
             .subscribe{       
                 border: solid 0.5px rgb(230, 230, 230);
                 padding: 30px 15px;
-                width: 49%;
                 .letter-icon{
                     width: 50px;
                     height: 50px;
@@ -194,7 +192,6 @@ footer{
         padding: 10px 0;
         background-color:#151515;
         span{
-            width: 50%;
             color: white;
             font-size: 14px;
             font-weight: 400;
@@ -209,7 +206,6 @@ footer{
             display: flex;
             justify-content: flex-end;
             align-items: center;
-            width: 50%;
             img{
                 margin-left: 10px;
             }
