@@ -185,7 +185,7 @@ footer .footer-mid ul li:nth-child(even) {
   margin: 0 10px;
 }
 footer .footer-mid ul li a {
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   font-weight: 400;
   text-decoration: none;
   color: rgb(100, 100, 100);
@@ -203,7 +203,7 @@ footer .footer-bottom span {
   color: white;
   font-size: 14px;
   font-weight: 400;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 }
 footer .footer-bottom span a {
   text-decoration: none;
