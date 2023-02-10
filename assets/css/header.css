@@ -16,6 +16,8 @@ header {
   padding: 30px 0;
 }
 header .container {
+  display: flex;
+  align-items: center;
   padding: 0 15px;
   margin: 0 30px;
 }
@@ -130,10 +132,13 @@ header .container .search-cart-login .login .login-drop {
   padding: 10px 20px;
   background-color: white;
   border: solid 0.5px rgb(200, 200, 200);
-  box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.4);
+  box-shadow: 0px 7px 15px rgba(128, 128, 128, 0.4);
+}
+header .container .search-cart-login .login .login-drop span {
+  font-size: 14px;
 }
 header .container .search-cart-login .login .login-drop ul {
-  padding: 0px;
+  padding: 0 10px 10px;
   margin: 0px;
   width: 100%;
   height: -moz-max-content;
@@ -152,6 +157,7 @@ header .container .search-cart-login .login .login-drop ul li a:hover {
   color: black;
 }
 header .container .search-cart-login .login .login-drop .languages {
+  padding: 10px 0;
   width: 100%;
   height: -moz-max-content;
   height: max-content;
@@ -172,6 +178,29 @@ header .container .search-cart-login .login .login-drop .languages ul li a img {
   -o-object-fit: contain;
      object-fit: contain;
   margin-right: 10px;
+}
+header .container .search-cart-login .login .login-drop .languages ul li a span {
+  font-size: 12px;
+}
+header .container .search-cart-login .login .login-drop .currency {
+  padding: 10px 0 0;
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+}
+header .container .search-cart-login .login .login-drop .currency ul {
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+header .container .search-cart-login .login .login-drop .currency ul li {
+  padding: 0 10px;
+}
+header .container .search-cart-login .login .login-drop .currency ul li a {
+  font-size: 12px;
+  text-decoration: none;
 }
 header .container .search-cart-login .cart sup {
   position: absolute;
@@ -321,10 +350,13 @@ header .container .search-cart-login .cart .cart-drop {
   padding: 10px 20px;
   background-color: white;
   border: solid 0.5px rgb(200, 200, 200);
-  box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.4);
+  box-shadow: 0px 7px 15px rgba(128, 128, 128, 0.4);
+}
+.scroll-header .container .search-cart-login .login .login-drop span {
+  font-size: 14px;
 }
 .scroll-header .container .search-cart-login .login .login-drop ul {
-  padding: 0px;
+  padding: 0 10px 10px;
   margin: 0px;
   width: 100%;
   height: -moz-max-content;
@@ -343,6 +375,7 @@ header .container .search-cart-login .cart .cart-drop {
   color: black;
 }
 .scroll-header .container .search-cart-login .login .login-drop .languages {
+  padding: 10px 0;
   width: 100%;
   height: -moz-max-content;
   height: max-content;
@@ -363,6 +396,29 @@ header .container .search-cart-login .cart .cart-drop {
   -o-object-fit: contain;
      object-fit: contain;
   margin-right: 10px;
+}
+.scroll-header .container .search-cart-login .login .login-drop .languages ul li a span {
+  font-size: 12px;
+}
+.scroll-header .container .search-cart-login .login .login-drop .currency {
+  padding: 10px 0 0;
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+}
+.scroll-header .container .search-cart-login .login .login-drop .currency ul {
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.scroll-header .container .search-cart-login .login .login-drop .currency ul li {
+  padding: 0 10px;
+}
+.scroll-header .container .search-cart-login .login .login-drop .currency ul li a {
+  font-size: 12px;
+  text-decoration: none;
 }
 .scroll-header .container .search-cart-login .cart sup {
   position: absolute;
