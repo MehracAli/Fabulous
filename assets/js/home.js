@@ -1,4 +1,16 @@
 $(document).ready(function () {
+  //slider
+  $('#slider .owl-carousel').owlCarousel({
+    loop:true,
+    autoplay:true,
+    margin:10,
+    nav:false,
+    responsive:{
+        0:{
+            items:1
+        },
+    }
+})
   // service
   $(".service").on("mouseenter", function () {
     let image = $(this).find("img");

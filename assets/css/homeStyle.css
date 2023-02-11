@@ -8,6 +8,78 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+section#slider .slide .item {
+  color: white;
+  position: relative;
+}
+section#slider .slide .item .second.title {
+  left: 50px;
+}
+section#slider .slide .item .title {
+  text-align: left;
+  width: 40%;
+  height: -moz-max-content;
+  height: max-content;
+  position: absolute;
+  right: 20px;
+  top: 150px;
+}
+section#slider .slide .item .title h4 {
+  font-size: 28px;
+  line-height: 30px;
+  margin-bottom: 20px;
+  letter-spacing: 0.8px;
+  font-weight: 400;
+}
+section#slider .slide .item .title h1 {
+  font-size: 62px;
+  line-height: 70px;
+  font-weight: 600;
+}
+section#slider .slide .item .title p {
+  width: 95%;
+  margin-bottom: 50px;
+}
+section#slider .slide .item .title button {
+  background-color: #eb4d4b;
+  height: 40px;
+  padding: 8px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 14px;
+  color: white;
+  transition: 0.5s;
+}
+section#slider .slide .item .title button:hover {
+  background-color: #232323;
+}
+section#slider .slide .owl-theme .owl-dots {
+  position: absolute;
+  left: 45%;
+  right: 45%;
+  bottom: 0;
+}
+section#slider .slide .owl-theme .owl-dots .owl-dot button {
+  border-radius: 0px;
+}
+section#slider .slide .owl-theme .owl-dots .owl-dot span {
+  bottom: 30px;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  background: #D6D6D6;
+  display: block;
+  transition: 0.5s;
+  border-radius: 0px;
+  background-color: #eb4d4b;
+}
+section#slider .slide .owl-theme .owl-dots .owl-dot span:nth-child(1) {
+  margin-right: 2.5px;
+}
+section#slider .slide .owl-theme .owl-dots .owl-dot span:nth-child(2) {
+  margin-left: 2.5px;
+}
+
 section#services {
   background-color: #fbfbfb;
   margin-bottom: 70px;
@@ -39,7 +111,7 @@ section#services .row .service a .service-image img {
   height: 55px;
 }
 section#services .row .service a .service-image .service-rotate {
-  animation: mymove 0.5s;
+  animation: mymove 0.4s;
 }
 section#services .row .service a .describtion span {
   font-size: 18px;
@@ -127,6 +199,9 @@ section#products .about button {
   color: white;
   transition: 0.5s;
 }
+section#products .about button:hover {
+  background-color: #232323;
+}
 
 section#customers {
   background-image: url(/assets/images/home/testimonialbackground.png);
@@ -139,7 +214,7 @@ section#customers .container {
 section#customers .container .title {
   text-align: center;
   padding-bottom: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 100px;
 }
 section#customers .container .title h5 {
   text-transform: uppercase;
@@ -164,10 +239,37 @@ section#customers .container .title h1::after {
   position: absolute;
   width: 7%;
 }
-section#customers .container .customer {
+section#customers .container .owl-theme .owl-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+section#customers .container .owl-theme .owl-dots .owl-dot {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+section#customers .container .owl-theme .owl-dots .owl-dot span {
+  width: 35px;
+  height: 35px;
+  margin: 5px 7px;
+  background: rgb(235, 77, 75);
+  display: block;
+  transition: 0.5s;
+  border-radius: 30px;
+}
+section#customers .container .owl-theme .owl-dots .owl-dot span:hover {
+  background-color: #232323;
+}
+section#customers .container .owl-carousel {
   position: relative;
+}
+section#customers .container .owl-carousel .owl-stage-outer {
+  overflow: visible;
+}
+section#customers .container .customer {
   background-color: white;
-  width: 97%;
+  width: 100%;
   padding: 65px 50px 40px;
 }
 section#customers .container .customer .avatar {
@@ -329,6 +431,9 @@ section#faq .container .accordion .steps .sect i {
 }
 section#faq .container .accordion .steps .sect .active-i {
   transform: rotateZ(180deg);
+}
+section#faq .container .accordion .steps .sect-p {
+  display: none;
 }
 section#faq .container .accordion .steps .sect-p p {
   font-size: 14px;

@@ -6,6 +6,85 @@
 body::-webkit-scrollbar{
     display: none;
 }
+//slider
+section#slider{
+    .slide{
+        .item{
+            color: white;
+            position: relative;
+            .second.title{
+                left: 50px;
+            }
+            .title{
+                text-align: left;
+                width: 40%;
+                height: max-content;
+                position: absolute;
+                right: 20px;
+                top: 150px;
+                h4{
+                    font-size: 28px;
+                    line-height: 30px;
+                    margin-bottom: 20px;
+                    letter-spacing: 0.8px;
+                    font-weight: 400;
+                }
+                h1{
+                    font-size: 62px;
+                    line-height: 70px;
+                    font-weight: 600;
+                }
+                p{
+                    width: 95%;
+                    margin-bottom: 50px;
+                }
+                button{
+                    background-color: #eb4d4b;
+                    height: 40px;
+                    padding: 8px 30px;
+                    border: none;
+                    border-radius: 30px;
+                    font-size: 14px;
+                    color: white;
+                    transition: 0.5s;
+                    &:hover{
+                        background-color: #232323;
+                    }
+                }
+            }
+        }
+        .owl-theme{
+            .owl-dots{
+                position: absolute;
+                left: 45%;
+                right: 45%;
+                bottom: 0;
+                .owl-dot{
+                    button{
+                        border-radius: 0px;
+                    }
+                    span{
+                        bottom: 30px;
+                        left: 0;
+                        width: 12px;
+                        height: 12px;
+                        background: #D6D6D6;
+                        display: block;
+                        transition: 0.5s;
+                        border-radius: 0px;
+                        background-color: #eb4d4b;
+                        &:nth-child(1){
+                            margin-right: 2.5px;
+                        }
+                        &:nth-child(2){
+                            margin-left: 2.5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 // services
 section#services{
     background-color: #fbfbfb;
@@ -32,7 +111,7 @@ section#services{
                         height: 55px;
                     }
                     .service-rotate{
-                        animation: mymove 0.5s;
+                        animation: mymove 0.4s;
                     }
                     margin-bottom: 10px;
                 } 
@@ -124,6 +203,9 @@ section#products{
             font-size: 14px;
             color: white;
             transition: 0.5s;
+            &:hover{
+                background-color: #232323;
+            }
         }
     }
 }
@@ -138,7 +220,7 @@ section#customers{
         .title{
             text-align: center;
             padding-bottom: 25px;
-            margin-bottom: 25px;
+            margin-bottom: 100px;
             h5{
                 text-transform: uppercase;
                 color: #eb4d4b;
@@ -163,10 +245,38 @@ section#customers{
                 }
             }
         }
-        .customer{
+        
+        .owl-theme .owl-dots{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            .owl-dot{
+                display: inline-block;
+                zoom: 1;
+                *display: inline;
+                span{
+                    width: 35px;
+                    height: 35px;
+                    margin: 5px 7px;
+                    background:  rgb(235, 77, 75);
+                    display: block;
+                    transition: 0.5s;
+                    border-radius: 30px;
+                    &:hover{
+                        background-color: #232323;
+                    }
+                }
+            }
+        }
+        .owl-carousel{
             position: relative;
+            .owl-stage-outer{
+                overflow: visible;
+            }
+        }
+        .customer{
             background-color: white;
-            width: 97%;
+            width: 100%;
             padding: 65px 50px 40px;
             .avatar{
                 position: absolute;
@@ -340,6 +450,7 @@ section#faq{
                     }
                 }
                 .sect-p{
+                    display: none;
                     p{
                         font-size: 14px;
                         color: gray;
