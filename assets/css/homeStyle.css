@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-body::-webkit-scrollbar {
-  display: none;
-}
-
 section#slider .slide .item {
   color: white;
   position: relative;
@@ -22,7 +18,7 @@ section#slider .slide .item .title {
   height: max-content;
   position: absolute;
   right: 20px;
-  top: 150px;
+  top: 100px;
 }
 section#slider .slide .item .title h4 {
   font-size: 28px;
@@ -35,6 +31,7 @@ section#slider .slide .item .title h1 {
   font-size: 62px;
   line-height: 70px;
   font-weight: 600;
+  margin-bottom: 30px;
 }
 section#slider .slide .item .title p {
   width: 95%;
@@ -58,6 +55,9 @@ section#slider .slide .owl-theme .owl-dots {
   left: 45%;
   right: 45%;
   bottom: 0;
+}
+section#slider .slide .owl-theme .owl-dots .owl-dot.active span {
+  background-color: #232323;
 }
 section#slider .slide .owl-theme .owl-dots .owl-dot button {
   border-radius: 0px;

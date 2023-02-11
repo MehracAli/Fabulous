@@ -3,9 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-body::-webkit-scrollbar{
-    display: none;
-}
+// body::-webkit-scrollbar{
+//     display: none;
+// }
 //slider
 section#slider{
     .slide{
@@ -21,7 +21,7 @@ section#slider{
                 height: max-content;
                 position: absolute;
                 right: 20px;
-                top: 150px;
+                top: 100px;
                 h4{
                     font-size: 28px;
                     line-height: 30px;
@@ -33,6 +33,7 @@ section#slider{
                     font-size: 62px;
                     line-height: 70px;
                     font-weight: 600;
+                    margin-bottom: 30px;
                 }
                 p{
                     width: 95%;
@@ -60,6 +61,11 @@ section#slider{
                 left: 45%;
                 right: 45%;
                 bottom: 0;
+                .owl-dot.active{
+                    span{
+                        background-color: #232323;
+                    }
+                }
                 .owl-dot{
                     button{
                         border-radius: 0px;

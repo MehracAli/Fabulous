@@ -39,6 +39,7 @@ footer .footer-top .container h1::after {
   width: 16%;
 }
 footer .footer-top .container .contact {
+  width: 49%;
   border: solid 0.5px rgb(230, 230, 230);
   padding: 30px 15px;
 }
@@ -94,6 +95,7 @@ footer .footer-top .container .contact form button:hover {
   background-color: #232323;
 }
 footer .footer-top .container .subscribe {
+  width: 49%;
   border: solid 0.5px rgb(230, 230, 230);
   padding: 30px 15px;
 }
