@@ -80,33 +80,36 @@ section#slider .slide .owl-theme .owl-dots .owl-dot span:nth-child(2) {
   margin-left: 2.5px;
 }
 @media screen and (min-width: 391px) and (max-width: 821px) {
-  section#slider .slide .title {
+  section#slider .slide .item {
+    color: white;
+    position: relative;
+  }
+  section#slider .slide .item .second.title {
+    left: 50px;
+  }
+  section#slider .slide .item .title {
     text-align: left;
-    width: 40%;
     height: -moz-max-content;
     height: max-content;
     position: absolute;
     right: 20px;
-    top: 150px;
+    top: 50px !important;
   }
-  section#slider .slide .title h4 {
-    color: #eb4d4b;
-    font-size: 28px;
-    line-height: 30px;
-    margin-bottom: 20px;
-    letter-spacing: 0.8px;
-    font-weight: 400;
+  section#slider .slide .item .title h4 {
+    font-size: 20px !important;
+    line-height: 22px !important;
+    margin-bottom: 10px !important;
   }
-  section#slider .slide .title h1 {
-    font-size: 62px;
-    line-height: 70px;
-    font-weight: 600;
+  section#slider .slide .item .title h1 {
+    font-size: 38px !important;
+    line-height: 44px !important;
+    margin-bottom: 15px !important;
   }
-  section#slider .slide .title p {
-    width: 95%;
-    margin-bottom: 50px;
+  section#slider .slide .item .title p {
+    font-size: 14px !important;
+    margin-bottom: 15px !important;
   }
-  section#slider .slide .title button {
+  section#slider .slide .item .title button {
     background-color: #eb4d4b;
     height: 40px;
     padding: 8px 30px;
@@ -116,8 +119,34 @@ section#slider .slide .owl-theme .owl-dots .owl-dot span:nth-child(2) {
     color: white;
     transition: 0.5s;
   }
-  section#slider .slide .title button:hover {
+  section#slider .slide .item .title button:hover {
     background-color: #232323;
+  }
+  section#slider .slide .owl-theme .owl-dots {
+    position: absolute;
+    left: 45%;
+    right: 45%;
+    bottom: 0;
+  }
+  section#slider .slide .owl-theme .owl-dots .owl-dot button {
+    border-radius: 0px;
+  }
+  section#slider .slide .owl-theme .owl-dots .owl-dot span {
+    bottom: 30px;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    background: #D6D6D6;
+    display: block;
+    transition: 0.5s;
+    border-radius: 0px;
+    background-color: #eb4d4b;
+  }
+  section#slider .slide .owl-theme .owl-dots .owl-dot span:nth-child(1) {
+    margin-right: 2.5px;
+  }
+  section#slider .slide .owl-theme .owl-dots .owl-dot span:nth-child(2) {
+    margin-left: 2.5px;
   }
 }
 section#services {
@@ -163,7 +192,51 @@ section#services .row .service a .describtion p {
   letter-spacing: 1px;
   line-height: 25px;
 }
-
+@media screen and (min-width: 391px) and (max-width: 821px) {
+  section#services {
+    background-color: #fbfbfb;
+    margin-bottom: 50px;
+  }
+  section#services .container {
+    width: 1200px;
+    max-width: 85%;
+  }
+  section#services .row {
+    padding: 70px 0;
+    align-items: center;
+  }
+  section#services .row .service {
+    text-align: center;
+    padding: 0 20px;
+  }
+  section#services .row .service a {
+    text-decoration: none;
+    color: black;
+  }
+  section#services .row .service a .service-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  section#services .row .service a .service-image img {
+    width: 55px;
+    height: 55px;
+  }
+  section#services .row .service a .service-image .service-rotate {
+    animation: mymove 0.4s;
+  }
+  section#services .row .service a .describtion span {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  section#services .row .service a .describtion p {
+    font-size: 14px;
+    color: gray;
+    letter-spacing: 1px;
+    line-height: 25px;
+  }
+}
 @keyframes mymove {
   25% {
     transform: rotateY(90deg);
@@ -178,17 +251,13 @@ section#services .row .service a .describtion p {
     transform: rotateY(360deg);
   }
 }
+
 section#products {
   margin-bottom: 70px;
 }
 section#products .container {
   width: 1200px;
   max-width: 100%;
-}
-section#products .container .image {
-  background-color: #eb4d4b;
-  width: 360px;
-  height: 215px;
 }
 section#products .container .image img {
   width: 100%;
@@ -250,6 +319,86 @@ section#products .container .about button {
 }
 section#products .container .about button:hover {
   background-color: #232323;
+}
+@media screen and (min-width: 391px) and (max-width: 1181px) {
+  section#products {
+    margin-bottom: 50px;
+  }
+  section#products .container {
+    width: 1200px;
+    max-width: 85%;
+  }
+  section#products .container .image img {
+    width: 100%;
+    height: 100%;
+  }
+  section#products .container .about {
+    text-align: center;
+  }
+  section#products .container .about .title {
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+  }
+  section#products .container .about .title h5 {
+    text-transform: uppercase;
+    color: #eb4d4b;
+    font-size: 16px;
+    letter-spacing: 8px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 12px;
+  }
+  section#products .container .about .title h1 {
+    font-size: 40px;
+    font-weight: 600;
+    position: relative;
+  }
+  section#products .container .about .title h1::after {
+    border-top: 4px solid #eb4d4b;
+    bottom: -20px;
+    content: "";
+    position: absolute;
+    left: 42%;
+    right: 42%;
+    width: 16%;
+  }
+  section#products .container .about p {
+    font-size: 13px;
+    color: gray;
+    letter-spacing: 1px;
+  }
+  section#products .container .about .about-list {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  section#products .container .about .about-list ul {
+    text-align: left;
+  }
+  section#products .container .about .about-list ul li {
+    color: rgb(110, 110, 110);
+    font-size: 15px;
+    line-height: 30px;
+  }
+  section#products .container .about .about-list ul li::marker {
+    font-size: 20px;
+    color: #eb4d4b;
+  }
+  section#products .container .about .about-list ul:nth-child(2) {
+    margin-left: 30px;
+  }
+  section#products .container .about button {
+    background-color: #eb4d4b;
+    height: 45px;
+    padding: 8px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    color: white;
+    transition: 0.5s;
+  }
+  section#products .container .about button:hover {
+    background-color: #232323;
+  }
 }
 
 section#customers {

@@ -7,7 +7,7 @@
 }
 
 div#mini-head {
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   z-index: 1;
@@ -51,7 +51,6 @@ div#mini-head .container .row .login-cart .cart {
   width: 40px;
   height: 40px;
 }
-
 header {
   position: absolute;
   top: 0;

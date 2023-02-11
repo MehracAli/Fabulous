@@ -32,7 +32,7 @@ $(document).ready(function () {
         let drop = $(".cart-drop")
         drop.removeClass("d-none")
         setTimeout(
-            drop.addClass("animate__slideInRight")
+            drop.addClass("cart-drop.active")
         ,1000)
     })
     $(".cart-drop svg").on("click",()=>{
