@@ -79,7 +79,47 @@ section#slider .slide .owl-theme .owl-dots .owl-dot span:nth-child(1) {
 section#slider .slide .owl-theme .owl-dots .owl-dot span:nth-child(2) {
   margin-left: 2.5px;
 }
-
+@media screen and (min-width: 391px) and (max-width: 821px) {
+  section#slider .slide .title {
+    text-align: left;
+    width: 40%;
+    height: -moz-max-content;
+    height: max-content;
+    position: absolute;
+    right: 20px;
+    top: 150px;
+  }
+  section#slider .slide .title h4 {
+    color: #eb4d4b;
+    font-size: 28px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    letter-spacing: 0.8px;
+    font-weight: 400;
+  }
+  section#slider .slide .title h1 {
+    font-size: 62px;
+    line-height: 70px;
+    font-weight: 600;
+  }
+  section#slider .slide .title p {
+    width: 95%;
+    margin-bottom: 50px;
+  }
+  section#slider .slide .title button {
+    background-color: #eb4d4b;
+    height: 40px;
+    padding: 8px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    color: white;
+    transition: 0.5s;
+  }
+  section#slider .slide .title button:hover {
+    background-color: #232323;
+  }
+}
 section#services {
   background-color: #fbfbfb;
   margin-bottom: 70px;
@@ -145,12 +185,21 @@ section#products .container {
   width: 1200px;
   max-width: 100%;
 }
-section#products .about .title {
+section#products .container .image {
+  background-color: #eb4d4b;
+  width: 360px;
+  height: 215px;
+}
+section#products .container .image img {
+  width: 100%;
+  height: 100%;
+}
+section#products .container .about .title {
   text-align: left;
   padding-bottom: 25px;
   margin-bottom: 25px;
 }
-section#products .about .title h5 {
+section#products .container .about .title h5 {
   text-transform: uppercase;
   color: #eb4d4b;
   font-size: 16px;
@@ -159,12 +208,12 @@ section#products .about .title h5 {
   margin: 0;
   margin-bottom: 12px;
 }
-section#products .about .title h1 {
+section#products .container .about .title h1 {
   font-size: 40px;
   font-weight: 600;
   position: relative;
 }
-section#products .about .title h1::after {
+section#products .container .about .title h1::after {
   border-top: 4px solid #eb4d4b;
   bottom: -20px;
   content: "";
@@ -172,24 +221,24 @@ section#products .about .title h1::after {
   left: 0;
   width: 16%;
 }
-section#products .about p {
+section#products .container .about p {
   font-size: 14px;
   color: gray;
   letter-spacing: 1px;
 }
-section#products .about .about-list ul li {
+section#products .container .about .about-list ul li {
   color: rgb(110, 110, 110);
   font-size: 15px;
   line-height: 30px;
 }
-section#products .about .about-list ul li::marker {
+section#products .container .about .about-list ul li::marker {
   font-size: 20px;
   color: #eb4d4b;
 }
-section#products .about .about-list ul:nth-child(2) {
+section#products .container .about .about-list ul:nth-child(2) {
   margin-left: 30px;
 }
-section#products .about button {
+section#products .container .about button {
   background-color: #eb4d4b;
   height: 45px;
   padding: 8px 30px;
@@ -199,7 +248,7 @@ section#products .about button {
   color: white;
   transition: 0.5s;
 }
-section#products .about button:hover {
+section#products .container .about button:hover {
   background-color: #232323;
 }
 
@@ -265,7 +314,7 @@ section#customers .container .owl-carousel {
   position: relative;
 }
 section#customers .container .owl-carousel .owl-stage-outer {
-  overflow: visible;
+  overflow: hidden;
 }
 section#customers .container .customer {
   background-color: white;

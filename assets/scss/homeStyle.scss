@@ -52,6 +52,7 @@ section#slider{
                     }
                 }
             }
+            
         }
         .owl-theme{
             .owl-dots{
@@ -82,6 +83,50 @@ section#slider{
                     }
                 }
             }
+        }
+        
+        @media screen and (min-width:391px) and (max-width:821px) {
+            .title{
+                text-align: left;
+                width: 40%;
+                height: max-content;
+                position: absolute;
+                right: 20px;
+                top: 150px;
+                h4{
+                    color: #eb4d4b;
+                    font-size: 28px;
+                    line-height: 30px;
+                    margin-bottom: 20px;
+                    letter-spacing: 0.8px;
+                    font-weight: 400;
+                }
+                h1{
+                    font-size: 62px;
+                    line-height: 70px;
+                    font-weight: 600;
+                }
+                p{
+                    width: 95%;
+                    margin-bottom: 50px;
+                }
+                button{
+                    background-color: #eb4d4b;
+                    height: 40px;
+                    padding: 8px 30px;
+                    border: none;
+                    border-radius: 30px;
+                    font-size: 14px;
+                    color: white;
+                    transition: 0.5s;
+                    &:hover{
+                        background-color: #232323;
+                    }
+                }
+            }
+        }
+        @media screen and (max-width:391px) {
+            
         }
     }
 }
@@ -144,67 +189,76 @@ section#products{
     .container{
         width: 1200px;
         max-width: 100%;
-    }
-    .about{
-        .title{
-            text-align: left;
-            padding-bottom: 25px;
-            margin-bottom: 25px;
-            h5{
-                text-transform: uppercase;
-                color: #eb4d4b;
-                font-size: 16px;
-                letter-spacing: 8px;
-                font-weight: 500;
-                margin: 0;
-                margin-bottom: 12px;
-            }
-            h1{
-                font-size: 40px;
-                font-weight: 600;
-                position: relative;
-                &::after{
-                    border-top: 4px solid #eb4d4b;
-                    bottom: -20px;
-                    content: "";
-                    position: absolute;
-                    left: 0;
-                    width: 16%;
-                }
-            }
-        }
-        p{
-            font-size: 14px;
-            color: gray;
-            letter-spacing: 1px;
-        }
-        .about-list{
-            ul{
-                li{
-                    color: rgb(110, 110, 110);
-                    font-size: 15px;
-                    line-height: 30px;
-                }
-                li::marker{
-                    font-size: 20px;
-                    color: #eb4d4b;
-                }
-                &:nth-child(2){
-                    margin-left: 30px;
-                }
-            }
-        }
-        button{
+        .image{
             background-color: #eb4d4b;
-            height: 45px;
-            padding: 8px 30px;
-            border: none;
-            border-radius: 30px;
-            font-size: 14px;
-            color: white;
-            transition: 0.5s;
-            &:hover{
-                background-color: #232323;
+            width: 360px;
+            height: 215px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .about{
+            .title{
+                text-align: left;
+                padding-bottom: 25px;
+                margin-bottom: 25px;
+                h5{
+                    text-transform: uppercase;
+                    color: #eb4d4b;
+                    font-size: 16px;
+                    letter-spacing: 8px;
+                    font-weight: 500;
+                    margin: 0;
+                    margin-bottom: 12px;
+                }
+                h1{
+                    font-size: 40px;
+                    font-weight: 600;
+                    position: relative;
+                    &::after{
+                        border-top: 4px solid #eb4d4b;
+                        bottom: -20px;
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        width: 16%;
+                    }
+                }
+            }
+            p{
+                font-size: 14px;
+                color: gray;
+                letter-spacing: 1px;
+            }
+            .about-list{
+                ul{
+                    li{
+                        color: rgb(110, 110, 110);
+                        font-size: 15px;
+                        line-height: 30px;
+                    }
+                    li::marker{
+                        font-size: 20px;
+                        color: #eb4d4b;
+                    }
+                    &:nth-child(2){
+                        margin-left: 30px;
+                    }
+                }
+            }
+            button{
+                background-color: #eb4d4b;
+                height: 45px;
+                padding: 8px 30px;
+                border: none;
+                border-radius: 30px;
+                font-size: 14px;
+                color: white;
+                transition: 0.5s;
+                &:hover{
+                    background-color: #232323;
+                }
             }
         }
     }
@@ -271,7 +325,7 @@ section#customers{
         .owl-carousel{
             position: relative;
             .owl-stage-outer{
-                overflow: visible;
+                overflow: hidden;
             }
         }
         .customer{

@@ -1,9 +1,10 @@
 $(document).ready(function () {
   //slider
   $('#slider .owl-carousel').owlCarousel({
+    autoplay:false,
+    autoplayTimeout:5000,
+    autoplayHoverPause:false,
     loop:true,
-    autoplay:true,
-    margin:10,
     nav:false,
     responsive:{
         0:{

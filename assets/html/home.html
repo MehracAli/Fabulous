@@ -34,8 +34,73 @@
     <title>Your Store</title>
   </head>
   <body>
-    <div class="on-cart d-none"></div>
-    <header class="d-flex animate__animated">
+    <div id="mini-head" class="d-lg-none d-flex">
+      <div class="container">
+        <div class="row">
+          <div class="burger-search d-flex col-3">
+            <div class="nav-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                <symbol id="menu" viewBox="0 0 750 750"><title>menu</title>
+                    <path d="M12.03,84.212h360.909c6.641,0,12.03-5.39,12.03-12.03c0-6.641-5.39-12.03-12.03-12.03H12.03
+                    C5.39,60.152,0,65.541,0,72.182C0,78.823,5.39,84.212,12.03,84.212z"></path>
+                    <path d="M372.939,180.455H12.03c-6.641,0-12.03,5.39-12.03,12.03s5.39,12.03,12.03,12.03h360.909c6.641,0,12.03-5.39,12.03-12.03
+                        S379.58,180.455,372.939,180.455z"></path>
+                    <path d="M372.939,300.758H12.03c-6.641,0-12.03,5.39-12.03,12.03c0,6.641,5.39,12.03,12.03,12.03h360.909
+                    c6.641,0,12.03-5.39,12.03-12.03C384.97,306.147,379.58,300.758,372.939,300.758z"></path>
+                </symbol>
+              </svg>
+              <svg class="icon" viewBox="0 0 30 30"><use xlink:href="#menu" x="22%" y="25%"></use></svg>
+            </div>
+            <div class="search">
+              <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">   
+            <symbol id="magnifying-desktop" viewBox="0 0 1200 1200"><title>magnifying-desktop</title>
+              <path d="M606.209,578.714L448.198,423.228C489.576,378.272,515,318.817,515,253.393C514.98,113.439,399.704,0,257.493,0
+                   C115.282,0,0.006,113.439,0.006,253.393s115.276,253.393,257.487,253.393c61.445,0,117.801-21.253,162.068-56.586
+                   l158.624,156.099c7.729,7.614,20.277,7.614,28.006,0C613.938,598.686,613.938,586.328,606.209,578.714z M257.493,467.8
+                   c-120.326,0-217.869-95.993-217.869-214.407S137.167,38.986,257.493,38.986c120.327,0,217.869,95.993,217.869,214.407
+                   S377.82,467.8,257.493,467.8z"></path>
+             </symbol>
+          </svg>
+          <svg class="icon" viewBox="0 0 40 40"><use xlink:href="#magnifying-desktop" x="18%" y="25%"></use></svg>
+      </div>
+          </div>
+          <div class="logo col-6">
+            <img src="/assets/images/Logo.png" alt="">
+          </div>
+          <div class="login-cart d-flex col-3">
+            <div class="login">
+              <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">          
+                  <symbol id="user-desktop" viewBox="0 0 480 480"><title>user-desktop</title>
+                        <path d="M187.497,152.427H73.974c-38.111,0-69.117,31.006-69.117,69.117v39.928h251.758v-39.928
+                           C256.614,183.433,225.608,152.427,187.497,152.427z M241.614,246.473H19.856v-24.928c0-29.84,24.277-54.117,54.117-54.117h113.523
+                           c29.84,0,54.117,24.277,54.117,54.117L241.614,246.473L241.614,246.473z"></path>
+                        <path d="M130.735,145.326c40.066,0,72.663-32.597,72.663-72.663S170.802,0,130.735,0S58.072,32.596,58.072,72.663
+                           S90.669,145.326,130.735,145.326z M130.735,15c31.796,0,57.663,25.867,57.663,57.663s-25.867,57.663-57.663,57.663
+                           s-57.663-25.868-57.663-57.663S98.939,15,130.735,15z"></path>
+                      </symbol> 
+              </svg>
+                 <svg class="icon" viewBox="0 0 40 40"><use xlink:href="#user-desktop" x="19%" y="23%"></use></svg>
+            </div>
+            <div class="cart">
+              <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">          
+                <symbol id="cart1" viewBox="0 0 510 510"><title>cart</title>
+                        <path d="M306.4,313.2l-24-223.6c-0.4-3.6-3.6-6.4-7.2-6.4h-44.4V69.6c0-38.4-31.2-69.6-69.6-69.6c-38.4,0-69.6,31.2-69.6,69.6
+                  v13.6H46c-3.6,0-6.8,2.8-7.2,6.4l-24,223.6c-0.4,2,0.4,4,1.6,5.6c1.2,1.6,3.2,2.4,5.2,2.4h278c2,0,4-0.8,5.2-2.4
+                  C306,317.2,306.8,315.2,306.4,313.2z M223.6,123.6c3.6,0,6.4,2.8,6.4,6.4c0,3.6-2.8,6.4-6.4,6.4c-3.6,0-6.4-2.8-6.4-6.4
+                  C217.2,126.4,220,123.6,223.6,123.6z M106,69.6c0-30.4,24.8-55.2,55.2-55.2c30.4,0,55.2,24.8,55.2,55.2v13.6H106V69.6z
+                   M98.8,123.6c3.6,0,6.4,2.8,6.4,6.4c0,3.6-2.8,6.4-6.4,6.4c-3.6,0-6.4-2.8-6.4-6.4C92.4,126.4,95.2,123.6,98.8,123.6z M30,306.4
+                  L52.4,97.2h39.2v13.2c-8,2.8-13.6,10.4-13.6,19.2c0,11.2,9.2,20.4,20.4,20.4c11.2,0,20.4-9.2,20.4-20.4c0-8.8-5.6-16.4-13.6-19.2
+                  V97.2h110.4v13.2c-8,2.8-13.6,10.4-13.6,19.2c0,11.2,9.2,20.4,20.4,20.4c11.2,0,20.4-9.2,20.4-20.4c0-8.8-5.6-16.4-13.6-19.2V97.2
+                  H270l22.4,209.2H30z"></path>
+                </symbol> 
+              </svg>
+              <svg class="icon" viewBox="0 0 40 40"><use xlink:href="#cart1" x="17%" y="15%"></use></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header id="lg-head" class="d-lg-flex d-none animate__animated">
       <div class="container">
         <div class="row" style="width: 100%">
           <div class="logo col-lg-3 col-md-3 col-sm-3 d-flex">
@@ -295,10 +360,11 @@
       <div class="slide">
         <div class="owl-carousel owl-theme">
           <div class="item">
-            <img
+            <img class="d-none d-md-block"
               src="/assets/images/home/homeSlide/Slider-1-1920x925.png"
               alt=""
             />
+            <img class="d-lg-none d-md-none" src="/assets/images/home/homeSlide//Slider-1-543x460.png" alt="">
             <div class="title animate__animated animate__fadeInDown">
               <h4>Clear 4k Camera</h4>
               <h1>Underwater Drone</h1>
@@ -311,10 +377,11 @@
             </div>
           </div>
           <div class="item">
-            <img
+            <img class="d-none d-md-block"
               src="/assets/images/home/homeSlide/Slider-2-1920x925.png"
               alt=""
             />
+            <img class="d-lg-none d-md-none" src="/assets/images/home/homeSlide/Slider-2-543x460.png" alt="">
             <div class="second title animate__animated animate__fadeInDown">
               <h4>Clear 4k Camera</h4>
               <h1>Fast Drone Delivery</h1>
@@ -332,7 +399,7 @@
     <section id="services">
       <div class="container">
         <div class="row">
-          <div class="service col-lg-3">
+          <div class="service col-lg-3 col-md-6">
             <a href="#">
               <div class="service-image">
                 <img
@@ -347,7 +414,7 @@
               </div>
             </a>
           </div>
-          <div class="service col-lg-3">
+          <div class="service col-lg-3 col-md-6">
             <a href="#">
               <div class="service-image">
                 <img
@@ -362,7 +429,7 @@
               </div>
             </a>
           </div>
-          <div class="service col-lg-3">
+          <div class="service col-lg-3 col-md-6">
             <a href="#">
               <div class="service-image">
                 <img
@@ -377,7 +444,7 @@
               </div>
             </a>
           </div>
-          <div class="service col-lg-3">
+          <div class="service col-lg-3 col-md-6">
             <a href="#">
               <div class="service-image">
                 <img
@@ -399,7 +466,7 @@
       <div class="container">
         <div class="row">
           <div class="image col-lg-7">
-            <img src="/assets/images/home/storyblock.png" alt="" />
+            <img src="/assets/images/home/stryblock.png" alt="" />
           </div>
           <div class="about col-lg-5">
             <div class="title">
