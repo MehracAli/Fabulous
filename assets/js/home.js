@@ -5,12 +5,23 @@ $(document).ready(function () {
     autoplayTimeout:5000,
     autoplayHoverPause:false,
     loop:true,
-    nav:false,
+    nav:true,
     responsive:{
         0:{
             items:1
         },
     }
+})
+
+$("#slider").on("mouseenter", function(){
+  let next = $(".owl-carousel .owl-nav button.owl-next span")
+  let nec = next[0]
+  nec.innerText = ">"
+})
+$("#slider").on("mouseenter", function(){
+  let next = $(".owl-carousel .owl-nav button.owl-prev span")
+  let nec = next[0]
+  nec.innerText = "<"
 })
   // service
   $(".service").on("mouseenter", function () {
@@ -36,12 +47,21 @@ $(document).ready(function () {
         0:{
             items:1
         },
-        600:{
+        821:{
             items:2
         },
     }
 })
-
+AddArrowToSlideDot()
+function AddArrowToSlideDot() {
+  let dot = document.querySelector("#customers .owl-dots")
+  dot.children[0].firstChild.innerText = "<"
+  dot.children[0].firstChild.style.color = "white"
+  dot.children[0].firstChild.style.fontSize = "25px"
+  dot.children[1].firstChild.innerText = ">"
+  dot.children[1].firstChild.style.color = "white"
+  dot.children[1].firstChild.style.fontSize = "25px"
+}
   //faq
   $(".sect").on("click", function () {
     let next = $(this).next();

@@ -21,7 +21,7 @@ section#slider{
                 height: max-content;
                 position: absolute;
                 right: 20px;
-                top: 100px;
+                top: 120px;
                 h4{
                     font-size: 28px;
                     line-height: 30px;
@@ -53,7 +53,48 @@ section#slider{
                     }
                 }
             }
-            
+        }
+        .owl-carousel .owl-nav button.owl-next{
+            opacity: 0;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 50%;
+            right: 40px;
+            width: 40px;
+            height: 40px;
+            border-radius: 0px;
+            color: white;
+            background-color: #eb4d4b;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.5s;
+            &:hover{
+                background-color: #232323;
+            }
+        }
+        .owl-carousel .owl-nav button.owl-prev{
+            opacity: 0;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 50%;
+            left: 40px;
+            width: 40px;
+            height: 40px;
+            border-radius: 0px;
+            color: white;
+            background-color:#eb4d4b;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.5s;
+            &:hover{
+                background-color: #232323;
+            }
         }
         .owl-theme{
             .owl-dots{
@@ -91,7 +132,12 @@ section#slider{
             }
         }
     }
-    
+    &:hover .owl-carousel .owl-nav button.owl-next{
+        opacity: 1;
+    }
+    &:hover .owl-carousel .owl-nav button.owl-prev{
+        opacity: 1;
+    }
     @media screen and (min-width:391px) and (max-width:821px) {
         .slide{
             .item{
@@ -169,7 +215,77 @@ section#slider{
         }
     }
     @media screen and (max-width:391px) {
-        
+        .slide{
+            .item{
+                color: white;
+                position: relative;
+                .title{
+                    width: 200px;
+                    text-align: center;
+                    position: absolute;
+                    left: 25%!important;
+                    top: 65%!important;
+                    h4{
+                        font-size: 14px!important;
+                        line-height: 19px!important;
+                        margin-bottom: 4px!important;
+                    }
+                    h1{
+                        font-size: 18px!important;
+                        line-height: 22px!important;
+                        margin-bottom: 9px!important;
+                    }
+                    p{
+                        display: none;
+                    }
+                    button{
+                        background-color: #eb4d4b;
+                        height: 30px;
+                        padding: 7px 15px;
+                        border: none;
+                        border-radius: 30px;
+                        font-size: 11px;
+                        color: white;
+                        transition: 0.5s;
+                        &:hover{
+                            background-color: #232323;
+                        }
+                    }
+                }
+                
+            }
+            .owl-theme{
+                .owl-dots{
+                    display: flex;
+                    position: absolute;
+                    left: 45%;
+                    right: 45%;
+                    bottom: 0;
+                    .owl-dot{
+                        button{
+                            border-radius: 0px;
+                        }
+                        span{
+                            bottom: 30px;
+                            left: 0;
+                            width: 12px;
+                            height: 12px;
+                            background: #D6D6D6;
+                            display: block;
+                            transition: 0.5s;
+                            border-radius: 0px;
+                            background-color: #eb4d4b;
+                            &:nth-child(1){
+                                margin-right: 2.5px;
+                            }
+                            &:nth-child(2){
+                                margin-left: 2.5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -213,6 +329,15 @@ section#services{
                         color: gray;
                         letter-spacing: 1px;
                         line-height: 25px;
+                    }
+                }
+            }
+            @media screen and (max-width:391px) {
+                a{
+                    display: flex;
+                    .describtion{
+                        text-align: left;
+                        margin-left: 20px;
                     }
                 }
             }
@@ -497,8 +622,6 @@ section#customers{
             }
         }
         .item{
-            // height: max-content;
-            // background-color: white;
             .customer{
                 background-color: white;
                 padding: 0px 50px 40px;
@@ -535,6 +658,77 @@ section#customers{
                             color: #eb4d4b;
                             letter-spacing: 1px;
                             font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+        @media screen and (max-width:391px) {
+            .title{
+                text-align: center;
+                padding-bottom: 25px;
+                margin-bottom: 10px;
+                h5{
+                    text-transform: uppercase;
+                    color: #eb4d4b;
+                    font-size: 14px;
+                    letter-spacing: 3px;
+                    font-weight: 500;
+                    margin: 0;
+                    margin-bottom: 12px;
+                }
+                h1{
+                    font-size: 26px;
+                    font-weight: 600;
+                    position: relative;
+                    &::after{
+                        border-top: 4px solid rgb(235, 77, 75);
+                        left: 46.5%;
+                        right: 46.5%;
+                        bottom: -20px;
+                        content: "";
+                        position: absolute;
+                        width: 7%;
+                    }
+                }
+            }
+            .item{
+                .customer{
+                    text-align: center;
+                    background-color: white;
+                    padding: 40px 15px 40px;
+                    margin: 0px;
+                    .avatar{
+                        position: static;
+                        margin: 0 auto 20px;
+                        width: 100px;
+                        height: 100px;
+                        border: solid 5px  rgb(235, 77, 75);
+                        border-radius: 50%;
+                        overflow: hidden;
+                        img{
+                            object-fit: contain;
+                        }
+                    }
+                    .about{
+                        p{
+                            width: 100%;
+                            font-size: 12px;
+                            color: rgb(100, 100, 100);
+                        }
+                    }
+                    .name-prof{
+                        span{
+                            font-size: 24px;
+                            font-weight: 500;
+                            color: #232323;
+                            &:nth-child(2){
+                                margin-left: 8px;
+                                font-size: 14px;
+                                color: #eb4d4b;
+                                letter-spacing: 1px;
+                                font-weight: 400;
+                            }
                         }
                     }
                 }
@@ -721,12 +915,16 @@ section#brands{
     .container{
         width: 1200px;
         max-width: 100%;
-        img{
-            width: 200px;
-            height: 60px;
-        }
-        .img-rotate{
-            transform: rotateZ(180deg);
+        .item{
+            display: flex;
+            justify-content: center;
+            img{
+                width: 200px;
+                height: 60px;
+            }
+            .img-rotate{
+                transform: rotateZ(180deg);
+            }
         }
     }
 }

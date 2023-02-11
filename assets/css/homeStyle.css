@@ -18,7 +18,7 @@ section#slider .slide .item .title {
   height: max-content;
   position: absolute;
   right: 20px;
-  top: 100px;
+  top: 120px;
 }
 section#slider .slide .item .title h4 {
   font-size: 28px;
@@ -50,6 +50,48 @@ section#slider .slide .item .title button {
 section#slider .slide .item .title button:hover {
   background-color: #232323;
 }
+section#slider .slide .owl-carousel .owl-nav button.owl-next {
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 0px;
+  color: white;
+  background-color: #eb4d4b;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+section#slider .slide .owl-carousel .owl-nav button.owl-next:hover {
+  background-color: #232323;
+}
+section#slider .slide .owl-carousel .owl-nav button.owl-prev {
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 0px;
+  color: white;
+  background-color: #eb4d4b;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+section#slider .slide .owl-carousel .owl-nav button.owl-prev:hover {
+  background-color: #232323;
+}
 section#slider .slide .owl-theme .owl-dots {
   position: absolute;
   left: 45%;
@@ -78,6 +120,12 @@ section#slider .slide .owl-theme .owl-dots .owl-dot span:nth-child(1) {
 }
 section#slider .slide .owl-theme .owl-dots .owl-dot span:nth-child(2) {
   margin-left: 2.5px;
+}
+section#slider:hover .owl-carousel .owl-nav button.owl-next {
+  opacity: 1;
+}
+section#slider:hover .owl-carousel .owl-nav button.owl-prev {
+  opacity: 1;
 }
 @media screen and (min-width: 391px) and (max-width: 821px) {
   section#slider .slide .item {
@@ -149,6 +197,73 @@ section#slider .slide .owl-theme .owl-dots .owl-dot span:nth-child(2) {
     margin-left: 2.5px;
   }
 }
+@media screen and (max-width: 391px) {
+  section#slider .slide .item {
+    color: white;
+    position: relative;
+  }
+  section#slider .slide .item .title {
+    width: 200px;
+    text-align: center;
+    position: absolute;
+    left: 25% !important;
+    top: 65% !important;
+  }
+  section#slider .slide .item .title h4 {
+    font-size: 14px !important;
+    line-height: 19px !important;
+    margin-bottom: 4px !important;
+  }
+  section#slider .slide .item .title h1 {
+    font-size: 18px !important;
+    line-height: 22px !important;
+    margin-bottom: 9px !important;
+  }
+  section#slider .slide .item .title p {
+    display: none;
+  }
+  section#slider .slide .item .title button {
+    background-color: #eb4d4b;
+    height: 30px;
+    padding: 7px 15px;
+    border: none;
+    border-radius: 30px;
+    font-size: 11px;
+    color: white;
+    transition: 0.5s;
+  }
+  section#slider .slide .item .title button:hover {
+    background-color: #232323;
+  }
+  section#slider .slide .owl-theme .owl-dots {
+    display: flex;
+    position: absolute;
+    left: 45%;
+    right: 45%;
+    bottom: 0;
+  }
+  section#slider .slide .owl-theme .owl-dots .owl-dot button {
+    border-radius: 0px;
+  }
+  section#slider .slide .owl-theme .owl-dots .owl-dot span {
+    bottom: 30px;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    background: #D6D6D6;
+    display: block;
+    transition: 0.5s;
+    border-radius: 0px;
+    background-color: #eb4d4b;
+  }
+  section#slider .slide .owl-theme .owl-dots .owl-dot span:nth-child(1) {
+    margin-right: 2.5px;
+  }
+  section#slider .slide .owl-theme .owl-dots .owl-dot span:nth-child(2) {
+    margin-left: 2.5px;
+  }
+}
+
 section#services {
   background-color: #fbfbfb;
   margin-bottom: 70px;
@@ -191,6 +306,15 @@ section#services .row .service a .describtion p {
   color: gray;
   letter-spacing: 1px;
   line-height: 25px;
+}
+@media screen and (max-width: 391px) {
+  section#services .row .service a {
+    display: flex;
+  }
+  section#services .row .service a .describtion {
+    text-align: left;
+    margin-left: 20px;
+  }
 }
 @media screen and (min-width: 391px) and (max-width: 821px) {
   section#services {
@@ -506,6 +630,72 @@ section#customers .container .item .customer .name-prof span:nth-child(2) {
   letter-spacing: 1px;
   font-weight: 400;
 }
+@media screen and (max-width: 391px) {
+  section#customers .container .title {
+    text-align: center;
+    padding-bottom: 25px;
+    margin-bottom: 10px;
+  }
+  section#customers .container .title h5 {
+    text-transform: uppercase;
+    color: #eb4d4b;
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 12px;
+  }
+  section#customers .container .title h1 {
+    font-size: 26px;
+    font-weight: 600;
+    position: relative;
+  }
+  section#customers .container .title h1::after {
+    border-top: 4px solid rgb(235, 77, 75);
+    left: 46.5%;
+    right: 46.5%;
+    bottom: -20px;
+    content: "";
+    position: absolute;
+    width: 7%;
+  }
+  section#customers .container .item .customer {
+    text-align: center;
+    background-color: white;
+    padding: 40px 15px 40px;
+    margin: 0px;
+  }
+  section#customers .container .item .customer .avatar {
+    position: static;
+    margin: 0 auto 20px;
+    width: 100px;
+    height: 100px;
+    border: solid 5px rgb(235, 77, 75);
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  section#customers .container .item .customer .avatar img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  section#customers .container .item .customer .about p {
+    width: 100%;
+    font-size: 12px;
+    color: rgb(100, 100, 100);
+  }
+  section#customers .container .item .customer .name-prof span {
+    font-size: 24px;
+    font-weight: 500;
+    color: #232323;
+  }
+  section#customers .container .item .customer .name-prof span:nth-child(2) {
+    margin-left: 8px;
+    font-size: 14px;
+    color: #eb4d4b;
+    letter-spacing: 1px;
+    font-weight: 400;
+  }
+}
 
 section#latest {
   padding: 80px 0;
@@ -675,10 +865,14 @@ section#brands .container {
   width: 1200px;
   max-width: 100%;
 }
-section#brands .container img {
+section#brands .container .item {
+  display: flex;
+  justify-content: center;
+}
+section#brands .container .item img {
   width: 200px;
   height: 60px;
 }
-section#brands .container .img-rotate {
+section#brands .container .item .img-rotate {
   transform: rotateZ(180deg);
 }/*# sourceMappingURL=homeStyle.css.map */
