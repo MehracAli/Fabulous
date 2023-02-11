@@ -328,14 +328,18 @@ section#products .container .about button:hover {
     width: 1200px;
     max-width: 85%;
   }
+  section#products .container .image {
+    margin-bottom: 30px;
+  }
   section#products .container .image img {
     width: 100%;
     height: 100%;
   }
   section#products .container .about {
-    text-align: center;
+    text-align: center !important;
   }
   section#products .container .about .title {
+    text-align: center !important;
     padding-bottom: 25px;
     margin-bottom: 25px;
   }
@@ -465,37 +469,37 @@ section#customers .container .owl-carousel {
 section#customers .container .owl-carousel .owl-stage-outer {
   overflow: hidden;
 }
-section#customers .container .customer {
+section#customers .container .item .customer {
   background-color: white;
-  width: 100%;
-  padding: 65px 50px 40px;
+  padding: 0px 50px 40px;
+  margin: 50px 0 0;
 }
-section#customers .container .customer .avatar {
-  position: absolute;
-  top: -60px;
-  left: 50px;
+section#customers .container .item .customer .avatar {
+  position: relative;
+  top: -50px;
+  left: 10px;
   width: 100px;
   height: 100px;
   border: solid 5px rgb(235, 77, 75);
   border-radius: 50%;
   overflow: hidden;
 }
-section#customers .container .customer .avatar img {
+section#customers .container .item .customer .avatar img {
   -o-object-fit: contain;
      object-fit: contain;
 }
-section#customers .container .customer .about p {
+section#customers .container .item .customer .about p {
   font-size: 14px;
   color: rgb(100, 100, 100);
   line-height: 25px;
   letter-spacing: 0.5px;
 }
-section#customers .container .customer .name-prof span {
+section#customers .container .item .customer .name-prof span {
   font-size: 24px;
   font-weight: 500;
   color: #232323;
 }
-section#customers .container .customer .name-prof span:nth-child(2) {
+section#customers .container .item .customer .name-prof span:nth-child(2) {
   margin-left: 8px;
   font-size: 14px;
   color: #eb4d4b;
@@ -537,6 +541,32 @@ section#latest .container .title h1::after {
   content: "";
   position: absolute;
   width: 7%;
+}
+section#latest .container .category ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+section#latest .container .category ul li {
+  margin-left: 3px;
+}
+section#latest .container .category ul li a {
+  text-transform: capitalize;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #666;
+  transition: 0.5s;
+}
+section#latest .container .category ul li a:hover {
+  background-color: #f5f5f5;
+  color: #232323;
+}
+section#latest .container .category ul li .active {
+  background-color: #f5f5f5 !important;
+  color: #232323;
 }
 
 section#faq {

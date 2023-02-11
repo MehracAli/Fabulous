@@ -28,17 +28,7 @@ $(document).ready(function () {
         drop.slideToggle()
     })
     // cart
-    $(".cart svg").on("click",()=>{
-        let drop = $(".cart-drop")
-        drop.removeClass("d-none")
-        setTimeout(
-            drop.addClass("cart-drop.active")
-        ,1000)
-    })
-    $(".cart-drop svg").on("click",()=>{
-        let drop = $(".cart-drop")
-        drop.addClass("d-none")
-    })
+ 
     // scroll
     $(window).on('scroll',function(){
         if($(window).scrollTop() > 100){
