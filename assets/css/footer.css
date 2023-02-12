@@ -491,7 +491,7 @@ footer .footer-top .container .subscribe .social-net ul li a svg {
 footer .footer-mid {
   padding: 0 0 50px;
 }
-footer .footer-mid ul {
+footer .footer-mid .fm-ul {
   margin: 0;
   padding: 0;
   display: flex;
@@ -499,29 +499,52 @@ footer .footer-mid ul {
   list-style: none;
   font-size: 14px;
 }
-footer .footer-mid ul li {
+footer .footer-mid .fm-ul li {
   line-height: 30px;
   margin-bottom: 0px;
 }
-footer .footer-mid ul li:nth-child(even) {
+footer .footer-mid .fm-ul li:nth-child(even) {
   color: gray;
   font-weight: 100;
   margin: 0 10px;
 }
-footer .footer-mid ul li a {
+footer .footer-mid .fm-ul li a {
   letter-spacing: 0.5px;
   font-weight: 400;
   text-decoration: none;
   color: rgb(100, 100, 100);
   transition: 0.5s;
 }
-footer .footer-mid ul li a:hover {
+footer .footer-mid .fm-ul li a:hover {
   color: #eb4d4b;
 }
-@media screen and (max-width: 391px) {
-  footer .footer-mid ul {
-    display: none;
-  }
+footer .footer-mid .active-i {
+  transform: rotateZ(180deg);
+}
+footer .footer-mid .footer-mid-sm {
+  padding: 0 10px;
+}
+footer .footer-mid .footer-mid-sm .accordion .steps .sect {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-mid .footer-mid-sm .accordion .steps .sect h3 {
+  font-size: 16px;
+  font-weight: 500;
+}
+footer .footer-mid .footer-mid-sm .accordion .steps .sect i {
+  transition: 0.5s;
+}
+footer .footer-mid .footer-mid-sm .accordion .steps .ul {
+  display: none;
+}
+footer .footer-mid .footer-mid-sm .accordion .steps .ul ul {
+  list-style: none;
+  padding: 0;
+}
+footer .footer-mid .footer-mid-sm .accordion .steps .ul ul li a {
+  text-decoration: none;
+  color: gray;
 }
 footer .footer-bottom {
   padding: 10px 0;

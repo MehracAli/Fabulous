@@ -444,6 +444,87 @@ section#products .container .about button {
 section#products .container .about button:hover {
   background-color: #232323;
 }
+@media screen and (max-width: 391) {
+  section#products .container {
+    width: 1200px;
+    max-width: 85%;
+  }
+  section#products .container .image {
+    margin-bottom: 30px;
+  }
+  section#products .container .image img {
+    width: 100%;
+    height: 100%;
+  }
+  section#products .container .about {
+    text-align: center !important;
+  }
+  section#products .container .about .title {
+    text-align: center !important;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+  }
+  section#products .container .about .title h5 {
+    text-transform: uppercase;
+    color: #eb4d4b;
+    font-size: 16px;
+    letter-spacing: 8px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 12px;
+  }
+  section#products .container .about .title h1 {
+    font-size: 40px;
+    font-weight: 600;
+    position: relative;
+  }
+  section#products .container .about .title h1::after {
+    border-top: 4px solid #eb4d4b;
+    bottom: -20px;
+    content: "";
+    position: absolute;
+    left: 42%;
+    right: 42%;
+    width: 16%;
+  }
+  section#products .container .about p {
+    font-size: 13px;
+    color: gray;
+    letter-spacing: 1px;
+  }
+  section#products .container .about .about-list {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  section#products .container .about .about-list ul {
+    text-align: left;
+  }
+  section#products .container .about .about-list ul li {
+    color: rgb(110, 110, 110);
+    font-size: 15px;
+    line-height: 30px;
+  }
+  section#products .container .about .about-list ul li::marker {
+    font-size: 20px;
+    color: #eb4d4b;
+  }
+  section#products .container .about .about-list ul:nth-child(2) {
+    margin-left: 30px;
+  }
+  section#products .container .about button {
+    background-color: #eb4d4b;
+    height: 45px;
+    padding: 8px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    color: white;
+    transition: 0.5s;
+  }
+  section#products .container .about button:hover {
+    background-color: #232323;
+  }
+}
 @media screen and (min-width: 391px) and (max-width: 1181px) {
   section#products {
     margin-bottom: 50px;
@@ -593,7 +674,12 @@ section#customers .container .owl-carousel {
 section#customers .container .owl-carousel .owl-stage-outer {
   overflow: hidden;
 }
+section#customers .container .item {
+  display: flex;
+  justify-content: center;
+}
 section#customers .container .item .customer {
+  width: 97%;
   background-color: white;
   padding: 0px 50px 40px;
   margin: 50px 0 0;
@@ -629,6 +715,50 @@ section#customers .container .item .customer .name-prof span:nth-child(2) {
   color: #eb4d4b;
   letter-spacing: 1px;
   font-weight: 400;
+}
+@media screen and (min-width: 391px) and (max-width: 821px) {
+  section#customers .container .item {
+    display: flex;
+    justify-content: center;
+  }
+  section#customers .container .item .customer {
+    width: 85%;
+    background-color: white;
+    padding: 0px 50px 40px;
+    margin: 50px 0 0;
+  }
+  section#customers .container .item .customer .avatar {
+    position: relative;
+    top: -50px;
+    left: 10px;
+    width: 100px;
+    height: 100px;
+    border: solid 5px rgb(235, 77, 75);
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  section#customers .container .item .customer .avatar img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  section#customers .container .item .customer .about p {
+    font-size: 14px;
+    color: rgb(100, 100, 100);
+    line-height: 25px;
+    letter-spacing: 0.5px;
+  }
+  section#customers .container .item .customer .name-prof span {
+    font-size: 24px;
+    font-weight: 500;
+    color: #232323;
+  }
+  section#customers .container .item .customer .name-prof span:nth-child(2) {
+    margin-left: 8px;
+    font-size: 14px;
+    color: #eb4d4b;
+    letter-spacing: 1px;
+    font-weight: 400;
+  }
 }
 @media screen and (max-width: 391px) {
   section#customers .container .title {
@@ -757,6 +887,56 @@ section#latest .container .category ul li a:hover {
 section#latest .container .category ul li .active {
   background-color: #f5f5f5 !important;
   color: #232323;
+}
+section#latest .container .porduct-slide .item .prdct {
+  padding: 15px 15px 0;
+  text-align: center;
+}
+section#latest .container .porduct-slide .item .prdct .image {
+  position: relative;
+  height: 355px;
+}
+section#latest .container .porduct-slide .item .prdct .image img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+section#latest .container .porduct-slide .item .prdct .image .rate {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+}
+section#latest .container .porduct-slide .item .prdct .image .rate i {
+  font-size: 13px;
+}
+section#latest .container .porduct-slide .item .prdct .image .wish-view .icon {
+  width: 40px;
+  height: 40px;
+}
+section#latest .container .porduct-slide .item .prdct .caption {
+  padding: 10px;
+}
+section#latest .container .porduct-slide .item .prdct .caption h4 {
+  font-size: 16px;
+}
+section#latest .container .porduct-slide .item .prdct .caption p {
+  font-weight: 500;
+  color: #eb4d4b;
+}
+section#latest .container .porduct-slide .item .prdct .caption button {
+  display: none;
+}
+section#latest .container .porduct-slide .item .prdct .caption .active-button {
+  border: none;
+  background-color: #eb4d4b;
+  color: white;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  padding: 10px 21px;
 }
 
 section#faq {

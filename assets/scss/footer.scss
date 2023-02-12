@@ -478,9 +478,10 @@ footer{
             }
         }
     }
+    
     .footer-mid{
         padding: 0 0 50px;
-        ul{
+        .fm-ul{
             margin: 0;
             padding: 0;
             display: flex;
@@ -507,11 +508,38 @@ footer{
                 }
             }
         }
-    }
-    @media screen and (max-width:391px) {
-        .footer-mid{
-            ul{
-                display: none;
+        .active-i{
+            transform: rotateZ(180deg);
+        }
+        .footer-mid-sm{
+            padding: 0 10px;
+            .accordion{
+                .steps{
+                        .sect{
+                            display: flex;
+                            justify-content: space-between;
+                            h3{
+                                font-size: 16px;
+                                font-weight: 500;
+                            }
+                            i{
+                                transition: 0.5s;
+                            }
+                        }
+                        .ul{
+                            display: none;
+                            ul{
+                                list-style: none;
+                                padding: 0;
+                                li{
+                                    a{
+                                        text-decoration: none;
+                                        color: gray;
+                                    }
+                                }
+                            }
+                        }
+                }
             }
         }
     }
