@@ -28,7 +28,14 @@ $(document).ready(function () {
         drop.slideToggle()
     })
     // cart
- 
+    $("#lg-head .cart-icon").on("click", function(){
+        let cartDrop = $("#lg-head .cart-drop")
+        cartDrop.addClass("active")
+    })
+    $("#lg-head .cart .cart-drop .cd-top svg").on("click", function(){
+        let cartDrop = $("#lg-head .cart-drop")
+        cartDrop.removeClass("active")
+    })
     // scroll
     $(window).on('scroll',function(){
         if($(window).scrollTop() > 100){

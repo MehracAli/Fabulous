@@ -1,27 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="/assets/fontawesome/css/fontawesome.min.css">
-    <link rel="stylesheet" href="/assets/fontawesome/css/solid.min.css">
-    <link rel="stylesheet" href="/assets/BootstrapV5.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="/assets/css/productStyle.css">
-    <link rel="stylesheet" href="/assets/css/header.css">
-    <link rel="stylesheet" href="/assets/css/footer.css">
-    <link rel="icon" href="/assets/images/cart.png">
-    <title>HTC Touch HD</title>
-</head>
-<body>
-    
-<!-- js sources -->
-<script src="/assets/BootstrapV5.3/js/bootstrap.min.js"></script>
-<script src="/assets/jQuery/jquery-3.6.3.min.js"></script>
-<script src="/assets/js/owl.carousel.min.js"></script>
-<script src="/assets/js/header.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="/assets/fontawesome/css/fontawesome.css" />
+    <link rel="stylesheet" href="/assets/fontawesome/css/solid.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/owl.carousel.css" />
+    <link rel="stylesheet" href="/assets/css/owl.theme.default.css" />
+    <link rel="stylesheet" href="/assets/css/slick.css" />
+    <link rel="stylesheet" href="/assets/css/homeStyle.css" />
+    <link rel="stylesheet" href="/assets/css/header.css" />
+    <link rel="stylesheet" href="/assets/css/footer.css" />
+    <link rel="stylesheet" href="/assets/css/slide.css" />
+    <link rel="icon" href="/assets/images/cart.png" />
+    <title>Your Store</title>
+  </head>
+  <body>
+    <header id="lg-head" class="d-lg-flex d-none animate__animated">
+      <div class="container">
+        <div class="row" style="width: 100%">
+          <div class="logo col-lg-3 col-md-3 col-sm-3 d-flex">
+            <img src="/assets/images/Logo.png" alt="logo" />
+          </div>
+          <div class="nav-bar col-lg-7 col-md-7 col-sm-12 d-flex col-md-">
+            <nav class="d-flex">
+              <ul id="product-page-nav" class="d-flex">
+                <li class="drone">
+                  <a href="">Drone</a>
+                  <div class="drop-down drone-drop row" style="display: none">
+                    <div style="width: 30%">
+                      <div class="drop-title">
+                        <span>Indoor Toy</span>
+                      </div>
+                      <div class="drop-list" style="margin-top: 15px">
+                        <ul>
+                          <li><a href="">Parrot Mambo</a></li>
+                          <li><a href="">Potensic A20W</a></li>
+                          <li><a href="">Ryze Tello</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div style="width: 30%">
+                      <div class="drop-title">
+                        <span>Kids Entertainment</span>
+                      </div>
+                      <div class="drop-list" style="margin-top: 15px">
+                        <ul>
+                          <li><a href="">Holy Stone</a></li>
+                          <li><a href="">Hubsan Toy</a></li>
+                          <li><a href="">Motion Controlled</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div style="width: 30%">
+                      <div class="drop-title">
+                        <span>Photography</span>
+                      </div>
+                      <div class="drop-list" style="margin-top: 15px">
+                        <ul>
+                          <li><a href="">Autel EVO</a></li>
+                          <li><a href="">DJI Mavic</a></li>
+                          <li><a href="">PowerEgg X Wizard</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="accesories">
+                  <a href="">Accesories</a>
+                  <div
+                    class="drop-down accesories-drop row"
+                    style="display: none"
+                  >
+                    <div style="width: 50%">
+                      <div class="drop-title">
+                        <span>Ryze Tello</span>
+                      </div>
+                      <div class="drop-list" style="margin-top: 15px">
+                        <ul>
+                          <li><a href="">PowerVision</a></li>
+                          <li><a href="">PowerVision Wizard</a></li>
+                          <li><a href="">Snaptain SP500</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div style="width: 50%">
+                      <div class="drop-title">
+                        <span>Force 1 Scoot LED</span>
+                      </div>
+                      <div class="drop-list" style="margin-top: 15px">
+                        <ul>
+                          <li><a href="">DJI Mini 2</a></li>
+                          <li><a href="">EMAX TinyHawk</a></li>
+                          <li><a href="">Potensic A20</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="">Collection</a>
+                </li>
+                <li>
+                  <a href="">Components</a>
+                </li>
+                <li>
+                  <a href="">Outfits</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div id="product-nav-icon" class="search-cart-login col-lg-2 d-flex">
+            <div class="search">
+              <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+                <symbol id="magnifying-desktop" viewBox="0 0 1200 1200">
+                  <title>magnifying-desktop</title>
+                  <path
+                    d="M606.209,578.714L448.198,423.228C489.576,378.272,515,318.817,515,253.393C514.98,113.439,399.704,0,257.493,0
+                             C115.282,0,0.006,113.439,0.006,253.393s115.276,253.393,257.487,253.393c61.445,0,117.801-21.253,162.068-56.586
+                             l158.624,156.099c7.729,7.614,20.277,7.614,28.006,0C613.938,598.686,613.938,586.328,606.209,578.714z M257.493,467.8
+                             c-120.326,0-217.869-95.993-217.869-214.407S137.167,38.986,257.493,38.986c120.327,0,217.869,95.993,217.869,214.407
+                             S377.82,467.8,257.493,467.8z"
+                  ></path>
+                </symbol>
+              </svg>
+              <svg class="icon" viewBox="0 0 40 40">
+                <use xlink:href="#magnifying-desktop" x="18%" y="25%"></use>
+              </svg>
+              <input
+                type="search"
+                placeholder="Search Our Catalog"
+                style="display: none"
+              />
+            </div>
+            <div class="login">
+              <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+                <symbol id="user-desktop" viewBox="0 0 480 480">
+                  <title>user-desktop</title>
+                  <path
+                    d="M187.497,152.427H73.974c-38.111,0-69.117,31.006-69.117,69.117v39.928h251.758v-39.928
+                           C256.614,183.433,225.608,152.427,187.497,152.427z M241.614,246.473H19.856v-24.928c0-29.84,24.277-54.117,54.117-54.117h113.523
+                           c29.84,0,54.117,24.277,54.117,54.117L241.614,246.473L241.614,246.473z"
+                  ></path>
+                  <path
+                    d="M130.735,145.326c40.066,0,72.663-32.597,72.663-72.663S170.802,0,130.735,0S58.072,32.596,58.072,72.663
+                           S90.669,145.326,130.735,145.326z M130.735,15c31.796,0,57.663,25.867,57.663,57.663s-25.867,57.663-57.663,57.663
+                           s-57.663-25.868-57.663-57.663S98.939,15,130.735,15z"
+                  ></path>
+                </symbol>
+              </svg>
+              <svg class="icon" viewBox="0 0 40 40">
+                <use xlink:href="#user-desktop" x="19%" y="19%"></use>
+              </svg>
+              <div class="login-drop" style="display: none">
+                <ul style="list-style: none">
+                  <li><a href="" style="text-decoration: none">Register</a></li>
+                  <li><a href="" style="text-decoration: none">Login</a></li>
+                  <li>
+                    <a href="" style="text-decoration: none">Wish List(0)</a>
+                  </li>
+                </ul>
+                <div class="languages">
+                  <span>Language:</span>
+                  <ul style="list-style: none" class="d-flex">
+                    <li>
+                      <a href="" class="d-flex">
+                        <img
+                          src="/assets/images/home/languages/en-gb.png"
+                          alt="eng"
+                        />
+                        <span>English</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="d-flex">
+                        <img
+                          src="/assets/images/home/languages/ar.png"
+                          alt="arab"
+                        />
+                        <span>Arabic</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="currency">
+                  <span>Currency:</span>
+                  <ul class="d-flex">
+                    <li><a href="">€ Euro</a></li>
+                    <li><a href="">£ Pound Sterling</a></li>
+                    <li><a href="">$ US Dollar</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="cart">
+              <div class="cart-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+                  <symbol id="shopping-cart" viewBox="0 0 700 700">
+                    <title>shopping-cart</title>
+                    <path
+                      d="m150.355469 322.332031c-30.046875 0-54.402344 24.355469-54.402344 54.402344 0 30.042969 24.355469 54.398437 54.402344 54.398437 30.042969 0 54.398437-24.355468 54.398437-54.398437-.03125-30.03125-24.367187-54.371094-54.398437-54.402344zm0 88.800781c-19 0-34.402344-15.402343-34.402344-34.398437 0-19 15.402344-34.402344 34.402344-34.402344 18.996093 0 34.398437 15.402344 34.398437 34.402344 0 18.996094-15.402344 34.398437-34.398437 34.398437zm0 0"
+                    ></path>
+                    <path
+                      d="m446.855469 94.035156h-353.101563l-7.199218-40.300781c-4.4375-24.808594-23.882813-44.214844-48.699219-48.601563l-26.101563-4.597656c-5.441406-.96875-10.632812 2.660156-11.601562 8.097656-.964844 5.441407 2.660156 10.632813 8.101562 11.601563l26.199219 4.597656c16.53125 2.929688 29.472656 15.871094 32.402344 32.402344l35.398437 199.699219c4.179688 23.894531 24.941406 41.324218 49.199219 41.300781h210c22.0625.066406 41.546875-14.375 47.902344-35.5l47-155.800781c.871093-3.039063.320312-6.3125-1.5-8.898438-1.902344-2.503906-4.859375-3.980468-8-4zm-56.601563 162.796875c-3.773437 12.6875-15.464844 21.367188-28.699218 21.300781h-210c-14.566407.039063-27.035157-10.441406-29.5-24.800781l-24.699219-139.398437h336.097656zm0 0"
+                    ></path>
+                    <path
+                      d="m360.355469 322.332031c-30.046875 0-54.402344 24.355469-54.402344 54.402344 0 30.042969 24.355469 54.398437 54.402344 54.398437 30.042969 0 54.398437-24.355468 54.398437-54.398437-.03125-30.03125-24.367187-54.371094-54.398437-54.402344zm0 88.800781c-19 0-34.402344-15.402343-34.402344-34.398437 0-19 15.402344-34.402344 34.402344-34.402344 18.996093 0 34.398437 15.402344 34.398437 34.402344 0 18.996094-15.402344 34.398437-34.398437 34.398437zm0 0"
+                    ></path>
+                  </symbol>
+                </svg>
+                <svg class="icon" viewBox="0 0 40 40">
+                  <use xlink:href="#shopping-cart" x="12%" y="16%"></use>
+                </svg>
+                <sup>0</sup>
+              </div>
+              <div class="cart-drop">
+                <div
+                  class="cd-top d-flex justify-content-between align-items-center"
+                >
+                  <span style="font-size: 14px">CART</span>
+                  <div
+                    class="svg d-flex align-items-center justify-content-end"
+                  >
+                    <svg
+                      width="20px"
+                      height="20px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"
+                        fill="gray"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="cd-mid">
+                  <ul>
+                    <li>Your shopping cart is empty</li>
+                  </ul>
+                </div>
+                <div class="cd-btm">
+                  <ul>
+                    <li>
+                      <span>Sub-Total</span><span>0<span>$</span></span>
+                    </li>
+                    <li>
+                      <span>Eco Tax (-2.00)</span><span>0<span>$</span></span>
+                    </li>
+                    <li>
+                      <span>VAT (20%)</span><span>0<span>$</span></span>
+                    </li>
+                    <li>
+                      <span>Total</span><span>0<span>$</span></span>
+                    </li>
+                  </ul>
+                  <div class="buttons">
+                    <button>VIEW CART</button>
+                    <button>CHECKOUT</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- js sources -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/assets/js/owl.carousel.js"></script>
+    <script src="/assets/js/slick.js"></script>
+    <script src="/assets/js/header.js"></script>
+    <script src="/assets/js/footer.js"></script>
+    <script src="/assets/js/sm-header.js"></script>
+  </body>
 </html>

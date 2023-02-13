@@ -902,6 +902,20 @@ section#latest .container .porduct-slide .item .prdct .image img {
   position: absolute;
   top: 0;
   left: 0;
+  transition: 0.8s all;
+}
+section#latest .container .porduct-slide .item .prdct .image img:nth-child(1) {
+  opacity: 1;
+}
+section#latest .container .porduct-slide .item .prdct .image img:nth-child(2) {
+  opacity: 0;
+}
+section#latest .container .porduct-slide .item .prdct .image:hover img:nth-child(1) {
+  opacity: 0;
+}
+section#latest .container .porduct-slide .item .prdct .image:hover img:nth-child(2) {
+  opacity: 1;
+  transform: rotateY(180deg);
 }
 section#latest .container .porduct-slide .item .prdct .image .rate {
   position: absolute;

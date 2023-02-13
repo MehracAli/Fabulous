@@ -16,6 +16,7 @@ div#mini-head {
 }
 div#mini-head .container .row {
   padding: 10px 0;
+  flex-wrap: nowrap;
   justify-content: space-between;
 }
 div#mini-head .container .row .burger-search {
@@ -30,14 +31,19 @@ div#mini-head .container .row .burger-search .search {
   width: 40px;
   height: 40px;
 }
+div#mini-head .container .row .burger-search .search-active {
+  display: none;
+}
 div#mini-head .container .row .logo {
+  width: 156px;
+  height: 27px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 div#mini-head .container .row .logo img {
-  width: 156px;
-  height: 27px;
+  width: 100%;
+  height: 100%;
 }
 div#mini-head .container .row .login-cart {
   display: flex;
@@ -51,6 +57,56 @@ div#mini-head .container .row .login-cart .cart {
   width: 40px;
   height: 40px;
 }
+@media screen and (max-width: 821px) {
+  div#mini-head {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+  }
+  div#mini-head .container .row {
+    padding: 10px 0;
+    justify-content: space-between;
+  }
+  div#mini-head .container .row .burger-search {
+    display: flex;
+    justify-content: flex-start;
+  }
+  div#mini-head .container .row .burger-search .nav-icon {
+    width: 40px;
+    height: 40px;
+  }
+  div#mini-head .container .row .burger-search .search {
+    width: 40px;
+    height: 40px;
+  }
+  div#mini-head .container .row .logo {
+    width: 200px !important;
+    height: 35px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  div#mini-head .container .row .logo img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  div#mini-head .container .row .login-cart {
+    display: flex;
+    justify-content: flex-end;
+  }
+  div#mini-head .container .row .login-cart .login {
+    width: 40px;
+    height: 40px;
+  }
+  div#mini-head .container .row .login-cart .cart {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 header {
   position: absolute;
   top: 0;
@@ -83,6 +139,12 @@ header .container .nav-bar {
 header .container .nav-bar nav {
   justify-content: center;
 }
+header .container .nav-bar nav #product-page-nav li a {
+  color: #232323;
+}
+header .container .nav-bar nav #product-page-nav li a:hover {
+  color: #EB4D50;
+}
 header .container .nav-bar nav ul {
   justify-content: center;
   align-items: center;
@@ -103,7 +165,10 @@ header .container .nav-bar nav ul li a {
   transition: 0.5s;
 }
 header .container .nav-bar nav ul li a:hover {
-  color: black;
+  color: #232323;
+}
+header .container .nav-bar nav ul li a.other-page {
+  color: #232323;
 }
 header .container .nav-bar nav ul li.accesories .drop-down {
   width: 420px;
@@ -159,7 +224,7 @@ header .container .search-cart-login div svg {
   cursor: pointer;
 }
 header .container .search-cart-login div svg:hover {
-  fill: black;
+  fill: #232323;
 }
 header .container .search-cart-login .search input {
   position: absolute;
@@ -270,100 +335,94 @@ header .container .search-cart-login .cart sup {
   top: 2px;
   right: 2px;
 }
+header .container .search-cart-login .cart .cart-drop.active {
+  transition: 1s;
+  display: block !important;
+}
 header .container .search-cart-login .cart .cart-drop {
-  animation-duration: 0.5s;
+  border: solid 0.5px rgb(240, 240, 240);
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
-  bottom: 0;
+  background-color: white;
+  padding: 0 10px;
   height: 100vh;
   width: 400px;
-  background-color: white;
-  border: 1px solid #e9e9e9;
-  padding: 0 10px;
-  z-index: 1;
-  transition: 0.5s;
+  transition: 1s;
 }
-header .container .search-cart-login .cart .cart-drop .cart-top {
-  padding: 30px 0;
+header .container .search-cart-login .cart .cart-drop .cd-top {
   width: 100%;
-  justify-content: space-between;
+  border-bottom: solid 0.5px rgb(240, 240, 240);
+}
+header .container .search-cart-login .cart .cart-drop .cd-mid {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  border-bottom: 1px solid #eee;
-}
-header .container .search-cart-login .cart .cart-drop .cart-top span {
-  font-size: 14px;
-}
-header .container .search-cart-login .cart .cart-drop .cart-top svg {
-  width: 20px;
-  height: 20px;
-  fill: gray;
-}
-header .container .search-cart-login .cart .cart-drop .cart-list {
+  height: 60%;
   width: 100%;
-  height: 100%;
 }
-header .container .search-cart-login .cart .cart-drop .cart-list .product-list {
-  overflow-y: scroll;
-  overflow-x: hidden;
+header .container .search-cart-login .cart .cart-drop .cd-mid ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  color: gray;
 }
-header .container .search-cart-login .cart .cart-drop .cart-list .product-list li {
-  margin: 0;
-}
-header .container .search-cart-login .cart .cart-drop .cart-list .product-list li p {
-  margin: 50% auto;
-  text-align: center;
-  color: #adadad;
-}
-header .container .search-cart-login .cart .cart-drop .cart-bottom {
+header .container .search-cart-login .cart .cart-drop .cd-btm {
   position: sticky;
-  bottom: 0px;
-  width: 100%;
+  bottom: 0;
+  bottom: 0;
   height: 30%;
-  border-top: 1px solid #eee;
-  background-color: white;
+  width: 100%;
+  border-top: solid 0.5px rgb(240, 240, 240);
 }
-header .container .search-cart-login .cart .cart-drop .cart-bottom ul {
+header .container .search-cart-login .cart .cart-drop .cd-btm ul {
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+}
+header .container .search-cart-login .cart .cart-drop .cd-btm ul li {
   line-height: 30px;
-  font-size: 15px;
-  padding: 0;
-  margin: 0;
-}
-header .container .search-cart-login .cart .cart-drop .cart-bottom ul li {
-  margin: 0;
   display: flex;
   justify-content: space-between;
 }
-header .container .search-cart-login .cart .cart-drop .cart-bottom ul li span:nth-child(even) {
+header .container .search-cart-login .cart .cart-drop .cd-btm ul li span {
+  color: #232323;
+  font-size: 15px;
+}
+header .container .search-cart-login .cart .cart-drop .cd-btm ul li span:nth-child(2) {
   font-weight: 500;
 }
-header .container .search-cart-login .cart .cart-drop .cart-bottom .buttons {
+header .container .search-cart-login .cart .cart-drop .cd-btm .buttons {
   width: 100%;
-  padding: 10px 0;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
-header .container .search-cart-login .cart .cart-drop .cart-bottom .buttons button {
-  font-size: 14px;
-  height: 40px;
+header .container .search-cart-login .cart .cart-drop .cd-btm .buttons button {
   width: 49%;
   border: none;
-  background-color: #EB4D50;
   color: white;
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #EB4D50;
   transition: 0.5s;
 }
-header .container .search-cart-login .cart .cart-drop .cart-bottom .buttons button:hover {
+header .container .search-cart-login .cart .cart-drop .cd-btm .buttons button:hover {
   background-color: #232323;
 }
-header .container .search-cart-login .cart .cart-drop .cart-bottom .buttons button:nth-child(2) {
+header .container .search-cart-login .cart .cart-drop .cd-btm .buttons button:nth-child(2) {
   background-color: #232323;
 }
-header .container .search-cart-login .cart .cart-drop .cart-bottom .buttons button:nth-child(2):hover {
+header .container .search-cart-login .cart .cart-drop .cd-btm .buttons button:nth-child(2):hover {
   background-color: #EB4D50;
+}
+header .container #product-nav-icon.search-cart-login svg {
+  fill: #232323;
+  transition: 0.5s;
+  cursor: pointer;
+}
+header .container #product-nav-icon.search-cart-login svg:hover {
+  fill: #EB4D50;
 }
 
 .scroll-header {
