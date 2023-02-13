@@ -276,6 +276,7 @@ header .container .search-cart-login .cart .cart-drop {
   top: 0;
   right: 0;
   bottom: 0;
+  height: 100vh;
   width: 400px;
   background-color: white;
   border: 1px solid #e9e9e9;
