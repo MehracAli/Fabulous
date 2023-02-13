@@ -43,6 +43,8 @@ $(document).ready(function () {
   $("#customers .owl-carousel").owlCarousel({
     loop: false,
     margin: 10,
+    nav:true,
+    dots:false,
     responsive: {
       0: {
         items: 1,
@@ -52,16 +54,6 @@ $(document).ready(function () {
       },
     },
   });
-  AddArrowToSlideDot();
-  function AddArrowToSlideDot() {
-    let dot = document.querySelector("#customers .owl-dots");
-    dot.children[0].firstChild.innerText = "<";
-    dot.children[0].firstChild.style.color = "white";
-    dot.children[0].firstChild.style.fontSize = "25px";
-    dot.children[1].firstChild.innerText = ">";
-    dot.children[1].firstChild.style.color = "white";
-    dot.children[1].firstChild.style.fontSize = "25px";
-  }
   //latest
   $("#latest .owl-carousel").owlCarousel({
     loop: false,
@@ -80,6 +72,14 @@ $(document).ready(function () {
     },
   });
 
+  $(".prdct").on("mouseenter", function(){
+    let button = $(this).find("button")
+    button.slideDown()
+  })
+  $(".prdct").on("mouseleave", function(){
+    let button = $(this).find("button")
+    button.slideToggle()
+  })
   //faq
   $("#faq .sect").on("click", function () {
     let next = $(this).next();

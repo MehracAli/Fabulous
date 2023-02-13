@@ -934,6 +934,7 @@ section#latest{
         .porduct-slide{
             .item{
                 .prdct{
+                    position: relative;
                     padding: 15px 15px 0;
                     text-align: center;
                     .image{
@@ -986,10 +987,12 @@ section#latest{
                             font-weight: 500;
                             color: #eb4d4b;
                         }
+            
                         button{
+                            position: absolute;
+                            bottom: 15px;
+                            left: 33%;
                             display: none;
-                        }
-                        .active-button{
                             border: none;
                             background-color: #eb4d4b;
                             color: white;

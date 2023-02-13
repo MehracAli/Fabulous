@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section#go-home{
+    background-image: url(/assets/images/products/breadcrumb.png);
+    background-attachment: fixed;
+    background-size: calc(160%);
+    background-position: -350px -50px;
+    display: flex;
+    justify-content: center;
+    padding: 65px 15px;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    a{
+        text-decoration: none;
+        color: #232323;
+        i{
+            font-size: 12px;
+            &:hover{
+                color: #eb4d4b;
+            }
+        }
+        &:hover{
+            color: #eb4d4b;
+        }
+    }
+}
+section#product-detail{
+    display: flex;
+    .container{
+        .row{
+            flex-wrap: nowrap;
+            height: 600px;
+            overflow-y:scroll;
+            &::-webkit-scrollbar{
+                display: none;
+            }
+            .photos{
+                background-color: white;
+                width: 60%;
+                .big-photo{
+                    width: 100%;
+                    overflow: hidden;
+                    border: solid 0.5px rgb(230, 230, 230);
+                    margin-bottom: 20px;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .mini-photo-description{
+                    padding: 0 10px;
+                    .mini-photos{
+                        margin-bottom: 20px;
+                        .item{
+                            border: solid 0.5px rgb(230, 230, 230);
+                        }
+                    }
+                    .description-reviews{
+                        .step-item{
+                            padding: 20px 10px;
+                            border-bottom: solid 0.5px rgb(230, 230, 230);
+                            border-top: solid 0.5px rgb(230, 230, 230);
+                            &:nth-child(2){
+                                border-top: none;
+                            }
+
+                            .sect{
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                h3{
+                                    font-weight: 600;
+                                    font-size: 13px;
+                                    text-transform: uppercase;
+                                    margin: 0px;
+                                }
+                                i{
+                                    transition: 0.5s;
+                                    font-size: 13px
+                                }
+                                .active-i{
+                                    transform: rotateZ(180deg);
+                                }
+                            }
+                            .sect-down{
+                                p{
+                                    font-size: 14px;
+                                    color: #666;
+                                    font-weight: 400;
+                                }
+                                h6{
+                                    font-size: 13px;
+                                    color: #666;
+                                    font-weight: 700;
+                                    margin-bottom: 15px;
+                                }
+                                ul{
+                                    li{
+                                        font-size: 14px;
+                                        color: #666;
+                                        font-weight: 400;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
+            .details{
+                position: sticky;
+                top: 0;
+                right: 0;
+                width: 40%;
+                background-color: white;
+                .title{
+                    border-bottom: solid 0.5px rgb(230, 230, 230);
+                    padding-bottom: 10px;
+                    margin-bottom: 20px;
+                    h1{
+                        font-size: 30px;
+                        font-weight: 500;
+                    }
+                }
+                .share{
+                    display: flex;
+                    align-items: center;
+                    button{
+                        border: none;
+                        color: white;
+                        border: none;
+                        background: #1877f2;
+                        border-radius: 3px;
+                        font-size: 11px;
+                        height: 20px;
+                        padding: 0px 5px;
+                        font-weight: 500;
+                    }
+                    .twitter{
+                        height: max-content;
+                        display: flex;
+                        button{
+                            padding-left: 10px;
+                            background-color: #1d9bf0;
+                            border-top-left-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            margin-left: 20px;
+                            &:nth-child(2){
+                                background-color: #fe6d4c;
+                                margin: 0;
+                                border-radius: 0px;
+                                padding: 0 5px;
+                                border-radius: 3px;
+                                position: relative;
+                                left: -2px;
+                            }
+                        }
+                    }
+                }
+                .rating{
+                    display: flex;
+                    align-items: center;
+                    padding: 20px 0;
+                    .rate{
+                        i{
+                            font-size: 13px;
+                        }
+                    }
+                    .review{
+                        font-size: 14px;
+                        color: #888;
+                        margin-left: 15px;
+                        i{
+                            font-size: 13px;
+                        }
+                    }
+                }
+                .price{
+                    padding: 20px 0 20px;
+                    border-bottom: solid 0.5px rgb(230, 230, 230);
+                    h4{
+                        margin-bottom: 8px;
+                        font-size: 22px;
+                        font-weight: 500;
+                        color: #232323;
+                    }
+                    span{
+                        font-size: 13px;
+                        line-height: 24px;
+                        font-weight: 500;
+                        color: #232323
+                    }
+                }
+                .add-cart{
+                    padding: 10px 0;
+                    border-bottom: solid 0.5px rgb(230, 230, 230);
+                    border-top: solid 0.5px rgb(230, 230, 230);
+                    span{
+
+                    }
+                    input{
+                        height: 36px;
+                        width: 70px;
+                        border-radius: 0px;
+                        border: solid 0.5px rgb(230, 230, 230);
+                        outline: none;
+                        padding-left: 10px;
+                        margin-left: 6px;
+                    }
+                    .add{
+                        border: none;
+                        height: 36px;
+                        font-size: 14px;
+                        padding: 0 15px;
+                        color: white;
+                        background-color: #232323;
+                        transition: 0.5s;
+                        &:hover{
+                            background-color: #eb4d4b;
+                        }
+                    }
+                    .wish{
+                        border: none;
+                        height: 36px;
+                        width: 36px;
+                        background-color: #eb4d4b;
+                        transition: 0.5s;
+                        &:hover{
+                            background-color: #232323;
+                        }
+                        svg{
+                            fill: white;
+                        }
+                    }
+                    .compare{
+                        border: none;
+                        height: 36px;
+                        width: 36px;
+                        background-color: #eb4d4b;
+                        transition: 0.5s;
+                        &:hover{
+                            background-color: #232323;
+                        }
+                        svg{
+                            fill: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
