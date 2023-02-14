@@ -26,12 +26,10 @@
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="/assets/css/owl.carousel.css" />
-    <link rel="stylesheet" href="/assets/css/owl.theme.default.css" />
-    <link rel="stylesheet" href="/assets/css/slick.css">
+    <link rel="stylesheet" href="/assets/css/owl.theme.default.css"/>
     <link rel="stylesheet" href="/assets/css/homeStyle.css" />
     <link rel="stylesheet" href="/assets/css/header.css" />
     <link rel="stylesheet" href="/assets/css/footer.css" />
-    <link rel="stylesheet" href="/assets/css/slide.css" />
     <link rel="icon" href="/assets/images/cart.png" />
     <title>Your Store</title>
   </head>
@@ -40,6 +38,70 @@
       <div class="container">
         <div class="row">
           <div class="burger-search d-flex col-3">
+            <div class="open-nav">
+              <div class="top">
+                <svg width="800px" height="800px" viewBox="0 0 1024 1024" fill="#000000" class="icon"  version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M176.662 817.173c-8.19 8.471-7.96 21.977 0.51 30.165 8.472 8.19 21.978 7.96 30.166-0.51l618.667-640c8.189-8.472 7.96-21.978-0.511-30.166-8.471-8.19-21.977-7.96-30.166 0.51l-618.666 640z" fill="" /><path d="M795.328 846.827c8.19 8.471 21.695 8.7 30.166 0.511 8.471-8.188 8.7-21.694 0.511-30.165l-618.667-640c-8.188-8.471-21.694-8.7-30.165-0.511-8.471 8.188-8.7 21.694-0.511 30.165l618.666 640z" fill="" /></svg>
+              </div>
+              <div class="bottom">
+                <div class="accordion">
+                  <div class="steps">
+                    <div class="step-1 step-item">
+                      <div class="sect" id="sect-1">
+                        <span>Drone</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                      </div>
+                      <div class="sect-down">
+                        <div class="nav-accordion">
+                          <div class="steps">
+                            <div class="sect">
+                              <span><a href="">Indoor</a></span>
+                              <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="sect">
+                              <span><a href="">Kids Entertainment</a></span>
+                              <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="sect">
+                              <span><a href="">Photography</a></span>
+                              <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="step-2 step-item">
+                      <div class="sect" id="sect-2">
+                        <span>Accesories</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                      </div>
+                      <div class="sect-down">
+                        <div class="nav-accordion">
+                          <div class="steps">
+                            <div class="sect">
+                              <span><a href="">Ryze Tello</a></span>
+                              <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="sect">
+                              <span><a href="">Force 1 Scoot LED</a></span>
+                              <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="nav-item">
+                  <span>Collection</span>
+                </div>
+                <div class="nav-item">
+                  <span>Components</span>
+                </div>
+                <div class="nav-item">
+                  <span>Outfits</span>
+                </div>
+              </div>
+            </div>
             <div class="nav-icon">
               <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
                 <symbol id="menu" viewBox="0 0 750 750"><title>menu</title>
@@ -283,6 +345,7 @@
               </div>
             </div>
             <div class="cart">
+              <div class="wrap" style=" display: none;transition: 0.5s;position: fixed; top: 0; left: 0; background-color: rgba(0, 0, 0, 0.7); width: 100%; height: 100vh;"></div>
               <div class="cart-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
                   <symbol id="shopping-cart" viewBox="0 0 700 700">
@@ -333,7 +396,7 @@
                     </li>
                   </ul>
                   <div class="buttons">
-                    <button>VIEW CART</button>
+                    <button><a href="/assets/html/cart.html">VIEW CART</a></button>
                     <button>CHECKOUT</button>
                   </div>
                 </div>
@@ -600,7 +663,7 @@
                 </div>
                 <div class="caption">
                   <h4 class="title">Apple Cinema 30"</h4>
-                  <p>$<span class="price">122</span>.00</p>
+                  <p>$<span class="price">122.00</span></p>
                   <button class="to-cart">ADD TO CART</button>
                 </div>
               </div>

@@ -23,6 +23,48 @@ div#mini-head .container .row .burger-search {
   display: flex;
   justify-content: flex-start;
 }
+div#mini-head .container .row .burger-search .open-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-right: solid 1px rgb(240, 240, 240);
+  background-color: white;
+  height: 100vh;
+  width: 80%;
+  padding: 10px 15px;
+}
+div#mini-head .container .row .burger-search .open-nav .top {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+div#mini-head .container .row .burger-search .open-nav .top svg {
+  width: 20px;
+  height: 20px;
+}
+div#mini-head .container .row .burger-search .open-nav .bottom .steps .step-item {
+  border-bottom: solid 1px rgb(240, 240, 240);
+}
+div#mini-head .container .row .burger-search .open-nav .bottom .steps .sect {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+div#mini-head .container .row .burger-search .open-nav .bottom .steps .sect-down {
+  padding-left: 15px;
+  border: none;
+  padding-bottom: 15px;
+}
+div#mini-head .container .row .burger-search .open-nav .bottom .steps .sect-down .nav-accordion a {
+  text-decoration: none;
+  color: #232323;
+  font-size: 14px;
+}
+div#mini-head .container .row .burger-search .open-nav .bottom .nav-item {
+  padding: 10px 0;
+  border-bottom: solid 1px rgb(240, 240, 240);
+}
 div#mini-head .container .row .burger-search .nav-icon {
   width: 40px;
   height: 40px;
@@ -376,9 +418,9 @@ header .container .search-cart-login .cart .cart-drop .cd-mid ul {
   color: gray;
 }
 header .container .search-cart-login .cart .cart-drop .cd-mid ul li.when-empty {
+  display: none;
   position: relative;
   top: 50%;
-  display: flex;
   justify-content: center;
   width: 100%;
 }
@@ -452,6 +494,10 @@ header .container .search-cart-login .cart .cart-drop .cd-btm .buttons button:nt
 }
 header .container .search-cart-login .cart .cart-drop .cd-btm .buttons button:nth-child(2):hover {
   background-color: #EB4D50;
+}
+header .container .search-cart-login .cart .cart-drop .cd-btm .buttons button a {
+  text-decoration: none;
+  color: white;
 }
 header .container #product-nav-icon.search-cart-login svg {
   fill: #232323;

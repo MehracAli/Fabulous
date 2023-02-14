@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section#login-page{
+    margin-bottom: 30px;
+    .container{
+        .row{
+            .login{
+                display: flex;
+                justify-content: space-between;
+                .new-customer{
+                    padding: 15px;
+                    width: 49%;                   
+                    border: solid 0.5px rgb(230, 230, 230);
+                    border-radius: 5px;
+                    line-height: 22px;
+                    h5{
+                        font-size: 16px;
+                        font-weight: 600;
+                        margin-bottom: 15px;
+                        color: #333;
+                    }
+                    h6{
+                        font-size: 14px;
+                        margin-bottom: 15px;
+                        color: #333;
+                    }
+                    p{
+                        font-size: 13px;
+                        margin-bottom: 15px;
+                        letter-spacing: 0.5px;
+                        color: #333;
+                    }
+                    button{
+                        border: none;
+                        background-color: #232323;
+                        padding: 8px 20px;
+                        transition: 0.5s;
+                        a{
+                            color: white;
+                            text-decoration: none;
+                            font-weight: 400;
+                            font-size: 14px;
+                        }
+                        &:hover{
+                            background-color: #eb4d4b;
+                        }
+                    }
+                }
+                .returning-customer{
+                    padding: 15px;
+                    width: 49%;
+                    border: solid 0.5px rgb(230, 230, 230);
+                }
+            }
+        }
+    }
+}

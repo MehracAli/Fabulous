@@ -22,6 +22,54 @@ div#mini-head{
             .burger-search{
                 display: flex;
                 justify-content: flex-start;
+                .open-nav{
+                    position: absolute;
+                    top:0;
+                    left: 0;
+                    border-right: solid 1px rgb(240, 240, 240);
+                    background-color: white;
+                    height: 100vh;
+                    width: 80%;
+                    padding: 10px 15px;
+                    .top{
+                        width: 100%;
+                        display: flex;
+                        justify-content: flex-end;
+                        margin-bottom: 10px;
+                        svg{
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                    .bottom{
+                        .steps{
+                            .step-item{ 
+                                border-bottom: solid  1px rgb(240, 240, 240);
+                            }
+                            .sect{
+                                display: flex;
+                                justify-content: space-between;
+                                padding: 10px 0;
+                            }
+                            .sect-down{
+                                padding-left: 15px;
+                                border: none;
+                                padding-bottom: 15px;
+                                .nav-accordion{
+                                    a{
+                                        text-decoration: none;
+                                        color:#232323;
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+                        .nav-item{
+                            padding: 10px 0;
+                            border-bottom: solid  1px rgb(240, 240, 240);
+                        }
+                    }
+                }
                 .nav-icon{
                     width: 40px;
                     height: 40px;
@@ -384,9 +432,9 @@ header{
                             margin: 0;
                             color: gray;
                             li.when-empty{
+                                display: none;
                                 position: relative;
                                 top: 50%;
-                                display: flex;
                                 justify-content: center;
                                 width: 100%;
                             }
@@ -460,6 +508,10 @@ header{
                                     &:hover{
                                         background-color: #EB4D50;
                                     }
+                                }
+                                a{
+                                    text-decoration: none;
+                                    color: white;
                                 }
                             }
                         }
