@@ -1,6 +1,6 @@
 let buttons = document.querySelectorAll(".prdct .to-cart");
-let basketList = document.querySelector(".basket-list");
-
+let basketList = document.querySelector("header .cd-mid .basket-list");
+let cartBasketList
 document.addEventListener("DOMContentLoaded", function () {
   let basketStr = localStorage.getItem("basket");
   let basket = JSON.parse(basketStr);
@@ -8,13 +8,23 @@ document.addEventListener("DOMContentLoaded", function () {
   if (!basket || !basket.length) {
     localStorage.setItem("basket", JSON.stringify([]));
   }
+  else{
+    basket.forEach(product => {
+      BasketList(product)
+    })
+    TotalPrice(basket)
+    EcoTax(basket)
+    ProductCount(basket)
+  }
 
-  buttons.forEach((button) => {
+});
+
+buttons.forEach((button) => {
     button.addEventListener("click", function () {
       let product = GetProductDatas(this);
       let basketStr = localStorage.getItem("basket");
       let basket = JSON.parse(basketStr);
-      
+      basketList.querySelector(".when-empty").style.opacity = "0"
       if (!basket) {
         localStorage.setItem("basket", JSON.stringify([]));
         basketStr = localStorage.getItem("basket");
@@ -28,23 +38,18 @@ document.addEventListener("DOMContentLoaded", function () {
       if(!existedProduct){
           basket.push(product);
           BasketList(product)
-      }
-      else{
+      }else{
             existedProduct.count++;
       }
-  
-      basketStr = JSON.stringify(basket);
-      localStorage.setItem("basket", basketStr);
+      
       ProductCount(basket)
-      let totalPrice = TotalPrice(basket)
-      let ecoTax = EcoTax(basket)
-      let vat = VAT(totalPrice, ecoTax)
-      SubTotal(totalPrice, vat)
+      TotalPrice(basket)
+      EcoTax(basket)
+
       basketStr = JSON.stringify(basket);
       localStorage.setItem("basket", basketStr);
     });
   });
-});
 
 function GetProductDatas(button) {
   let parent = button.parentElement.parentElement;
@@ -58,7 +63,7 @@ function GetProductDatas(button) {
 
 function BasketList(product) {
   const productHtml = `
-  <li class="text" id="parent">
+  <li class="text" data-id="${product.id}">
     <div class="image">
       <img src="${product.src}"></img>
     </div>
@@ -67,12 +72,40 @@ function BasketList(product) {
       <span class="drop-price" style="color: #232323;font-size: 16px;">$${product.price}</span>
     </div>
     <div class="delete">
-    <i class="bi bi-trash3"></i>
+    <i class="bi bi-trash3" id = "${product.count}"></i>
     </div>
   </li>
 `;
   basketList.innerHTML += productHtml;
-  basketList.querySelector(".when-empty").remove()
+  let trash = basketList.querySelectorAll(".delete i")
+  console.log(trash);
+  trash.forEach(Element => {
+    Element.addEventListener("click", function () {
+
+      let basket = JSON.parse(localStorage.getItem("basket"));
+  
+      if (!basket) {
+        localStorage.setItem("basket", JSON.stringify([]));
+        basket = JSON.parse(localStorage.getItem("basket"));
+      }
+      console.log(this);
+      let id = this.parentElement.parentElement.getAttribute("data-id");
+      console.log(id);
+      let index = basket.findIndex((element) => {
+        return element.id == id;
+      });
+      console.log(index);
+  
+      delete basket[index];
+      basket = basket.filter(Object);
+      ProductCount(basket);
+      TotalPrice(basket);
+      let basketStr = JSON.stringify(basket);
+      localStorage.setItem("basket", basketStr);
+      this.parentElement.parentElement.remove();
+    });
+  })
+  
 }
 
 
