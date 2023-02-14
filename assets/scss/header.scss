@@ -370,16 +370,50 @@ header{
                         border-bottom:solid 0.5px rgb(240, 240, 240);
                     }
                     .cd-mid{
+                        overflow-x: hidden;
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         height: 60%;
                         width: 100%;
                         ul{
+                            width: 100%;
+                            height: 100%;
                             list-style: none;
                             padding: 0;
                             margin: 0;
                             color: gray;
+                            li.when-empty{
+                                position: relative;
+                                top: 50%;
+                                display: flex;
+                                justify-content: center;
+                                width: 100%;
+                            }
+                            li.text{
+                                padding: 15px 0 75px;
+                                display: flex;
+                                justify-content: space-between;
+                                width: 100%;
+                                border-bottom:solid 0.5px rgb(240, 240, 240);
+                                .image{
+                                    width: 30%;
+                                    img{
+                                        width: 100px; 
+                                        height: 100px;
+                                    }
+                                }
+
+                                .delete{
+                                    width: 20%;
+                                    display: flex;
+                                    justify-content: flex-end;
+                                    align-items: center;
+                                    i{
+                                        font-size: 15px;
+                                    }
+                                }
+                            }
                         }
                     }
                     .cd-btm{
