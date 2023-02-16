@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+section#cart {
+  margin-bottom: 30px;
+}
 section#cart .container {
   max-width: 1200px;
   width: 100%;
@@ -109,4 +112,196 @@ section#cart .container .cart-table tbody tr td:nth-child(4) button:nth-child(3)
 }
 section#cart .container .cart-table tbody tr td:nth-child(4) button:nth-child(3):hover {
   background-color: #c12f2d;
+}
+section#cart .container .to-do-next {
+  display: none;
+  margin-bottom: 40px;
+}
+section#cart .container .to-do-next h6 {
+  font-weight: 500;
+  font-size: 18px;
+}
+section#cart .container .to-do-next p {
+  color: #888;
+  font-size: 14px;
+  font-weight: 400;
+}
+section#cart .container .to-do-next .accordion-total {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+section#cart .container .to-do-next .accordion-total .accordion {
+  width: 62%;
+}
+section#cart .container .to-do-next .accordion-total .accordion .step-item {
+  margin-bottom: 5px;
+}
+section#cart .container .to-do-next .accordion-total .accordion .step-item .step-top {
+  cursor: pointer;
+  background-color: whitesmoke;
+  border: solid 0.5px #e9e9e9;
+  padding: 10px 15px;
+  font-weight: 500;
+  font-size: 14px;
+}
+section#cart .container .to-do-next .accordion-total .accordion .step-item .step-bottom {
+  display: none;
+  border: solid 0.5px #e9e9e9;
+  border-top: none;
+  padding: 15px;
+}
+section#cart .container .to-do-next .accordion-total .accordion .step-item .step-bottom p {
+  font-weight: 400;
+  color: #232323;
+  font-size: 14px;
+  margin: 0 0 5px;
+}
+section#cart .container .to-do-next .accordion-total .accordion #step-1 .step-bottom .apply {
+  display: flex;
+}
+section#cart .container .to-do-next .accordion-total .accordion #step-1 .step-bottom .apply input {
+  width: 83%;
+  height: 34px;
+  padding: 6px 12px;
+  border-radius: 0px;
+  outline: none;
+  border: 1px solid #e9e9e9;
+}
+section#cart .container .to-do-next .accordion-total .accordion #step-1 .step-bottom .apply input::-moz-placeholder {
+  font-size: 12px;
+  color: #9c9b9b;
+}
+section#cart .container .to-do-next .accordion-total .accordion #step-1 .step-bottom .apply input::placeholder {
+  font-size: 12px;
+  color: #9c9b9b;
+}
+section#cart .container .to-do-next .accordion-total .accordion #step-1 .step-bottom .apply button {
+  border: 1px solid #232323;
+  line-height: 16px;
+  font-size: 12px;
+  padding: 8px 14px;
+  background-color: #232323;
+  color: white;
+}
+section#cart .container .to-do-next .accordion-total .accordion #step-2 .step-bottom .get-quotes div {
+  margin-bottom: 20px;
+}
+section#cart .container .to-do-next .accordion-total .accordion #step-2 .step-bottom .get-quotes div label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  width: 100%;
+  padding: 0;
+  color: #232323;
+  text-align: left;
+}
+section#cart .container .to-do-next .accordion-total .accordion #step-2 .step-bottom .get-quotes div select {
+  width: 100%;
+  border-radius: 0px;
+  border: solid 0.5px #e9e9e9;
+  color: #888;
+  height: 35px;
+  padding: 0 5px;
+  font-size: 12px;
+  outline: none;
+}
+section#cart .container .to-do-next .accordion-total .accordion #step-2 .step-bottom .get-quotes div input {
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  border-radius: 0px;
+  outline: none;
+  border: 1px solid #e9e9e9;
+}
+section#cart .container .to-do-next .accordion-total .accordion #step-2 .step-bottom .get-quotes div input::-moz-placeholder {
+  font-size: 12px;
+  color: #9c9b9b;
+}
+section#cart .container .to-do-next .accordion-total .accordion #step-2 .step-bottom .get-quotes div input::placeholder {
+  font-size: 12px;
+  color: #9c9b9b;
+}
+section#cart .container .to-do-next .accordion-total .accordion #step-2 .step-bottom .get-quotes button {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 20px;
+  border: none;
+  background-color: #232323;
+  color: white;
+}
+section#cart .container .to-do-next .accordion-total .accordion #step-3 .step-bottom .apply {
+  display: flex;
+}
+section#cart .container .to-do-next .accordion-total .accordion #step-3 .step-bottom .apply input {
+  width: 78%;
+  height: 34px;
+  padding: 6px 12px;
+  border-radius: 0px;
+  outline: none;
+  border: 1px solid #e9e9e9;
+}
+section#cart .container .to-do-next .accordion-total .accordion #step-3 .step-bottom .apply input::-moz-placeholder {
+  font-size: 12px;
+  color: #9c9b9b;
+}
+section#cart .container .to-do-next .accordion-total .accordion #step-3 .step-bottom .apply input::placeholder {
+  font-size: 12px;
+  color: #9c9b9b;
+}
+section#cart .container .to-do-next .accordion-total .accordion #step-3 .step-bottom .apply button {
+  border: 1px solid #232323;
+  line-height: 16px;
+  font-size: 12px;
+  padding: 8px 14px;
+  background-color: #232323;
+  color: white;
+}
+section#cart .container .to-do-next .accordion-total .total {
+  width: 35%;
+  height: -moz-max-content;
+  height: max-content;
+  border: solid 0.5px #e9e9e9;
+}
+section#cart .container .to-do-next .accordion-total .total table {
+  width: 100%;
+}
+section#cart .container .to-do-next .accordion-total .total table tr {
+  border: solid 0.5px #e9e9e9;
+}
+section#cart .container .to-do-next .accordion-total .total table tr td {
+  font-weight: 500;
+  font-size: 15px;
+  border: solid 0.5px #e9e9e9;
+  padding: 10px;
+  text-align: right;
+}
+section#cart .container .to-do-next .accordion-total .total table tr td:first-child {
+  width: 60%;
+}
+section#cart .container .to-do-next .accordion-total .total table tr td:nth-child(2) {
+  color: #333;
+  font-weight: 400;
+  font-size: 13px;
+}
+section#cart .container .to-do-next .buttons {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+section#cart .container .to-do-next .buttons button {
+  border: none;
+  padding: 10px 20px;
+  background-color: #eb4d4b;
+  color: white;
+  transition: 0.5s;
+}
+section#cart .container .to-do-next .buttons button:hover {
+  background-color: #232323;
+}
+section#cart .container .to-do-next .buttons button:nth-child(2) {
+  background-color: #232323;
+}
+section#cart .container .to-do-next .buttons button:nth-child(2):hover {
+  background-color: #eb4d4b;
 }/*# sourceMappingURL=cartStyle.css.map */

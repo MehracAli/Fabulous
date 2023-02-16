@@ -15,13 +15,13 @@ $(document).ready(function () {
 
   $("#slider").on("mouseenter", function () {
     let next = $(".owl-carousel .owl-nav button.owl-next span");
-    let nec = next[0];
-    nec.innerText = ">";
+    let nex = next[0];
+    nex.innerText = ">";
   });
   $("#slider").on("mouseenter", function () {
     let next = $(".owl-carousel .owl-nav button.owl-prev span");
-    let nec = next[0];
-    nec.innerText = "<";
+    let nex = next[0];
+    nex.innerText = "<";
   });
   // service
   $(".service").on("mouseenter", function () {
@@ -58,7 +58,8 @@ $(document).ready(function () {
   $("#latest .owl-carousel").owlCarousel({
     loop: false,
     margin: 10,
-    nav: false,
+    nav: true,
+    dots:false,
     responsive: {
       0: {
         items: 1,
@@ -72,8 +73,8 @@ $(document).ready(function () {
     },
   });
 
-  $(".prdct").on("mouseenter", function(){
-    let button = $(this).find("button")
+  $(".prdct").on("mouseenter", function(){console.log("ok");
+    let button = $(this).find("button.to-cart")
     button.slideDown()
   })
   $(".prdct").on("mouseleave", function(){

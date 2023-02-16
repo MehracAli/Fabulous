@@ -7,13 +7,128 @@
 section#login-page {
   margin-bottom: 30px;
 }
+section#login-page .container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 25px;
+}
+section#login-page .container .row {
+  padding: 0;
+}
+section#login-page .container .row .left-bar {
+  width: 23%;
+  padding: 0;
+}
+section#login-page .container .row .left-bar .categories {
+  border: solid 0.5px rgb(230, 230, 230);
+  margin-bottom: 30px;
+}
+section#login-page .container .row .left-bar .categories .head {
+  padding: 15px;
+  background-color: whitesmoke;
+}
+section#login-page .container .row .left-bar .categories .head h5 {
+  margin: 0;
+  color: #222;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 400;
+}
+section#login-page .container .row .left-bar .categories .body {
+  padding: 0 15px;
+}
+section#login-page .container .row .left-bar .categories .body ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+section#login-page .container .row .left-bar .categories .body ul li {
+  line-height: 35px;
+  font-size: 14px;
+}
+section#login-page .container .row .left-bar .bestsellers {
+  border: solid 0.5px rgb(230, 230, 230);
+  margin-bottom: 30px;
+}
+section#login-page .container .row .left-bar .bestsellers .head {
+  padding: 15px;
+  background-color: whitesmoke;
+}
+section#login-page .container .row .left-bar .bestsellers .head h5 {
+  margin: 0;
+  color: #222;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 400;
+}
+section#login-page .container .row .left-bar .bestsellers .body {
+  padding: 15px;
+}
+section#login-page .container .row .left-bar .bestsellers .body .products {
+  display: flex;
+  margin-bottom: 15px;
+}
+section#login-page .container .row .left-bar .bestsellers .body .products .product-detail {
+  margin-left: 10px;
+}
+section#login-page .container .row .left-bar .bestsellers .body .products .product-detail h6 {
+  font-size: 15px;
+  font-weight: 400;
+}
+section#login-page .container .row .left-bar .bestsellers .body .products .product-detail span {
+  color: #EB4D50;
+  font-size: 14px;
+  font-weight: 500;
+}
+section#login-page .container .row .left-bar .latest-products {
+  border: solid 0.5px rgb(230, 230, 230);
+  margin-bottom: 30px;
+}
+section#login-page .container .row .left-bar .latest-products .head {
+  padding: 15px;
+  background-color: whitesmoke;
+}
+section#login-page .container .row .left-bar .latest-products .head h5 {
+  margin: 0;
+  color: #222;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 400;
+}
+section#login-page .container .row .left-bar .latest-products .body {
+  padding: 15px;
+}
+section#login-page .container .row .left-bar .latest-products .body .products {
+  display: flex;
+  margin-bottom: 15px;
+}
+section#login-page .container .row .left-bar .latest-products .body .products .product-detail {
+  margin-left: 10px;
+}
+section#login-page .container .row .left-bar .latest-products .body .products .product-detail h6 {
+  font-size: 15px;
+  font-weight: 400;
+}
+section#login-page .container .row .left-bar .latest-products .body .products .product-detail span {
+  color: #EB4D50;
+  font-size: 14px;
+  font-weight: 500;
+}
+section#login-page .container .row .left-bar .latest-products .body .products .product-detail .discount {
+  text-decoration: line-through;
+  color: #888;
+}
 section#login-page .container .row .login {
+  margin-left: 20px;
+  width: 75%;
   display: flex;
   justify-content: space-between;
 }
 section#login-page .container .row .login .new-customer {
-  padding: 15px;
-  width: 49%;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 20px 15px;
+  width: 48%;
   border: solid 0.5px rgb(230, 230, 230);
   border-radius: 5px;
   line-height: 22px;
@@ -28,6 +143,7 @@ section#login-page .container .row .login .new-customer h6 {
   font-size: 14px;
   margin-bottom: 15px;
   color: #333;
+  letter-spacing: 0.5px;
 }
 section#login-page .container .row .login .new-customer p {
   font-size: 13px;
@@ -51,7 +167,70 @@ section#login-page .container .row .login .new-customer button:hover {
   background-color: #eb4d4b;
 }
 section#login-page .container .row .login .returning-customer {
-  padding: 15px;
-  width: 49%;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 20px 15px;
+  width: 48%;
   border: solid 0.5px rgb(230, 230, 230);
+}
+section#login-page .container .row .login .returning-customer h5 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
+}
+section#login-page .container .row .login .returning-customer h6 {
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #333;
+  letter-spacing: 0.5px;
+}
+section#login-page .container .row .login .returning-customer form div {
+  margin-bottom: 15px;
+}
+section#login-page .container .row .login .returning-customer form div label {
+  font-size: 14px;
+  font-weight: 400;
+  color: #232323;
+}
+section#login-page .container .row .login .returning-customer form div input {
+  width: 100%;
+  border: solid 0.5px rgb(230, 230, 230);
+  outline: none;
+  padding: 5px 10px;
+}
+section#login-page .container .row .login .returning-customer form div input::-moz-placeholder {
+  font-size: 12px;
+  color: #888;
+}
+section#login-page .container .row .login .returning-customer form div input::placeholder {
+  font-size: 12px;
+  color: #888;
+}
+section#login-page .container .row .login .returning-customer form a {
+  margin-bottom: 15px;
+  display: block;
+  text-decoration: none;
+  color: #222;
+  font-size: 14px;
+  font-weight: 400;
+}
+section#login-page .container .row .login .returning-customer form a:hover {
+  color: #eb4d4b;
+}
+section#login-page .container .row .login .returning-customer form button {
+  border: none;
+  background-color: #232323;
+  padding: 8px 20px;
+  transition: 0.5s;
+}
+section#login-page .container .row .login .returning-customer form button a {
+  margin: 0;
+  color: white !important;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+}
+section#login-page .container .row .login .returning-customer form button:hover {
+  background-color: #eb4d4b;
 }/*# sourceMappingURL=loginStyle.css.map */

@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
   } else {
     basket.forEach((product) => {
       BasketList(product);
-      CartBasketList(product)
     });
     TotalPrice(basket);
     EcoTax(basket);
@@ -64,28 +63,28 @@ function GetProductDatas(button) {
   return product;
 }
 
-function CartBasketList(product) {
-  document.querySelector(".cart-table").style.display = "table"
-  const productHtml = `
-    <tr data-id="${product.id}">
-      <td><img style="width:102px;" src="${product.src}" alt=""></td>
-      <td>${product.title}</td>
-      <td><span>Product </span>${product.id}</td>
-      <td>
-        <input type="text">
-        <button>
-          <i class="fa fa-refresh"></i>
-        </button>
-        <button>
-          <i class="fa fa-times-circle"></i>
-        </button>
-      </td>
-      <td>${product.price}<span>$</span></td>
-      <td>Total</td>
-    </tr>
-  `;
-  cartBasketList.innerHTML += productHtml;
-}
+// function CartBasketList(product) {
+//   document.querySelector(".cart-table").style.display = "table"
+//   const productHtml = `
+//     <tr data-id="${product.id}">
+//       <td><img style="width:102px;" src="${product.src}" alt=""></td>
+//       <td>${product.title}</td>
+//       <td><span>Product </span>${product.id}</td>
+//       <td>
+//         <input type="text">
+//         <button>
+//           <i class="fa fa-refresh"></i>
+//         </button>
+//         <button>
+//           <i class="fa fa-times-circle"></i>
+//         </button>
+//       </td>
+//       <td>${product.price}<span>$</span></td>
+//       <td>Total</td>
+//     </tr>
+//   `;
+//   cartBasketList.innerHTML += productHtml;
+// }
 
 function BasketList(product) {
   const productHtml = `

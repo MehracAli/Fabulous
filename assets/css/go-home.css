@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section#go-home {
+  background-image: url(/assets/images/products/breadcrumb.png);
+  background-attachment: fixed;
+  background-size: 160%;
+  background-position: -350px -50px;
+  display: flex;
+  justify-content: center;
+  padding: 65px 15px;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+section#go-home a {
+  text-decoration: none;
+  color: #232323;
+}
+section#go-home a i {
+  font-size: 12px;
+}
+section#go-home a i:hover {
+  color: #eb4d4b;
+}
+section#go-home a:hover {
+  color: #eb4d4b;
+}/*# sourceMappingURL=go-home.css.map */

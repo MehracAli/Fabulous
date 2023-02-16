@@ -4,32 +4,6 @@
   box-sizing: border-box;
 }
 
-section#go-home {
-  background-image: url(/assets/images/products/breadcrumb.png);
-  background-attachment: fixed;
-  background-size: 160%;
-  background-position: -350px -50px;
-  display: flex;
-  justify-content: center;
-  padding: 65px 15px;
-  font-size: 15px;
-  font-weight: 400;
-  margin-bottom: 30px;
-}
-section#go-home a {
-  text-decoration: none;
-  color: #232323;
-}
-section#go-home a i {
-  font-size: 12px;
-}
-section#go-home a i:hover {
-  color: #eb4d4b;
-}
-section#go-home a:hover {
-  color: #eb4d4b;
-}
-
 section#product-detail {
   display: flex;
 }
@@ -56,12 +30,36 @@ section#product-detail .container .row .photos .big-photo img {
 }
 section#product-detail .container .row .photos .mini-photo-description {
   padding: 0 10px;
+  position: relative;
 }
 section#product-detail .container .row .photos .mini-photo-description .mini-photos {
   margin-bottom: 20px;
 }
 section#product-detail .container .row .photos .mini-photo-description .mini-photos .item {
   border: solid 0.5px rgb(230, 230, 230);
+}
+section#product-detail .container .row .photos .mini-photo-description .owl-carousel .owl-nav button {
+  color: white;
+  background-color: #eb4d4b;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  opacity: 1;
+  margin-top: 20px;
+  transition: 0.5s;
+}
+section#product-detail .container .row .photos .mini-photo-description .owl-carousel .owl-nav button:hover {
+  background-color: #232323;
+}
+section#product-detail .container .row .photos .mini-photo-description .owl-carousel .owl-nav button:first-child {
+  position: absolute;
+  left: -20px;
+  top: 40px;
+}
+section#product-detail .container .row .photos .mini-photo-description .owl-carousel .owl-nav button:nth-child(2) {
+  position: absolute;
+  right: -20px;
+  top: 40px;
 }
 section#product-detail .container .row .photos .mini-photo-description .description-reviews .step-item {
   padding: 20px 10px;
@@ -88,6 +86,9 @@ section#product-detail .container .row .photos .mini-photo-description .descript
 }
 section#product-detail .container .row .photos .mini-photo-description .description-reviews .step-item .sect .active-i {
   transform: rotateZ(180deg);
+}
+section#product-detail .container .row .photos .mini-photo-description .description-reviews .step-item .sect-down {
+  padding: 20px 0 0;
 }
 section#product-detail .container .row .photos .mini-photo-description .description-reviews .step-item .sect-down p {
   font-size: 14px;

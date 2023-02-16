@@ -52,6 +52,7 @@ div#mini-head .container .row .burger-search .open-nav .bottom .steps .sect {
   padding: 10px 0;
 }
 div#mini-head .container .row .burger-search .open-nav .bottom .steps .sect-down {
+  display: none;
   padding-left: 15px;
   border: none;
   padding-bottom: 15px;
@@ -184,10 +185,10 @@ header .container .nav-bar {
 header .container .nav-bar nav {
   justify-content: center;
 }
-header .container .nav-bar nav #product-page-nav li a {
+header .container .nav-bar nav #other-page-nav li a {
   color: #232323;
 }
-header .container .nav-bar nav #product-page-nav li a:hover {
+header .container .nav-bar nav #other-page-nav li a:hover {
   color: #EB4D50;
 }
 header .container .nav-bar nav ul {
@@ -249,7 +250,7 @@ header .container .nav-bar nav ul li .drop-down .drop-list ul li {
 }
 header .container .nav-bar nav ul li .drop-down .drop-list ul li a {
   font-size: 14px;
-  color: gray;
+  color: gray !important;
   padding: 0px;
 }
 header .container .nav-bar nav ul li .drop-down .drop-list ul li a:hover {
@@ -499,12 +500,12 @@ header .container .search-cart-login .cart .cart-drop .cd-btm .buttons button a 
   text-decoration: none;
   color: white;
 }
-header .container #product-nav-icon.search-cart-login svg {
+header .container #other-nav-icon.search-cart-login svg {
   fill: #232323;
   transition: 0.5s;
   cursor: pointer;
 }
-header .container #product-nav-icon.search-cart-login svg:hover {
+header .container #other-nav-icon.search-cart-login svg:hover {
   fill: #EB4D50;
 }
 

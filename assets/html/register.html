@@ -14,9 +14,9 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/assets/fontawesome/css/all.css" />
-    <link rel="stylesheet" href="/assets/fontawesome/css/fontawesome.css" />
-    <link rel="stylesheet" href="/assets/fontawesome/css/solid.css" />
+    <link rel="stylesheet" href="../fontawesome/css/all.css" />
+    <link rel="stylesheet" href="../fontawesome/css/fontawesome.css" />
+    <link rel="stylesheet" href="../fontawesome/css/solid.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
@@ -27,16 +27,13 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/assets/css/owl.carousel.css" />
-    <link rel="stylesheet" href="/assets/css/owl.theme.default.css" />
-    <link rel="stylesheet" href="/assets/css/slick.css" />
-    <link rel="stylesheet" href="/assets/css/productStyle.css" />
-    <link rel="stylesheet" href="/assets/css/header.css" />
-    <link rel="stylesheet" href="/assets/css/footer.css" />
-    <link rel="stylesheet" href="/assets/css/slide.css" />
-    <link rel="stylesheet" href="/assets/css/productStyle.css">
-    <link rel="icon" href="/assets/images/cart.png" />
+    <link rel="stylesheet" href="../css/owl.carousel.css" />
+    <link rel="stylesheet" href="../css/owl.theme.default.css" />
+    <link rel="stylesheet" href="../css/go-home.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/registerStyle.css">
+    <link rel="icon" href="../images/cart.png" />
     <title>Register Account</title>
   </head>
 </html>
@@ -52,7 +49,7 @@
           </div>
           <div class="nav-bar col-lg-7 col-md-7 col-sm-12 d-flex col-md-">
             <nav class="d-flex">
-              <ul id="product-page-nav" class="d-flex">
+              <ul id="other-page-nav" class="d-flex">
                 <li class="drone">
                   <a href="">Drone</a>
                   <div class="drop-down drone-drop row" style="display: none">
@@ -138,7 +135,7 @@
               </ul>
             </nav>
           </div>
-          <div id="product-nav-icon" class="search-cart-login col-lg-2 d-flex">
+          <div id="other-nav-icon" class="search-cart-login col-lg-2 d-flex">
             <div class="search">
               <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
                 <symbol id="magnifying-desktop" viewBox="0 0 1200 1200">
@@ -182,8 +179,8 @@
               </svg>
               <div class="login-drop" style="display: none">
                 <ul style="list-style: none">
-                  <li><a href="" style="text-decoration: none">Register</a></li>
-                  <li><a href="" style="text-decoration: none">Login</a></li>
+                  <li><a href="./register.html" style="text-decoration: none">Register</a></li>
+                  <li><a href="./login.html" style="text-decoration: none">Login</a></li>
                   <li>
                     <a href="" style="text-decoration: none">Wish List(0)</a>
                   </li>
@@ -243,47 +240,32 @@
                 <sup>0</sup>
               </div>
               <div class="cart-drop">
-                <div
-                  class="cd-top d-flex justify-content-between align-items-center"
-                >
-                  <span style="font-size: 14px">CART</span>
-                  <div
-                    class="svg d-flex align-items-center justify-content-end"
-                  >
-                    <svg
-                      width="20px"
-                      height="20px"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"
-                        fill="gray"
-                      />
-                    </svg>
+                <div class="cd-top d-flex justify-content-between align-items-center">
+                  <span style="font-size: 14px;">CART</span>
+                  <div class="svg d-flex align-items-center justify-content-end">
+                    <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" fill="gray"/>
+                      </svg>
                   </div>
                 </div>
                 <div class="cd-mid">
-                  <ul>
-                    <li>Your shopping cart is empty</li>
+                  <ul class="basket-list">
+                    <li class="when-empty">Your shopping cart is empty</li>
                   </ul>
                 </div>
                 <div class="cd-btm">
                   <ul>
                     <li>
-                      <span>Sub-Total</span><span>0<span>$</span></span>
+                      <span>Sub-Total</span><span class="sub-total">0<span>$</span></span>
                     </li>
                     <li>
-                      <span>Eco Tax (-2.00)</span><span>0<span>$</span></span>
+                      <span>Eco Tax (-2.00)</span><span class="eco-tax">0<span>$</span></span>
                     </li>
                     <li>
-                      <span>VAT (20%)</span><span>0<span>$</span></span>
+                      <span>VAT (20%)</span><span class="vat">0<span>$</span></span>
                     </li>
                     <li>
-                      <span>Total</span><span>0<span>$</span></span>
+                      <span>Total</span><span class="total">0<span>$</span></span>
                     </li>
                   </ul>
                   <div class="buttons">
@@ -317,7 +299,152 @@
             </a>
           </div>
         </div>
-      </section>
+    </section>
+    <section id="register">
+        <div class="container">
+          <div class="row">
+            <div class="left-bar">
+              <div class="categories">
+                <div class="head">
+                  <h5>CATEGORIES</h5>
+                </div>
+                <div class="body">
+                  <ul>
+                    <li>Drone (15)</li>
+                    <li>Accesories (12)</li>
+                    <li>Collection (3)</li>
+                    <li>Components (3)</li>
+                    <li>Outfits (3)</li>
+                    <li>Brands (3)</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="bestsellers">
+                <div class="head">
+                  <h5>CATEGORIES</h5>
+                </div>
+                <div class="body">
+                  <div class="products">
+                    <img src="/assets/images/category/11-85x85.jpg" alt="">
+                    <div class="product-detail">
+                      <h6>iPod Nano</h6>
+                      <span>$122.00</span>
+                    </div>
+                    </div>
+                  <div class="products">
+                    <img src="/assets/images/category/12-85x85.jpg" alt="">
+                    <div class="product-detail">
+                      <h6>iPod Shuffle</h6>
+                      <span>$122.00</span>
+                    </div>
+                  </div>
+                  <div class="products">
+                    <img src="/assets/images/category/16-85x85.jpg" alt="">
+                    <div class="product-detail">
+                      <h6>HTC Touch HD</h6>
+                      <span>$122.00</span>
+                    </div>
+                  </div>
+                  <div class="products">
+                    <img src="/assets/images/category/17-85x85.jpg" alt="">
+                    <div class="product-detail">
+                      <h6>HP LP3065</h6>
+                      <span>$122.00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="latest-products">
+                <div class="head">
+                  <h5>LATEST PRODUCTS</h5>
+                </div>
+                <div class="body">
+                  <div class="products">
+                    <img src="/assets/images/category/11-85x85.jpg" alt="">
+                    <div class="product-detail">
+                      <h6>iPod Nano</h6>
+                      <span>$20.00</span>
+                      <span class="discount">241.99</span>
+                    </div>
+                    </div>
+                  <div class="products">
+                    <img src="/assets/images/category/12-85x85.jpg" alt="">
+                    <div class="product-detail">
+                      <h6>iPod Shuffle</h6>
+                      <span>$38.00</span>
+                      <span class="discount">241.99</span>
+                    </div>
+                  </div>
+                  <div class="products">
+                    <img src="/assets/images/category/16-85x85.jpg" alt="">
+                    <div class="product-detail">
+                      <h6>HTC Touch HD</h6>
+                      <span>$122.00</span>
+                    </div>
+                  </div>
+                  <div class="products">
+                    <img src="/assets/images/category/17-85x85.jpg" alt="">
+                    <div class="product-detail">
+                      <h6>HP LP3065</h6>
+                      <span>$122.00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="registration">
+              <p>If you already have an account with us, please login at the <a href="../html/login.html">login page</a>.</p>
+              <form action="">
+                <div class="personal-details">
+                  <h4>Your Personal Details</h4>
+                  <div class="firstname">
+                    <label for="">First Name</label>
+                    <input type="text" placeholder="First Name">
+                  </div>
+                  <div class="lastname">
+                    <label for="">Last Name</label>
+                    <input type="text" placeholder="Las Name">
+                  </div>
+                  <div class="e-mail">
+                    <label for="">E-Mail</label>
+                    <input type="email" placeholder="E-Mail">
+                  </div>
+                  <div class="telephone">
+                    <label for="">Telephone</label>
+                    <input type="tel" placeholder="Telephone">
+                  </div>
+                </div>
+                <div class="your-password">
+                  <h4>Your Password</h4>
+                  <div class="password">
+                    <label for="">Password</label>
+                    <input type="password" placeholder="Password">
+                  </div>
+                  <div class="password-confirm">
+                    <label for="">Password Confirm</label>
+                    <input type="password" placeholder="Password Confirm">
+                  </div>
+                </div>
+                <div class="news-letter">
+                  <h4>Newsletter</h4>
+                  <div class="subscribe">
+                    <label for="">Subscribe</label>
+                    <div>
+                      <input type="radio">Yes
+                      <input type="radio">No
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <div class="privacy-policy">
+                <p>I have read and agree to the <a href="">Privacy Policy</a></p>
+                <input type="checkbox">
+                <button>CONTUNIE</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
     <footer>
         <div class="footer-top">
           <div class="container">
@@ -653,9 +780,8 @@
         <a class="go-top" href="" target="_top"
           ><i class="fa-solid fa-chevron-up"></i
         ></a>
-      </footer>
+    </footer>
 <!-- js -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
@@ -666,10 +792,9 @@
       integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
       crossorigin="anonymous"
     ></script>
-    <script src="/assets/js/owl.carousel.js"></script>
-    <script src="/assets/js/slick.js"></script>
-    <script src="/assets/js/header.js"></script>
-    <script src="/assets/js/footer.js"></script>
-    <script src="/assets/js/product.js"></script>
-    <script src="/assets/js/sm-header.js"></script>
+    <script src="../js/slick.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/footer.js"></script>
+    <script src="../js/sm-header.js"></script>
+    <script src="../js/basket.js"></script>
 </body>

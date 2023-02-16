@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section#go-home{
+    background-image: url(/assets/images/products/breadcrumb.png);
+    background-attachment: fixed;
+    background-size: calc(160%);
+    background-position: -350px -50px;
+    display: flex;
+    justify-content: center;
+    padding: 65px 15px;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    a{
+        text-decoration: none;
+        color: #232323;
+        i{
+            font-size: 12px;
+            &:hover{
+                color: #eb4d4b;
+            }
+        }
+        &:hover{
+            color: #eb4d4b;
+        }
+    }
+}

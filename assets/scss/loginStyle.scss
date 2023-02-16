@@ -7,13 +7,123 @@
 section#login-page{
     margin-bottom: 30px;
     .container{
+        max-width: 1200px;
+        width: 100%;
+        padding: 0 25px;
         .row{
+            padding: 0;
+            .left-bar{
+                width: 23%;
+                padding: 0;
+                .categories{
+                    border: solid 0.5px rgb(230, 230, 230);
+                    margin-bottom: 30px;
+                  .head{
+                    padding: 15px;
+                    background-color: whitesmoke;
+                    h5{
+                      margin: 0;
+                      color: #222;
+                      letter-spacing: 1px;
+                      font-size: 16px;
+                      font-weight: 400;
+                    }
+                  }
+                  .body{
+                    padding: 0 15px;
+                    ul{
+                      list-style: none;
+                      padding: 0;
+                      margin: 0;
+                      li{
+                        line-height: 35px;
+                        font-size: 14px;
+                      }
+                    }
+                  }
+                }
+                .bestsellers{
+                  border: solid 0.5px rgb(230, 230, 230);
+                  margin-bottom: 30px;
+                  .head{
+                    padding: 15px;
+                    background-color: whitesmoke;
+                    h5{
+                      margin: 0;
+                      color: #222;
+                      letter-spacing: 1px;
+                      font-size: 16px;
+                      font-weight: 400;
+                    }
+                  }
+                  .body{
+                    padding: 15px;
+                    .products{
+                      display: flex;
+                      margin-bottom: 15px;
+                      .product-detail{
+                        margin-left: 10px;
+                        h6{
+                          font-size: 15px;
+                          font-weight: 400;
+                        }
+                        span{
+                          color: #EB4D50;
+                          font-size: 14px;
+                          font-weight: 500;
+                        }
+                      }
+                    }
+                  }
+                }
+                .latest-products{
+                  border: solid 0.5px rgb(230, 230, 230);
+                  margin-bottom: 30px;
+                  .head{
+                    padding: 15px;
+                    background-color: whitesmoke;
+                    h5{
+                      margin: 0;
+                      color: #222;
+                      letter-spacing: 1px;
+                      font-size: 16px;
+                      font-weight: 400;
+                    }
+                  }
+                  .body{
+                    padding: 15px;
+                    .products{
+                      display: flex;
+                      margin-bottom: 15px;
+                      .product-detail{
+                        margin-left: 10px;
+                        h6{
+                          font-size: 15px;
+                          font-weight: 400;
+                        }
+                        span{
+                          color: #EB4D50;
+                          font-size: 14px;
+                          font-weight: 500;
+                        }
+                        .discount{
+                          text-decoration:line-through;
+                          color: #888;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
             .login{
+                margin-left: 20px;
+                width: 75%;
                 display: flex;
                 justify-content: space-between;
                 .new-customer{
-                    padding: 15px;
-                    width: 49%;                   
+                    height: max-content;
+                    padding: 20px 15px;
+                    width: 48%;                   
                     border: solid 0.5px rgb(230, 230, 230);
                     border-radius: 5px;
                     line-height: 22px;
@@ -27,6 +137,7 @@ section#login-page{
                         font-size: 14px;
                         margin-bottom: 15px;
                         color: #333;
+                        letter-spacing: 0.5px;
                     }
                     p{
                         font-size: 13px;
@@ -51,9 +162,69 @@ section#login-page{
                     }
                 }
                 .returning-customer{
-                    padding: 15px;
-                    width: 49%;
+                    height: max-content;
+                    padding: 20px 15px;
+                    width: 48%;
                     border: solid 0.5px rgb(230, 230, 230);
+                    h5{
+                        font-size: 16px;
+                        font-weight: 600;
+                        margin-bottom: 15px;
+                        color: #333;
+                    }
+                    h6{
+                        font-size: 14px;
+                        margin-bottom: 15px;
+                        color: #333;
+                        letter-spacing: 0.5px;
+                    }
+                    form{
+                        div{
+                            margin-bottom: 15px;
+                            label{
+                                font-size: 14px;
+                                font-weight: 400;
+                                color: #232323;
+                            }
+                            input{
+                                width: 100%;
+                                border: solid 0.5px rgb(230, 230, 230);
+                                outline: none;
+                                padding: 5px 10px;
+                                &::placeholder{
+                                    font-size: 12px;
+                                    color: #888;
+                                }
+                            }
+                        }
+                        a{
+                            margin-bottom: 15px;
+                            display: block;
+                            text-decoration: none;
+                            color: #222;
+                            font-size: 14px;
+                            font-weight: 400;
+                            &:hover{
+                                color: #eb4d4b;
+                            }
+                        }
+                        button{
+                            border: none;
+                            background-color: #232323;
+                            padding: 8px 20px;
+                            transition: 0.5s;
+                            a{
+                                margin: 0;
+                                color: white!important;
+                                text-decoration: none;
+                                font-weight: 400;
+                                font-size: 14px;
+                            }
+                            &:hover{
+                                background-color: #eb4d4b;
+                            }
+                        }
+                    }
                 }
             }
         }
