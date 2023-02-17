@@ -997,13 +997,39 @@
           </tr>
         `;
         cartBasketList.innerHTML += productHtml;
-        console.log(cartBasketList.innerHTML);
+        let timesCircle = document.querySelectorAll(".fa-times-circle")
+        timesCircle.forEach(Element=>{
+        Element.addEventListener("click", function(){
+            let del = document.querySelector(".delete i")
+            del.click()
+            let basket = JSON.parse(localStorage.getItem("basket"));
+            if (!basket) {
+              localStorage.setItem("basket", JSON.stringify([]));
+              basket = JSON.parse(localStorage.getItem("basket"));
+            }
+            ifCartEmpty()
+            let id = this.parentElement.parentElement.parentElement.getAttribute("data-id");
+            let index = basket.findIndex((element) => {
+             return element.id == id;
+        });
+        
+        delete basket[index];
+        basket = basket.filter(Object);
+        ifEmpty(basket)
+        ProductCount(basket);
+        TotalPrice(basket);
+        let basketStr = JSON.stringify(basket);
+        localStorage.setItem("basket", basketStr);
+        this.parentElement.parentElement.parentElement.remove();
+          })
+        })
       }
       function ifCartEmpty() {
       let basket = JSON.parse(localStorage.getItem("basket"));
        if (!basket.length){
         document.querySelector("section#cart .when-empty").style.display = "flex"
         document.querySelector(".table").style.display = "none"
+        document.querySelector(".to-do-next").style.display = "none"
         }
       }
       ifCartEmpty()

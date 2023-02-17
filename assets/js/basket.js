@@ -89,6 +89,8 @@ function BasketList(product) {
   let trash = document.querySelectorAll(".delete i");
   trash.forEach((Element) => {
     Element.addEventListener("click", function () {
+      let timesCircle = document.querySelector(".fa-times-circle")
+      timesCircle.click()
       let basket = JSON.parse(localStorage.getItem("basket"));
       if (!basket) {
         localStorage.setItem("basket", JSON.stringify([]));
