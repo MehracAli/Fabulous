@@ -227,6 +227,9 @@ div#mini-head{
                                         width: 100px; 
                                         height: 100px;
                                     }
+                                    @media screen and (max-width:391px) {
+                                        margin-right: 25px;
+                                    }
                                 }
 
                                 .delete{
@@ -282,6 +285,9 @@ div#mini-head{
                                 }
                             }
                         }
+                    }
+                    @media screen and (max-width:391px) {
+                        width: 80%;
                     }
                 }
                 .cart{

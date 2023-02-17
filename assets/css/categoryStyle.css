@@ -47,6 +47,11 @@ section#collection .container .row .left-bar .categories .body ul li {
   line-height: 35px;
   font-size: 14px;
 }
+@media screen and (max-width: 391px) {
+  section#collection .container .row .left-bar .categories .body {
+    display: none;
+  }
+}
 section#collection .container .row .left-bar .refine-search {
   border: solid 0.5px rgb(230, 230, 230);
   margin-bottom: 30px;
@@ -96,6 +101,11 @@ section#collection .container .row .left-bar .refine-search .body button {
 section#collection .container .row .left-bar .refine-search .body button:hover {
   background-color: #EB4D50;
 }
+@media screen and (max-width: 391px) {
+  section#collection .container .row .left-bar .refine-search .body {
+    display: none;
+  }
+}
 section#collection .container .row .left-bar .bestsellers {
   border: solid 0.5px rgb(230, 230, 230);
   margin-bottom: 30px;
@@ -129,6 +139,11 @@ section#collection .container .row .left-bar .bestsellers .body .products .produ
   color: #EB4D50;
   font-size: 14px;
   font-weight: 500;
+}
+@media screen and (max-width: 391px) {
+  section#collection .container .row .left-bar .bestsellers .body {
+    display: none;
+  }
 }
 section#collection .container .row .left-bar .latest-products {
   border: solid 0.5px rgb(230, 230, 230);
@@ -167,6 +182,11 @@ section#collection .container .row .left-bar .latest-products .body .products .p
 section#collection .container .row .left-bar .latest-products .body .products .product-detail .discount {
   text-decoration: line-through;
   color: #888;
+}
+@media screen and (max-width: 391px) {
+  section#collection .container .row .left-bar .latest-products .body {
+    display: none;
+  }
 }
 @media screen and (min-width: 391px) and (max-width: 821px) {
   section#collection .container .row .left-bar {

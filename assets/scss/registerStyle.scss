@@ -37,6 +37,9 @@ section#register{
                         font-size: 14px;
                       }
                     }
+                    @media screen and (max-width:391px) {
+                      display: none;
+                    }
                   }
                 }
                 .bestsellers{
@@ -70,6 +73,9 @@ section#register{
                           font-weight: 500;
                         }
                       }
+                    }
+                    @media screen and (max-width:391px) {
+                      display: none;
                     }
                   }
                 }
@@ -108,6 +114,9 @@ section#register{
                           color: #888;
                         }
                       }
+                    }
+                    @media screen and (max-width:391px) {
+                      display: none;
                     }
                   }
                 }

@@ -151,9 +151,13 @@ function VAT(totalPrice, ecoTax) {
 }
 
 function TotalPrice(basket) {
-  let totalPrice = document.querySelector(".total");
-  totalPrice.innerHTML = `${basket.reduce((total, product) => {
-    return (total += parseInt(product.price * product.count));
-  }, 0)}$`
-  return totalPrice.innerHTML;
+  let total;
+  let totalPrice = document.querySelectorAll(".total");
+  totalPrice.forEach(element => {
+    element.innerHTML = `${basket.reduce((total, product) => {
+      return (total += parseInt(product.price * product.count));
+    }, 0)}$`
+    total = element.innerHTML;
+  })
+  return total;
 }

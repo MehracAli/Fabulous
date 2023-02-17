@@ -571,7 +571,7 @@
                 </div>
               </div>
             </div>
-            <div class="total">
+            <div class="total-table">
               <table>
                 <tbody>
                   <tr>
@@ -960,7 +960,7 @@
 
           if (!basket || !basket.length) {
             localStorage.setItem("basket", JSON.stringify([]));
-            document.querySelector(".cart-table").style.display = "none"
+            document.querySelector(".table").style.display = "none"
             document.querySelector(".cd-mid .when-empty-cart").style.display = "flex"
             document.querySelector("section#cart .when-empty").style.display = "flex"
             console.log("test");
@@ -975,9 +975,8 @@
         });
         let total=0;
         function CartBasketList(product) {
-        total += parseInt(product.price*product.count)  
-        console.log(typeof(total));
-        document.querySelector(".cart-table").style.display = "table"
+        total += parseInt(product.price*product.count);
+        document.querySelector(".table").style.display = "table"
         document.querySelector(".to-do-next").style.display = "block"
         document.querySelector(".to-do-next #total").innerText = `$${total}`
         const productHtml = `
@@ -1005,7 +1004,7 @@
       console.log(basket);
        if (!basket.length){
         document.querySelector("section#cart .when-empty").style.display = "flex"
-        document.querySelector(".cart-table").style.display = "none"
+        document.querySelector(".table").style.display = "none"
         }
       }
       ifCartEmpty()

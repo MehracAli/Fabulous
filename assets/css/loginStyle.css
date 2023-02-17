@@ -46,6 +46,11 @@ section#login-page .container .row .left-bar .categories .body ul li {
   line-height: 35px;
   font-size: 14px;
 }
+@media screen and (max-width: 391px) {
+  section#login-page .container .row .left-bar .categories .body {
+    display: none;
+  }
+}
 section#login-page .container .row .left-bar .bestsellers {
   border: solid 0.5px rgb(230, 230, 230);
   margin-bottom: 30px;
@@ -79,6 +84,11 @@ section#login-page .container .row .left-bar .bestsellers .body .products .produ
   color: #EB4D50;
   font-size: 14px;
   font-weight: 500;
+}
+@media screen and (max-width: 391px) {
+  section#login-page .container .row .left-bar .bestsellers .body {
+    display: none;
+  }
 }
 section#login-page .container .row .left-bar .latest-products {
   border: solid 0.5px rgb(230, 230, 230);
@@ -118,10 +128,21 @@ section#login-page .container .row .left-bar .latest-products .body .products .p
   text-decoration: line-through;
   color: #888;
 }
+@media screen and (max-width: 391px) {
+  section#login-page .container .row .left-bar .latest-products .body {
+    display: none;
+  }
+}
 @media screen and (min-width: 391px) and (max-width: 821px) {
   section#login-page .container .row .left-bar {
     width: 100%;
     padding: 0 50px;
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 391px) {
+  section#login-page .container .row .left-bar {
+    width: 100%;
     margin-top: 30px;
   }
 }
@@ -280,6 +301,11 @@ section#login-page .container .row .login .returning-customer form button:hover 
   }
 }
 @media screen and (min-width: 391px) and (max-width: 821px) {
+  section#login-page .container .row {
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width: 391px) {
   section#login-page .container .row {
     flex-direction: column-reverse;
   }

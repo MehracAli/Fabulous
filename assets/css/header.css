@@ -232,6 +232,11 @@ div#mini-head .container .row .login-cart .mini-cart-drop .mid ul li.text .image
   width: 100px;
   height: 100px;
 }
+@media screen and (max-width: 391px) {
+  div#mini-head .container .row .login-cart .mini-cart-drop .mid ul li.text .image {
+    margin-right: 25px;
+  }
+}
 div#mini-head .container .row .login-cart .mini-cart-drop .mid ul li.text .delete {
   width: 20%;
   display: flex;
@@ -282,6 +287,11 @@ div#mini-head .container .row .login-cart .mini-cart-drop .bottom .buttons butto
 div#mini-head .container .row .login-cart .mini-cart-drop .bottom .buttons button a {
   text-decoration: none;
   color: white;
+}
+@media screen and (max-width: 391px) {
+  div#mini-head .container .row .login-cart .mini-cart-drop {
+    width: 80%;
+  }
 }
 div#mini-head .container .row .login-cart .cart {
   width: 40px;

@@ -40,6 +40,9 @@ section#login-page{
                         font-size: 14px;
                       }
                     }
+                    @media screen and (max-width:391px) {
+                      display: none;
+                    }
                   }
                 }
                 .bestsellers{
@@ -73,6 +76,9 @@ section#login-page{
                           font-weight: 500;
                         }
                       }
+                    }
+                    @media screen and (max-width:391px) {
+                      display: none;
                     }
                   }
                 }
@@ -112,11 +118,18 @@ section#login-page{
                         }
                       }
                     }
+                    @media screen and (max-width:391px) {
+                      display: none;
+                    }
                   }
                 }
                 @media screen and (min-width:391px) and (max-width:821px){
                   width: 100%;
                   padding: 0 50px;
+                  margin-top: 30px;
+                }
+                @media screen and (max-width:391px){
+                  width: 100%;
                   margin-top: 30px;
                 } 
               }
@@ -263,6 +276,9 @@ section#login-page{
                 }
             }
             @media screen and (min-width:391px) and (max-width:821px) {
+              flex-direction: column-reverse;
+            }
+            @media screen and (max-width:391px) {
               flex-direction: column-reverse;
             }
         }

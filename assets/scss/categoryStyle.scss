@@ -40,6 +40,9 @@ section#collection{
                 font-size: 14px;
               }
             }
+            @media screen and (max-width:391px) {
+              display: none;
+            }
           }
         }
         .refine-search{
@@ -89,6 +92,9 @@ section#collection{
                 background-color: #EB4D50;
               }
             }
+            @media screen and (max-width:391px) {
+              display: none;
+            }
           }
         }
         .bestsellers{
@@ -122,6 +128,9 @@ section#collection{
                   font-weight: 500;
                 }
               }
+            }
+            @media screen and (max-width:391px) {
+              display: none;
             }
           }
         }
@@ -160,6 +169,9 @@ section#collection{
                   color: #888;
                 }
               }
+            }
+            @media screen and (max-width:391px) {
+              display: none;
             }
           }
         }
