@@ -114,7 +114,7 @@ section#login-page{
                     }
                   }
                 }
-                @media screen and (max-width:821px){
+                @media screen and (min-width:391px) and (max-width:821px){
                   width: 100%;
                   padding: 0 50px;
                   margin-top: 30px;
@@ -262,7 +262,7 @@ section#login-page{
                   }
                 }
             }
-            @media screen and (max-width:821px) {
+            @media screen and (min-width:391px) and (max-width:821px) {
               flex-direction: column-reverse;
             }
         }

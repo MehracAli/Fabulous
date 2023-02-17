@@ -118,7 +118,7 @@ section#login-page .container .row .left-bar .latest-products .body .products .p
   text-decoration: line-through;
   color: #888;
 }
-@media screen and (max-width: 821px) {
+@media screen and (min-width: 391px) and (max-width: 821px) {
   section#login-page .container .row .left-bar {
     width: 100%;
     padding: 0 50px;
@@ -279,7 +279,7 @@ section#login-page .container .row .login .returning-customer form button:hover 
     width: 48%;
   }
 }
-@media screen and (max-width: 821px) {
+@media screen and (min-width: 391px) and (max-width: 821px) {
   section#login-page .container .row {
     flex-direction: column-reverse;
   }

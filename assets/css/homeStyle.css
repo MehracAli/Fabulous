@@ -170,38 +170,8 @@ section#slider:hover .owl-carousel .owl-nav button.owl-prev {
   section#slider .slide .item .title button:hover {
     background-color: #232323;
   }
-  section#slider .slide .owl-theme .owl-dots {
-    position: absolute;
-    left: 45%;
-    right: 45%;
-    bottom: 0;
-  }
-  section#slider .slide .owl-theme .owl-dots .owl-dot button {
-    border-radius: 0px;
-  }
-  section#slider .slide .owl-theme .owl-dots .owl-dot span {
-    bottom: 30px;
-    left: 0;
-    width: 12px;
-    height: 12px;
-    background: #D6D6D6;
-    display: block;
-    transition: 0.5s;
-    border-radius: 0px;
-    background-color: #eb4d4b;
-  }
-  section#slider .slide .owl-theme .owl-dots .owl-dot span:nth-child(1) {
-    margin-right: 2.5px;
-  }
-  section#slider .slide .owl-theme .owl-dots .owl-dot span:nth-child(2) {
-    margin-left: 2.5px;
-  }
 }
 @media screen and (max-width: 391px) {
-  section#slider .slide .item {
-    color: white;
-    position: relative;
-  }
   section#slider .slide .item .title {
     width: 200px;
     text-align: center;
@@ -223,17 +193,10 @@ section#slider:hover .owl-carousel .owl-nav button.owl-prev {
     display: none;
   }
   section#slider .slide .item .title button {
-    background-color: #eb4d4b;
     height: 30px;
     padding: 7px 15px;
     border: none;
-    border-radius: 30px;
     font-size: 11px;
-    color: white;
-    transition: 0.5s;
-  }
-  section#slider .slide .item .title button:hover {
-    background-color: #232323;
   }
   section#slider .slide .owl-theme .owl-dots {
     display: flex;
@@ -241,26 +204,6 @@ section#slider:hover .owl-carousel .owl-nav button.owl-prev {
     left: 45%;
     right: 45%;
     bottom: 0;
-  }
-  section#slider .slide .owl-theme .owl-dots .owl-dot button {
-    border-radius: 0px;
-  }
-  section#slider .slide .owl-theme .owl-dots .owl-dot span {
-    bottom: 30px;
-    left: 0;
-    width: 12px;
-    height: 12px;
-    background: #D6D6D6;
-    display: block;
-    transition: 0.5s;
-    border-radius: 0px;
-    background-color: #eb4d4b;
-  }
-  section#slider .slide .owl-theme .owl-dots .owl-dot span:nth-child(1) {
-    margin-right: 2.5px;
-  }
-  section#slider .slide .owl-theme .owl-dots .owl-dot span:nth-child(2) {
-    margin-left: 2.5px;
   }
 }
 
@@ -316,49 +259,9 @@ section#services .row .service a .describtion p {
     margin-left: 20px;
   }
 }
-@media screen and (min-width: 391px) and (max-width: 821px) {
-  section#services {
-    background-color: #fbfbfb;
-    margin-bottom: 50px;
-  }
-  section#services .container {
-    width: 1200px;
-    max-width: 85%;
-  }
+@media screen and (max-width: 391px) {
   section#services .row {
-    padding: 70px 0;
-    align-items: center;
-  }
-  section#services .row .service {
-    text-align: center;
-    padding: 0 20px;
-  }
-  section#services .row .service a {
-    text-decoration: none;
-    color: black;
-  }
-  section#services .row .service a .service-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  section#services .row .service a .service-image img {
-    width: 55px;
-    height: 55px;
-  }
-  section#services .row .service a .service-image .service-rotate {
-    animation: mymove 0.4s;
-  }
-  section#services .row .service a .describtion span {
-    font-size: 18px;
-    font-weight: 500;
-  }
-  section#services .row .service a .describtion p {
-    font-size: 14px;
-    color: gray;
-    letter-spacing: 1px;
-    line-height: 25px;
+    padding: 30px 0;
   }
 }
 @keyframes mymove {
@@ -378,6 +281,7 @@ section#services .row .service a .describtion p {
 
 section#products {
   margin-bottom: 70px;
+  margin-bottom: 30px;
 }
 section#products .container {
   width: 1200px;
@@ -645,11 +549,6 @@ section#products .container .about button:hover {
     background-color: #232323;
   }
 }
-@media screen and (max-width: 391px) {
-  section#products {
-    margin-bottom: 30px;
-  }
-}
 
 section#customers {
   background-image: url(/assets/images/home/testimonialbackground.png);
@@ -673,6 +572,13 @@ section#customers .container .title h5 {
   margin: 0;
   margin-bottom: 12px;
 }
+@media screen and (max-width: 391px) {
+  section#customers .container .title h5 {
+    font-size: 14px;
+    margin-bottom: 8px;
+    letter-spacing: 3px;
+  }
+}
 section#customers .container .title h1 {
   font-size: 40px;
   font-weight: 600;
@@ -686,6 +592,28 @@ section#customers .container .title h1::after {
   content: "";
   position: absolute;
   width: 7%;
+}
+@media screen and (max-width: 391px) {
+  section#customers .container .title h1 {
+    font-size: 26px;
+    line-height: 26px;
+  }
+  section#customers .container .title h1::after {
+    left: 40%;
+    right: 40%;
+    width: 20%;
+    bottom: -20px;
+  }
+}
+@media screen and (min-width: 391px) and (max-width: 821px) {
+  section#customers .container .title {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 391px) {
+  section#customers .container .title {
+    margin-bottom: 20px;
+  }
 }
 section#customers .container .owl-carousel .owl-nav button {
   color: white;
@@ -724,11 +652,23 @@ section#customers .container .item .customer .avatar img {
   -o-object-fit: contain;
      object-fit: contain;
 }
+@media screen and (max-width: 391px) {
+  section#customers .container .item .customer .avatar {
+    position: static;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
 section#customers .container .item .customer .about p {
   font-size: 14px;
   color: rgb(100, 100, 100);
   line-height: 25px;
   letter-spacing: 0.5px;
+}
+@media screen and (max-width: 391px) {
+  section#customers .container .item .customer .about {
+    text-align: center;
+  }
 }
 section#customers .container .item .customer .name-prof span {
   font-size: 24px;
@@ -742,114 +682,23 @@ section#customers .container .item .customer .name-prof span:nth-child(2) {
   letter-spacing: 1px;
   font-weight: 400;
 }
-@media screen and (min-width: 391px) and (max-width: 821px) {
-  section#customers .container .item {
-    display: flex;
-    justify-content: center;
-  }
-  section#customers .container .item .customer {
-    width: 85%;
-    background-color: white;
-    padding: 0px 50px 40px;
-    margin: 50px 0 0;
-  }
-  section#customers .container .item .customer .avatar {
-    position: relative;
-    top: -50px;
-    left: 10px;
-    width: 100px;
-    height: 100px;
-    border: solid 5px rgb(235, 77, 75);
-    border-radius: 50%;
-    overflow: hidden;
-  }
-  section#customers .container .item .customer .avatar img {
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-  section#customers .container .item .customer .about p {
-    font-size: 14px;
-    color: rgb(100, 100, 100);
-    line-height: 25px;
-    letter-spacing: 0.5px;
+@media screen and (max-width: 391px) {
+  section#customers .container .item .customer .name-prof {
+    text-align: center;
   }
   section#customers .container .item .customer .name-prof span {
-    font-size: 24px;
-    font-weight: 500;
-    color: #232323;
-  }
-  section#customers .container .item .customer .name-prof span:nth-child(2) {
-    margin-left: 8px;
-    font-size: 14px;
-    color: #eb4d4b;
-    letter-spacing: 1px;
-    font-weight: 400;
+    display: block;
   }
 }
 @media screen and (max-width: 391px) {
-  section#customers .container .title {
-    text-align: center;
-    padding-bottom: 25px;
-    margin-bottom: 10px;
-  }
-  section#customers .container .title h5 {
-    text-transform: uppercase;
-    color: #eb4d4b;
-    font-size: 14px;
-    letter-spacing: 3px;
-    font-weight: 500;
-    margin: 0;
-    margin-bottom: 12px;
-  }
-  section#customers .container .title h1 {
-    font-size: 26px;
-    font-weight: 600;
-    position: relative;
-  }
-  section#customers .container .title h1::after {
-    border-top: 4px solid rgb(235, 77, 75);
-    left: 46.5%;
-    right: 46.5%;
-    bottom: -20px;
-    content: "";
-    position: absolute;
-    width: 7%;
-  }
   section#customers .container .item .customer {
-    text-align: center;
-    background-color: white;
-    padding: 40px 15px 40px;
     margin: 0px;
+    padding: 40px 20px 30px;
   }
-  section#customers .container .item .customer .avatar {
-    position: static;
-    margin: 0 auto 20px;
-    width: 100px;
-    height: 100px;
-    border: solid 5px rgb(235, 77, 75);
-    border-radius: 50%;
-    overflow: hidden;
-  }
-  section#customers .container .item .customer .avatar img {
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-  section#customers .container .item .customer .about p {
-    width: 100%;
-    font-size: 12px;
-    color: rgb(100, 100, 100);
-  }
-  section#customers .container .item .customer .name-prof span {
-    font-size: 24px;
-    font-weight: 500;
-    color: #232323;
-  }
-  section#customers .container .item .customer .name-prof span:nth-child(2) {
-    margin-left: 8px;
-    font-size: 14px;
-    color: #eb4d4b;
-    letter-spacing: 1px;
-    font-weight: 400;
+}
+@media screen and (max-width: 391px) {
+  section#customers {
+    padding: 40px 0;
   }
 }
 
@@ -874,6 +723,20 @@ section#latest .container .title h5 {
   margin: 0;
   margin-bottom: 12px;
 }
+@media screen and (max-width: 391px) {
+  section#latest .container .title h5 {
+    font-size: 14px;
+    margin-bottom: 8px;
+    letter-spacing: 3px;
+  }
+}
+@media screen and (min-width: 391px) and (max-width: 821px) {
+  section#latest .container .title h5 {
+    font-size: 16px;
+    margin-bottom: 12px;
+    letter-spacing: 5px;
+  }
+}
 section#latest .container .title h1 {
   font-size: 40px;
   font-weight: 600;
@@ -888,10 +751,38 @@ section#latest .container .title h1::after {
   position: absolute;
   width: 7%;
 }
+@media screen and (max-width: 391px) {
+  section#latest .container .title h1 {
+    font-size: 26px;
+    line-height: 26px;
+  }
+  section#latest .container .title h1::after {
+    left: 40%;
+    right: 40%;
+    width: 20%;
+    bottom: -20px;
+  }
+}
+@media screen and (min-width: 391px) and (max-width: 821px) {
+  section#latest .container .title h1 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  section#latest .container .title h1::after {
+    left: 45%;
+    right: 45%;
+    width: 10%;
+    bottom: -20px;
+  }
+}
 @media screen and (min-width: 391px) and (max-width: 821px) {
   section#latest .container .title {
-    margin-bottom: 0px;
-    padding-bottom: 0px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 391px) {
+  section#latest .container .title {
+    margin-bottom: 10px;
   }
 }
 section#latest .container .owl-carousel .owl-nav button {
@@ -1007,6 +898,12 @@ section#latest .container .porduct-slide .item .prdct .image .wish-view .icon:ho
   background-color: #eb4d4b;
   fill: white;
 }
+@media screen and (max-width: 391px) {
+  section#latest .container .porduct-slide .item .prdct .image .wish-view .icon {
+    width: 20px;
+    height: 20px;
+  }
+}
 section#latest .container .porduct-slide .item .prdct .image .wish-view .view {
   position: relative;
   right: -60px;
@@ -1035,7 +932,7 @@ section#latest .container .porduct-slide .item .prdct .image .wish-view .compare
 }
 @media screen and (max-width: 391px) {
   section#latest .container .porduct-slide .item .prdct .image {
-    height: 340px;
+    height: 160px;
   }
 }
 section#latest .container .porduct-slide .item .prdct:hover .view {
@@ -1058,6 +955,11 @@ section#latest .container .porduct-slide .item .prdct .caption h4 {
   margin-bottom: 10px;
   padding: 0;
 }
+@media screen and (max-width: 391px) {
+  section#latest .container .porduct-slide .item .prdct .caption h4 {
+    font-size: 14px;
+  }
+}
 section#latest .container .porduct-slide .item .prdct .caption p {
   font-weight: 500;
   color: #eb4d4b;
@@ -1075,22 +977,36 @@ section#latest .container .porduct-slide .item .prdct .caption button {
   letter-spacing: 0.5px;
   padding: 10px 21px;
 }
+@media screen and (max-width: 391px) {
+  section#latest .container .porduct-slide .item .prdct .caption button {
+    left: 23px;
+  }
+}
 @media screen and (min-width: 391px) and (max-width: 821px) {
   section#latest .container .porduct-slide .item .prdct .caption button {
     left: 24%;
   }
 }
+@media screen and (max-width: 391px) {
+  section#latest {
+    padding: 30px 0;
+  }
+}
+@media screen and (min-width: 391px) and (max-width: 821px) {
+  section#latest {
+    padding: 40px 0;
+  }
+}
 
 section#faq {
   background-color: #F2F6FA;
-  padding: 80px 0;
   margin-bottom: 60px;
   padding: 140px 0;
 }
 section#faq .container {
-  width: 1200px;
-  max-width: 100%;
-  padding: 0 9%;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 5%;
 }
 section#faq .container .title {
   text-align: center;
@@ -1106,6 +1022,20 @@ section#faq .container .title h5 {
   margin: 0;
   margin-bottom: 12px;
 }
+@media screen and (max-width: 391px) {
+  section#faq .container .title h5 {
+    font-size: 14px;
+    margin-bottom: 8px;
+    letter-spacing: 3px;
+  }
+}
+@media screen and (min-width: 391px) and (max-width: 821px) {
+  section#faq .container .title h5 {
+    font-size: 16px;
+    margin-bottom: 12px;
+    letter-spacing: 5px;
+  }
+}
 section#faq .container .title h1 {
   font-size: 40px;
   font-weight: 600;
@@ -1119,6 +1049,30 @@ section#faq .container .title h1::after {
   content: "";
   position: absolute;
   width: 7%;
+}
+@media screen and (max-width: 391px) {
+  section#faq .container .title h1 {
+    font-size: 26px;
+    line-height: 26px;
+  }
+  section#faq .container .title h1::after {
+    left: 40%;
+    right: 40%;
+    width: 20%;
+    bottom: -20px;
+  }
+}
+@media screen and (min-width: 391px) and (max-width: 821px) {
+  section#faq .container .title h1 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  section#faq .container .title h1::after {
+    left: 45%;
+    right: 45%;
+    width: 10%;
+    bottom: -20px;
+  }
 }
 section#faq .container .title .accordion {
   display: flex;
@@ -1150,6 +1104,9 @@ section#faq .container .title .accordion .steps .sect-p p {
 section#faq .container .accordion .steps .step-item {
   border-bottom: solid 0.1px rgb(220, 220, 220);
 }
+section#faq .container .accordion .steps .step-item:last-child {
+  border: none;
+}
 section#faq .container .accordion .steps .sect {
   cursor: pointer;
   padding: 25px 0;
@@ -1166,6 +1123,11 @@ section#faq .container .accordion .steps .sect h3 span {
   font-weight: 600;
   margin-right: 8px;
 }
+@media screen and (max-width: 391px) {
+  section#faq .container .accordion .steps .sect h3 {
+    font-size: 14px;
+  }
+}
 section#faq .container .accordion .steps .sect i {
   transition: 0.5s;
 }
@@ -1179,6 +1141,11 @@ section#faq .container .accordion .steps .sect-p p {
   font-size: 14px;
   color: gray;
 }
+@media screen and (max-width: 391px) {
+  section#faq {
+    padding: 70px 0;
+  }
+}
 
 section#brands {
   margin-bottom: 70px;
@@ -1186,6 +1153,25 @@ section#brands {
 section#brands .container {
   width: 1200px;
   max-width: 100%;
+}
+section#brands .container .owl-carousel .owl-nav button {
+  opacity: 0;
+  color: white;
+  background-color: #eb4d4b;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  opacity: 1;
+  margin-top: 20px;
+  transition: 0.5s;
+}
+section#brands .container .owl-carousel .owl-nav button:hover {
+  background-color: #232323;
+}
+@media screen and (max-width: 391) {
+  section#brands .container .owl-carousel .owl-nav button {
+    display: 1;
+  }
 }
 section#brands .container .item {
   display: flex;
@@ -1195,6 +1181,17 @@ section#brands .container .item img {
   width: 200px;
   height: 60px;
 }
+@media screen and (max-width: 391px) {
+  section#brands .container .item img {
+    width: 165px;
+    height: 50px;
+  }
+}
 section#brands .container .item .img-rotate {
   transform: rotateZ(180deg);
+}
+@media screen and (max-width: 391px) {
+  section#brands {
+    margin-bottom: 30px;
+  }
 }/*# sourceMappingURL=homeStyle.css.map */

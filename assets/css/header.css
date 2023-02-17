@@ -24,6 +24,7 @@ div#mini-head .container .row .burger-search {
   justify-content: flex-start;
 }
 div#mini-head .container .row .burger-search .open-nav {
+  z-index: 1;
   display: none;
   position: absolute;
   top: 0;
@@ -164,7 +165,17 @@ div#mini-head .container .row .login-cart .login .mini-login-drop .languages ul 
   padding: 5px 10px;
   text-decoration: none;
 }
+@media screen and (min-width: 391px) and (max-width: 821px) {
+  div#mini-head .container .row .login-cart .login .mini-login-drop {
+    width: 320px;
+  }
+  div#mini-head .container .row .login-cart .login .mini-login-drop .languages ul, div#mini-head .container .row .login-cart .login .mini-login-drop .currency ul {
+    display: flex;
+    justify-content: space-around;
+  }
+}
 div#mini-head .container .row .login-cart .mini-cart-drop {
+  z-index: 1;
   display: none;
   background-color: #ffffff;
   position: fixed;
@@ -238,6 +249,19 @@ div#mini-head .container .row .login-cart .mini-cart-drop .bottom .buttons butto
 div#mini-head .container .row .login-cart .cart {
   width: 40px;
   height: 40px;
+}
+div#mini-head .container .row .login-cart .cart sup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+  background-color: #EB4D50;
+  border-radius: 50%;
+  color: white;
+  position: relative;
+  top: -30px;
+  right: -20px;
 }
 @media screen and (max-width: 821px) {
   div#mini-head {
