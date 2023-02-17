@@ -53,6 +53,7 @@ buttons.forEach((button) => {
     ProductCount(basket);
     TotalPrice(basket);
     EcoTax(basket);
+    SubTotal(basket)
 
     basketStr = JSON.stringify(basket);
     localStorage.setItem("basket", basketStr);
@@ -130,9 +131,18 @@ function ProductCount(basket) {
   })
 }
 
-function SubTotal(totalPrice, vat, ecoTax) {
-  let subTotal = document.querySelector(".cd-btm .sub-total");
-  subTotal.innerHTML = totalPrice - vat;
+function SubTotal(basket) {
+  let subTotal = document.querySelectorAll(".sub-total");
+  subTotal.forEach(element => {
+    element.innerHTML = `${basket.reduce((total, product) => {
+      let divison = product.price/1.2
+      let roundDivision = Math.round(divison)
+      console.log(roundDivision);
+      return (total += parseInt(roundDivision * product.count));
+    }, 0)}$`
+    total = element.innerHTML;
+  })
+  console.log(total);
 }
 
 function EcoTax(basket) {
@@ -143,7 +153,7 @@ function EcoTax(basket) {
   return EcoTax.innerHTML;
 }
 
-function VAT(totalPrice, ecoTax) {
+function VAT(basket) {
   let percent = totalPrice - ecoTax; 
   console.log(percent.innerText);
   let vat = document.querySelector(".cd-btm .vat");
