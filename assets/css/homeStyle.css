@@ -414,10 +414,36 @@ section#products .container .about .title h1::after {
   left: 0;
   width: 16%;
 }
+@media screen and (max-width: 391px) {
+  section#products .container .about .title {
+    text-align: center;
+    margin-top: 20px;
+  }
+  section#products .container .about .title h5 {
+    font-size: 14px;
+    letter-spacing: 3px;
+  }
+  section#products .container .about .title h1 {
+    font-size: 24px;
+  }
+  section#products .container .about .title h1::after {
+    border-top: 4px solid #eb4d4b;
+    bottom: -20px;
+    content: "";
+    position: absolute;
+    left: 42%;
+    width: 16%;
+  }
+}
 section#products .container .about p {
   font-size: 14px;
   color: gray;
   letter-spacing: 1px;
+}
+@media screen and (max-width: 391px) {
+  section#products .container .about p {
+    text-align: center;
+  }
 }
 section#products .container .about .about-list ul li {
   color: rgb(110, 110, 110);
@@ -431,6 +457,11 @@ section#products .container .about .about-list ul li::marker {
 section#products .container .about .about-list ul:nth-child(2) {
   margin-left: 30px;
 }
+@media screen and (max-width: 391px) {
+  section#products .container .about .about-list ul {
+    text-align: left;
+  }
+}
 section#products .container .about button {
   background-color: #eb4d4b;
   height: 45px;
@@ -443,6 +474,11 @@ section#products .container .about button {
 }
 section#products .container .about button:hover {
   background-color: #232323;
+}
+@media screen and (max-width: 391px) {
+  section#products .container .about button {
+    transform: translateX(80%);
+  }
 }
 @media screen and (max-width: 391) {
   section#products .container {
@@ -607,6 +643,11 @@ section#products .container .about button:hover {
   }
   section#products .container .about button:hover {
     background-color: #232323;
+  }
+}
+@media screen and (max-width: 391px) {
+  section#products {
+    margin-bottom: 30px;
   }
 }
 
@@ -847,6 +888,12 @@ section#latest .container .title h1::after {
   position: absolute;
   width: 7%;
 }
+@media screen and (min-width: 391px) and (max-width: 821px) {
+  section#latest .container .title {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+}
 section#latest .container .owl-carousel .owl-nav button {
   color: white;
   background-color: #eb4d4b;
@@ -885,6 +932,18 @@ section#latest .container .category ul li a:hover {
 section#latest .container .category ul li .active {
   background-color: #f5f5f5 !important;
   color: #232323;
+}
+@media screen and (max-width: 391px) {
+  section#latest .container .category ul {
+    justify-content: space-around;
+    padding: 0 10px;
+  }
+  section#latest .container .category ul li {
+    margin: 0;
+  }
+  section#latest .container .category ul li a {
+    padding: 0;
+  }
 }
 section#latest .container .porduct-slide .item .prdct {
   position: relative;
@@ -969,6 +1028,16 @@ section#latest .container .porduct-slide .item .prdct .image .wish-view .compare
   transition: 0.9s;
   opacity: 0;
 }
+@media screen and (min-width: 391px) and (max-width: 821px) {
+  section#latest .container .porduct-slide .item .prdct .image {
+    height: 230px;
+  }
+}
+@media screen and (max-width: 391px) {
+  section#latest .container .porduct-slide .item .prdct .image {
+    height: 340px;
+  }
+}
 section#latest .container .porduct-slide .item .prdct:hover .view {
   transform: translateX(-60px);
   opacity: 1 !important;
@@ -986,6 +1055,8 @@ section#latest .container .porduct-slide .item .prdct .caption {
 }
 section#latest .container .porduct-slide .item .prdct .caption h4 {
   font-size: 16px;
+  margin-bottom: 10px;
+  padding: 0;
 }
 section#latest .container .porduct-slide .item .prdct .caption p {
   font-weight: 500;
@@ -1003,6 +1074,11 @@ section#latest .container .porduct-slide .item .prdct .caption button {
   font-weight: 400;
   letter-spacing: 0.5px;
   padding: 10px 21px;
+}
+@media screen and (min-width: 391px) and (max-width: 821px) {
+  section#latest .container .porduct-slide .item .prdct .caption button {
+    left: 24%;
+  }
 }
 
 section#faq {

@@ -111,11 +111,16 @@ section#register{
                     }
                   }
                 }
+                @media screen and (max-width:821px){
+                  width: 100%;
+                  margin-top: 30px;
+                } 
             }
             .registration{
                 width: 75%;
                 margin-left: 20px;
                 p{
+                  margin: 0 auto;
                     padding: 10px 0;
                     text-align: center;
                     color: #8a6d3b;
@@ -150,9 +155,15 @@ section#register{
                                 letter-spacing: 0.5px;
                                 width: 16%;
                                 display: flex;
-                                align-items: center;
                                 font-size: 14px;
                                 font-weight: 500;
+                                &::before{
+                                  content: '* ';
+                                  position: relative;
+                                  right: 3px;
+                                  color: #f00;
+                                  font-weight: bold;
+                              }
                             }
                             input{
                                 width: 83%;
@@ -175,6 +186,10 @@ section#register{
                                         margin-left: 10px;
                                     }
                                 }
+                              @media screen and (max-width:391px) {
+                                justify-content: space-between;
+                                margin-bottom: 10px;
+                              }
                             }
                         }
                     }
@@ -209,8 +224,29 @@ section#register{
                             background-color: #EB4D50;
                         }
                     }
+                    @media screen and (max-width:391px) {
+                      display: block;
+                      p{
+                        width: 100%;
+                        padding: 0;
+                        margin: 0 0 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                      }
+                      input{
+                        margin: 0;
+                      }
+                    }
                 }
+              @media screen and (max-width:821px) {
+                width: 100%;
+                margin: 0;
+              }  
             }
+          @media screen and (max-width:821px) {
+            flex-direction: column-reverse;
+          }  
         }
-    }
+    } 
 }

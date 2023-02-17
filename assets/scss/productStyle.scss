@@ -6,10 +6,14 @@
 
 section#product-detail{
     display: flex;
+    margin-bottom: 30px;
     .container{
+        max-width: 1200px;
+        width: 100%;
+        padding: 0 25px;
         .row{
             flex-wrap: nowrap;
-            height: 600px;
+            height: 540px;
             overflow-y:scroll;
             &::-webkit-scrollbar{
                 display: none;
@@ -85,6 +89,8 @@ section#product-detail{
                                     transform: rotateZ(180deg);
                                 }
                             }
+                        }
+                        .step-1{
                             .sect-down{
                                 padding: 20px 0 0;
                                 p{
@@ -103,6 +109,121 @@ section#product-detail{
                                         font-size: 14px;
                                         color: #666;
                                         font-weight: 400;
+                                    }
+                                }
+                            }
+                        }
+                        .step-2{
+                            .sect-down{
+                                padding: 20px 0 0;
+                                .review{
+                                    table{
+                                        border: solid 0.5px rgb(230, 230, 230);
+                                        width: 100%;
+                                        thead{
+                                            border: solid 0.5px rgb(230, 230, 230);
+                                            tr{
+                                                border: solid 0.5px rgb(230, 230, 230);
+                                                background-color: whitesmoke;
+                                                th{
+                                                    width: 50%;
+                                                    border: solid 0.5px rgb(230, 230, 230);
+                                                    padding: 10px 15px;
+                                                    font-weight: 500;
+                                                    font-size: 14px;
+                                                    &:nth-child(2){
+                                                        text-align: right;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        tbody{
+                                            tr{
+                                                td{
+                                                    padding: 15px;
+                                                    p{
+                                                        margin-bottom: 10px;
+                                                        font-size: 14px;
+                                                        color: #888;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .write-review{
+                                    label::before{
+                                        content: '* ';
+                                        color: #f00;
+                                        font-weight: bold;
+                                    }
+                                    h6{
+                                        font-size: 20px;
+                                        font-weight: 500;
+                                        margin-top: 20px;
+                                        margin-bottom: 10px;
+                                    }
+                                    .your-name{
+                                        label{
+                                            font-size: 14px;
+                                            font-weight: 400;
+                                            letter-spacing: 0.5px;
+                                        }
+                                        input{
+                                            width: 100%;
+                                            border-radius: 0px;
+                                            border: solid 0.5px rgb(230, 230, 230);
+                                            padding: 6px 12px;
+                                            outline: none;
+                                        }
+                                    }
+                                    .your-review{
+                                        label{
+                                            font-size: 14px;
+                                            font-weight: 400;
+                                            letter-spacing: 0.5px;
+                                        }
+                                        textarea{
+                                            border: solid 0.5px rgb(230, 230, 230);
+                                            padding: 6px 12px;
+                                            height: 100px;
+                                            width: 100%;
+                                            font-size: 12px;
+                                            outline: none;
+                                        }
+                                        p{
+                                            color: #737373;
+                                            font-size: 14px;
+                                            span{
+                                                color: #a94442;
+                                            }
+                                        }
+                                    }
+                                    .rating{
+                                        label{
+                                            font-size: 14px;
+                                            font-weight: 400;
+                                            letter-spacing: 0.5px;
+                                            margin-right: 10px;
+                                        }
+                                        span{
+                                            color: #737373;
+                                            font-size: 14px;
+                                        }
+                                        input{
+                                            margin: 0 5px;
+                                        }
+                                    }
+                                    .button{
+                                        display: flex;
+                                        justify-content: end;
+                                       button{
+                                        border: none;
+                                        background-color: #232323;
+                                        padding: 8px 20px;
+                                        transition: 0.5s;
+                                        color: white;
+                                       }
                                     }
                                 }
                             }
@@ -196,9 +317,8 @@ section#product-detail{
                     }
                 }
                 .add-cart{
-                    padding: 10px 0;
+                    padding: 20px 0 20px;
                     border-bottom: solid 0.5px rgb(230, 230, 230);
-                    border-top: solid 0.5px rgb(230, 230, 230);
                     input{
                         height: 36px;
                         width: 70px;
@@ -244,6 +364,214 @@ section#product-detail{
                         }
                         svg{
                             fill: white;
+                        }
+                    }
+                }
+                .about{
+                    padding: 20px 0 20px;
+                    .frames{
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        align-items: center;
+                        .frame{
+                            text-align: center;
+                            border: solid 0.5px rgb(230, 230, 230);
+                            width: 48%;
+                            margin-bottom: 20px;
+                            padding: 5px;
+                            h6{
+                                letter-spacing: 0.5px;
+                                padding: 9px;
+                                background-color: whitesmoke;
+                                margin: 0;
+                                font-weight: 400;
+                                color: #232323;
+                                font-size: 13px;
+                                &:nth-child(2){
+                                    padding: 7px 0 0;
+                                    background-color: transparent;
+                                    color: #666;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+section#product-slide{
+    margin-bottom: 30px;
+    .container{
+        max-width: 1200px;
+        width: 100%;
+        .the-products{
+            .title{
+                display: flex;
+                justify-content: center;
+                div{
+                    text-align: center;
+                    h5{
+                        text-transform: uppercase;
+                        color: #eb4d4b;
+                        font-size: 16px;
+                        letter-spacing: 8px;
+                        font-weight: 500;
+                        margin: 0;
+                        margin-bottom: 12px;
+                    }
+                    h1{
+                        position: relative;
+                        font-weight: 600;
+                        margin-bottom: 25px;
+                        padding-bottom: 25px;
+                        &::after{
+                            border-top: 4px solid #eb4d4b;
+                            bottom: 0px;
+                            content: "";
+                            position: absolute;
+                            left: 38%;
+                            right: 38%;
+                            width: 24%;
+                        }
+                    }
+                }
+            }
+            .owl-carousel .owl-nav button{
+                color: white;
+                background-color: #eb4d4b;
+                border-radius: 50%;
+                width: 35px;
+                height: 35px;
+                opacity: 1;
+                margin-top: 20px;
+                transition: 0.5s;
+                &:hover{
+                    background-color: #232323;
+                }
+            }
+            .slide{
+                .item{
+                    .prdct{
+                        position: relative;
+                        padding: 15px 15px 0;
+                        text-align: center;
+                        .image{
+                            overflow: hidden;
+                            position: relative;
+                            height: 260px;
+                            img{
+                                object-fit: contain;
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                transition: 0.8s all;
+                            }
+                            img:nth-child(1){
+                                opacity: 1;
+                            }
+                            img:nth-child(2){
+                                opacity: 0;
+                            }
+                            &:hover{
+                                img:nth-child(1){
+                                    opacity: 0;
+                                }
+                                img:nth-child(2){
+                                    opacity: 1;
+                                    transform: rotateY(180deg);
+                                } 
+                            }
+                            .rate{
+                                position: absolute;
+                                bottom: 10px;
+                                left: 0;
+                                right: 0;
+                                i{
+                                    font-size: 13px;
+                                }
+                            }
+                            .wish-view{
+                                position: absolute;
+                                right: 10px;
+                                top: 10px;
+                                transition: 0.5s;
+                                // opacity: 0;
+                                .icon{
+                                    background-color: white;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    width: 40px;
+                                    height: 40px;
+                                    margin-bottom: 10px;
+                                    border-radius: 50%;
+                                    box-shadow: 0px 0px 5px rgba(128, 128, 128, 0.5);
+                                    transition: 0.5s;
+                                    &:hover{
+                                        background-color: #eb4d4b;
+                                        fill: white;
+                                    }
+                                }
+                                .view{
+                                  position: relative;
+                                  right: -60px;
+                                  transition-delay: 0.3s;
+                                  transition: 0.3s;
+                                  opacity: 0;
+                                }
+                                .wish{
+                                  position: relative;
+                                  right: -60px;
+                                  transition-delay: 0.6s;
+                                  transition: 0.6s;
+                                  opacity: 0;
+                                }
+                                .compare{
+                                  position: relative;
+                                  right: -60px;
+                                  transition-delay: 0.9s;
+                                  transition: 0.9s;
+                                  opacity: 0;
+                                }
+                            }
+                        }
+                        &:hover .view{
+                          transform: translateX(-60px);
+                          opacity: 1!important;
+                        }
+                        &:hover .wish{
+                          transform: translateX(-60px);
+                          opacity: 1!important;
+                        }
+                        &:hover .compare{
+                          transform: translateX(-60px);
+                          opacity: 1!important;
+                        }
+                        .caption{
+                            padding: 10px;
+                            h4{
+                                font-size: 16px;
+                            }
+                            p{
+                                font-weight: 500;
+                                color: #eb4d4b;
+                            }
+                
+                            button{
+                                position: absolute;
+                                bottom: 15px;
+                                left: 27%;
+                                display: none;
+                                border: none;
+                                background-color: #eb4d4b;
+                                color: white;
+                                font-size: 13px;
+                                font-weight: 400;
+                                letter-spacing: 0.5px;
+                                padding: 10px 21px;
+                            }
                         }
                     }
                 }

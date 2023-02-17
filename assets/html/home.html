@@ -39,7 +39,7 @@
           <div class="burger-search d-flex col-3">
             <div class="open-nav">
               <div class="top">
-                <svg width="800px" height="800px" viewBox="0 0 1024 1024" fill="#000000" class="icon"  version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M176.662 817.173c-8.19 8.471-7.96 21.977 0.51 30.165 8.472 8.19 21.978 7.96 30.166-0.51l618.667-640c8.189-8.472 7.96-21.978-0.511-30.166-8.471-8.19-21.977-7.96-30.166 0.51l-618.666 640z" fill="" /><path d="M795.328 846.827c8.19 8.471 21.695 8.7 30.166 0.511 8.471-8.188 8.7-21.694 0.511-30.165l-618.667-640c-8.188-8.471-21.694-8.7-30.165-0.511-8.471 8.188-8.7 21.694-0.511 30.165l618.666 640z" fill="" /></svg>
+                <i class="fa-solid fa-xmark"></i>
               </div>
               <div class="bottom">
                 <div class="accordion">
@@ -125,7 +125,7 @@
                 </symbol>
               </svg>
               <svg class="icon" viewBox="0 0 40 40"><use xlink:href="#magnifying-desktop" x="18%" y="25%"></use></svg>
-              <input type="search">
+              <input type="search" placeholder="Search">
             </div>
           </div>
           <div class="logo col-6">
@@ -144,6 +144,73 @@
                       </symbol> 
               </svg>
                  <svg class="icon" viewBox="0 0 40 40"><use xlink:href="#user-desktop" x="19%" y="23%"></use></svg>
+                <div class="mini-login-drop">
+                  <div class="login-register">
+                    <ul>
+                      <li><a href="../html/register.html">Register</a></li>
+                      <li><a href="../html/login.html">Login</a></li>
+                      <li><a href="../html/cart.html">Wish List (0)</a></li>
+                    </ul>
+                  </div>
+                  <div class="languages">
+                    <span>Language:</span>
+                    <ul>
+                      <li>
+                        <img src="/assets/images/home/languages/en-gb.png" alt="">
+                        <a href="">English</a>
+                      </li>
+                      <li>
+                        <img src="/assets/images/home/languages/ar.png" alt="">
+                        <a href="">English</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="currency">
+                    <span>Currency:</span>
+                    <ul>
+                      <li>
+                        <a href="">€ Euro</a>
+                      </li>
+                      <li>
+                        <a href="">£ Pound Sterling</a>
+                      </li>
+                      <li>
+                        <a href="">$ US Dollar</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+            <div class="mini-cart-drop">
+              <div class="top">
+                <span>CART</span>
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+              <div class="mid">
+                <ul class="mini-basket-list">
+                  <li><span>Your shopping cart is empty!</span></li>
+                </ul>
+              </div>
+              <div class="bottom">
+                <ul>
+                  <li>
+                    <span>Sub-Total</span><span class="sub-total">0<span>$</span></span>
+                  </li>
+                  <li>
+                    <span>Eco Tax (-2.00)</span><span class="eco-tax">0<span>$</span></span>
+                  </li>
+                  <li>
+                    <span>VAT (20%)</span><span class="vat">0<span>$</span></span>
+                  </li>
+                  <li>
+                    <span>Total</span><span class="total">0<span>$</span></span>
+                  </li>
+                </ul>
+                <div class="buttons">
+                  <button><a href="/assets/html/cart.html">VIEW CART</a></button>
+                  <button>CHECKOUT</button>
+                </div>
+              </div>
             </div>
             <div class="cart">
               <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">          
@@ -376,7 +443,7 @@
                 </div>
                 <div class="cd-mid">
                   <ul class="basket-list">
-                    <li class="when-empty">Your shopping cart is empty</li>
+                    <li class="when-empty-cart">Your shopping cart is empty</li>
                   </ul>
                 </div>
                 <div class="cd-btm">
@@ -414,7 +481,7 @@
               alt=""
             />
             <img class="d-lg-none d-md-none" src="/assets/images/home/homeSlide//Slider-1-543x460.png" alt="">
-            <div class="title animate__animated animate__fadeInDown">
+            <div class="title animate__animated">
               <h4>Clear 4k Camera</h4>
               <h1>Underwater Drone</h1>
               <p>
@@ -431,7 +498,7 @@
               alt=""
             />
             <img class="d-lg-none d-md-none" src="/assets/images/home/homeSlide/Slider-2-543x460.png" alt="">
-            <div class="second title animate__animated animate__fadeInDown">
+            <div class="second title animate__animated">
               <h4>Clear 4k Camera</h4>
               <h1>Fast Drone Delivery</h1>
               <p>
@@ -1640,7 +1707,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="../js/owl.carousel.js"></script>
-    <script src="../js/slick.js"></script>
     <script src="../js/home.js"></script>
     <script src="../js/header.js"></script>
     <script src="../js/footer.js"></script>

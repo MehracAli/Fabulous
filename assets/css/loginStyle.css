@@ -118,6 +118,13 @@ section#login-page .container .row .left-bar .latest-products .body .products .p
   text-decoration: line-through;
   color: #888;
 }
+@media screen and (max-width: 821px) {
+  section#login-page .container .row .left-bar {
+    width: 100%;
+    padding: 0 50px;
+    margin-top: 30px;
+  }
+}
 section#login-page .container .row .login {
   margin-left: 20px;
   width: 75%;
@@ -166,6 +173,12 @@ section#login-page .container .row .login .new-customer button a {
 section#login-page .container .row .login .new-customer button:hover {
   background-color: #eb4d4b;
 }
+@media screen and (max-width: 821px) {
+  section#login-page .container .row .login .new-customer {
+    width: 100%;
+    margin: 0 0 20px;
+  }
+}
 section#login-page .container .row .login .returning-customer {
   height: -moz-max-content;
   height: max-content;
@@ -192,6 +205,11 @@ section#login-page .container .row .login .returning-customer form div label {
   font-size: 14px;
   font-weight: 400;
   color: #232323;
+}
+section#login-page .container .row .login .returning-customer form div label::before {
+  content: "* ";
+  color: #f00;
+  font-weight: bold;
 }
 section#login-page .container .row .login .returning-customer form div input {
   width: 100%;
@@ -233,4 +251,36 @@ section#login-page .container .row .login .returning-customer form button a {
 }
 section#login-page .container .row .login .returning-customer form button:hover {
   background-color: #eb4d4b;
+}
+@media screen and (max-width: 821px) {
+  section#login-page .container .row .login .returning-customer {
+    width: 100%;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 391px) {
+  section#login-page .container .row .login {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 391px) and (max-width: 821px) {
+  section#login-page .container .row .login {
+    width: 100%;
+    margin: 0;
+    padding: 0 50px;
+  }
+  section#login-page .container .row .login .new-customer {
+    width: 48%;
+  }
+  section#login-page .container .row .login .returning-customer {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 821px) {
+  section#login-page .container .row {
+    flex-direction: column-reverse;
+  }
 }/*# sourceMappingURL=loginStyle.css.map */

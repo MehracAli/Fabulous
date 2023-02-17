@@ -24,6 +24,7 @@ div#mini-head .container .row .burger-search {
   justify-content: flex-start;
 }
 div#mini-head .container .row .burger-search .open-nav {
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -74,6 +75,19 @@ div#mini-head .container .row .burger-search .search {
   width: 40px;
   height: 40px;
 }
+div#mini-head .container .row .burger-search .search input {
+  display: none;
+  border: solid 1px rgb(230, 230, 230);
+  border-radius: 0px;
+}
+div#mini-head .container .row .burger-search .search input::-moz-placeholder {
+  font-size: 12px;
+  padding: 0 10px;
+}
+div#mini-head .container .row .burger-search .search input::placeholder {
+  font-size: 12px;
+  padding: 0 10px;
+}
 div#mini-head .container .row .burger-search .search-active {
   display: none;
 }
@@ -95,6 +109,131 @@ div#mini-head .container .row .login-cart {
 div#mini-head .container .row .login-cart .login {
   width: 40px;
   height: 40px;
+  position: relative;
+}
+div#mini-head .container .row .login-cart .login .mini-login-drop {
+  display: none;
+  width: 180px;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 10px 15px;
+  border: solid 1px rgb(230, 230, 230);
+  box-shadow: 0px 0px 7px rgba(128, 128, 128, 0.2);
+  background-color: white;
+  position: absolute;
+  right: 0;
+}
+div#mini-head .container .row .login-cart .login .mini-login-drop .login-register {
+  border-bottom: solid 1px rgb(230, 230, 230);
+  padding-bottom: 15px;
+}
+div#mini-head .container .row .login-cart .login .mini-login-drop .login-register ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+div#mini-head .container .row .login-cart .login .mini-login-drop .login-register ul li {
+  line-height: 25px;
+}
+div#mini-head .container .row .login-cart .login .mini-login-drop .login-register ul li a {
+  color: #888;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+div#mini-head .container .row .login-cart .login .mini-login-drop .languages, div#mini-head .container .row .login-cart .login .mini-login-drop .currency {
+  padding-top: 10px;
+}
+div#mini-head .container .row .login-cart .login .mini-login-drop .languages span, div#mini-head .container .row .login-cart .login .mini-login-drop .currency span {
+  font-size: 14px;
+  font-weight: 400;
+}
+div#mini-head .container .row .login-cart .login .mini-login-drop .languages ul, div#mini-head .container .row .login-cart .login .mini-login-drop .currency ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 10px;
+}
+div#mini-head .container .row .login-cart .login .mini-login-drop .languages ul li, div#mini-head .container .row .login-cart .login .mini-login-drop .currency ul li {
+  line-height: 25px;
+}
+div#mini-head .container .row .login-cart .login .mini-login-drop .languages ul li a, div#mini-head .container .row .login-cart .login .mini-login-drop .currency ul li a {
+  color: #888;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+div#mini-head .container .row .login-cart .mini-cart-drop {
+  display: none;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80%;
+  height: 100vh;
+  padding: 0 15px;
+  border-left: solid 1px rgb(240, 240, 240);
+}
+div#mini-head .container .row .login-cart .mini-cart-drop .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  border-bottom: solid 1px rgb(240, 240, 240);
+  padding: 15px 0;
+}
+div#mini-head .container .row .login-cart .mini-cart-drop .mid {
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div#mini-head .container .row .login-cart .mini-cart-drop .mid ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+div#mini-head .container .row .login-cart .mini-cart-drop .bottom {
+  position: sticky;
+  bottom: 0;
+  height: 30%;
+  width: 100%;
+}
+div#mini-head .container .row .login-cart .mini-cart-drop .bottom ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+div#mini-head .container .row .login-cart .mini-cart-drop .bottom ul li {
+  display: flex;
+  justify-content: space-between;
+}
+div#mini-head .container .row .login-cart .mini-cart-drop .bottom .buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+div#mini-head .container .row .login-cart .mini-cart-drop .bottom .buttons button {
+  padding: 5px 10px;
+  border: none;
+  color: white;
+  width: 49%;
+  background-color: #EB4D50;
+}
+div#mini-head .container .row .login-cart .mini-cart-drop .bottom .buttons button:hover {
+  background-color: #232323;
+}
+div#mini-head .container .row .login-cart .mini-cart-drop .bottom .buttons button:nth-child(2) {
+  background-color: #232323;
+}
+div#mini-head .container .row .login-cart .mini-cart-drop .bottom .buttons button:nth-child(2):hover {
+  background-color: #EB4D50;
+}
+div#mini-head .container .row .login-cart .mini-cart-drop .bottom .buttons button a {
+  text-decoration: none;
+  color: white;
 }
 div#mini-head .container .row .login-cart .cart {
   width: 40px;
@@ -418,8 +557,7 @@ header .container .search-cart-login .cart .cart-drop .cd-mid ul {
   margin: 0;
   color: gray;
 }
-header .container .search-cart-login .cart .cart-drop .cd-mid ul li.when-empty {
-  display: none;
+header .container .search-cart-login .cart .cart-drop .cd-mid ul li.when-empty-cart {
   position: relative;
   top: 50%;
   justify-content: center;
@@ -450,7 +588,6 @@ header .container .search-cart-login .cart .cart-drop .cd-mid ul li.text .delete
 }
 header .container .search-cart-login .cart .cart-drop .cd-btm {
   position: sticky;
-  bottom: 0;
   bottom: 0;
   height: 30%;
   width: 100%;

@@ -1,6 +1,6 @@
 $(document).ready(function(){
-    $('.owl-carousel').owlCarousel({
-        loop:false,
+    $('.mini-photos .owl-carousel').owlCarousel({
+        loop:true,
         margin:10,
         nav:true,
         dots:false,
@@ -27,3 +27,29 @@ $(document).ready(function(){
         $(".footer-mid-sm .sect i").not(icon).removeClass("active-i")
       });
 })
+  $("#product-slide .owl-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    dots:false,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 3,
+      },
+      1000: {
+        items: 4,
+      },
+    },
+  });
+
+  $(".prdct").on("mouseenter", function(){console.log("ok");
+    let button = $(this).find("button.to-cart")
+    button.slideDown()
+  })
+  $(".prdct").on("mouseleave", function(){
+    let button = $(this).find("button")
+    button.slideToggle()
+  })

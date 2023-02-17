@@ -13,6 +13,19 @@ $(document).ready(function () {
     },
   });
 
+  $(".owl-carousel .owl-nav button").on("click", function(){
+    $("#slider .item .animate__animated").addClass("animate__slideInDown")
+    setTimeout(() => {
+    $("#slider .item .animate__animated").removeClass("animate__slideInDown")
+    }, 1000);
+  })
+  $(document).ready(function(){
+    $("#slider .item .animate__animated").addClass("animate__slideInDown")
+    setTimeout(() => {
+      $("#slider .item .animate__animated").removeClass("animate__slideInDown")
+    }, 1000);
+  })
+
   $("#slider").on("mouseenter", function () {
     let next = $(".owl-carousel .owl-nav button.owl-next span");
     let nex = next[0];

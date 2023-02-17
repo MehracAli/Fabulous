@@ -114,6 +114,11 @@ section#login-page{
                     }
                   }
                 }
+                @media screen and (max-width:821px){
+                  width: 100%;
+                  padding: 0 50px;
+                  margin-top: 30px;
+                } 
               }
             .login{
                 margin-left: 20px;
@@ -160,6 +165,10 @@ section#login-page{
                             background-color: #eb4d4b;
                         }
                     }
+                    @media screen and (max-width:821px) {
+                      width: 100%;
+                      margin: 0 0 20px;
+                    }  
                 }
                 .returning-customer{
                     height: max-content;
@@ -185,6 +194,11 @@ section#login-page{
                                 font-size: 14px;
                                 font-weight: 400;
                                 color: #232323;
+                                &::before{
+                                  content: '* ';
+                                  color: #f00;
+                                  font-weight: bold;
+                              }
                             }
                             input{
                                 width: 100%;
@@ -225,7 +239,31 @@ section#login-page{
                             }
                         }
                     }
+                    @media screen and (max-width:821px) {
+                      width: 100%;
+                      margin: 0;
+                    }  
                 }
+                @media screen and (max-width:391px) {
+                  flex-direction: column;
+                  width: 100%;
+                  margin: 0;
+                  padding: 0;
+                }
+                @media screen and (min-width:391px) and (max-width:821px) {
+                  width: 100%;
+                  margin: 0;
+                  padding: 0 50px;
+                  .new-customer{
+                    width: 48%;
+                  }
+                  .returning-customer{
+                    width: 48%;
+                  }
+                }
+            }
+            @media screen and (max-width:821px) {
+              flex-direction: column-reverse;
             }
         }
     }

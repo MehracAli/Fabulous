@@ -8,10 +8,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (!basket || !basket.length) {
     localStorage.setItem("basket", JSON.stringify([]));
-    document.querySelector(".cart-table").style.display = "none"
-    document.querySelector(".cd-mid .when-empty").style.display = "flex"
-    document.querySelector("section#cart .when-empty").style.display = "flex"
+    document.querySelector(".cd-mid .when-empty-cart").style.display = "flex"
+    console.log(document.querySelector(".cd-mid .when-empty-cart"));
   } else {
+    document.querySelector(".cd-mid .when-empty-cart").style.display = "none"
     basket.forEach((product) => {
       BasketList(product);
     });
@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 buttons.forEach((button) => {
   button.addEventListener("click", function () {
+    document.querySelector(".cd-mid .when-empty-cart").style.display = "none"
     let product = GetProductDatas(this);
     let basketStr = localStorage.getItem("basket");
     let basket = JSON.parse(basketStr);
@@ -63,29 +64,6 @@ function GetProductDatas(button) {
   return product;
 }
 
-// function CartBasketList(product) {
-//   document.querySelector(".cart-table").style.display = "table"
-//   const productHtml = `
-//     <tr data-id="${product.id}">
-//       <td><img style="width:102px;" src="${product.src}" alt=""></td>
-//       <td>${product.title}</td>
-//       <td><span>Product </span>${product.id}</td>
-//       <td>
-//         <input type="text">
-//         <button>
-//           <i class="fa fa-refresh"></i>
-//         </button>
-//         <button>
-//           <i class="fa fa-times-circle"></i>
-//         </button>
-//       </td>
-//       <td>${product.price}<span>$</span></td>
-//       <td>Total</td>
-//     </tr>
-//   `;
-//   cartBasketList.innerHTML += productHtml;
-// }
-
 function BasketList(product) {
   const productHtml = `
   <li class="text" data-id="${product.id}">
@@ -106,19 +84,19 @@ function BasketList(product) {
   trash.forEach((Element) => {
     Element.addEventListener("click", function () {
       let basket = JSON.parse(localStorage.getItem("basket"));
-
       if (!basket) {
         localStorage.setItem("basket", JSON.stringify([]));
         basket = JSON.parse(localStorage.getItem("basket"));
       }
-
+      
       let id = this.parentElement.parentElement.getAttribute("data-id");
       let index = basket.findIndex((element) => {
         return element.id == id;
       });
-
+      
       delete basket[index];
       basket = basket.filter(Object);
+      ifEmpty(basket)
       ProductCount(basket);
       TotalPrice(basket);
       let basketStr = JSON.stringify(basket);
@@ -126,6 +104,11 @@ function BasketList(product) {
       this.parentElement.parentElement.remove();
     });
   });
+}
+function ifEmpty(basket) {
+  if (!basket.length){
+    document.querySelector(".cd-mid .when-empty-cart").style.display = "flex"
+  }
 }
 
 function ProductCount(basket) {
@@ -142,15 +125,15 @@ function SubTotal(totalPrice, vat, ecoTax) {
 
 function EcoTax(basket) {
   let EcoTax = document.querySelector(".cd-btm .eco-tax");
-  EcoTax.innerHTML = basket.reduce((total, product) => {
+  EcoTax.innerHTML = `${basket.reduce((total, product) => {
     return (total += parseInt(2 * product.count));
-  }, 0);
+  }, 0)}$`;
   return EcoTax.innerHTML;
 }
 
 function VAT(totalPrice, ecoTax) {
-  totalPrice - ecoTax;
-  let percent = 20 / 100;
+  let percent = totalPrice - ecoTax; 
+  console.log(percent.innerText);
   let vat = document.querySelector(".cd-btm .vat");
   vat.innerHTML = basket.reduce((total, product) => {
     return (total += parseInt(product.price * product.count));
@@ -159,8 +142,8 @@ function VAT(totalPrice, ecoTax) {
 
 function TotalPrice(basket) {
   let totalPrice = document.querySelector(".cd-btm .total");
-  totalPrice.innerHTML = basket.reduce((total, product) => {
+  totalPrice.innerHTML = `${basket.reduce((total, product) => {
     return (total += parseInt(product.price * product.count));
-  }, 0);
+  }, 0)}$`
   return totalPrice.innerHTML;
 }

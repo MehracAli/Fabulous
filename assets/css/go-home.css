@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+.go-home-head {
+  height: 90px;
+}
+@media screen and (max-width: 821px) {
+  .go-home-head {
+    height: 0px;
+  }
+}
+
 section#go-home {
   background-image: url(/assets/images/products/breadcrumb.png);
   background-attachment: fixed;
@@ -28,4 +37,11 @@ section#go-home a i:hover {
 }
 section#go-home a:hover {
   color: #eb4d4b;
+}
+@media screen and (max-width: 821px) {
+  section#go-home {
+    padding: 40px 0px;
+    background-color: whitesmoke;
+    background-image: none;
+  }
 }/*# sourceMappingURL=go-home.css.map */

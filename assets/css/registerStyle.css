@@ -112,11 +112,18 @@ section#register .container .row .left-bar .latest-products .body .products .pro
   text-decoration: line-through;
   color: #888;
 }
+@media screen and (max-width: 821px) {
+  section#register .container .row .left-bar {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
 section#register .container .row .registration {
   width: 75%;
   margin-left: 20px;
 }
 section#register .container .row .registration p {
+  margin: 0 auto;
   padding: 10px 0;
   text-align: center;
   color: #8a6d3b;
@@ -152,9 +159,15 @@ section#register .container .row .registration form div div label {
   letter-spacing: 0.5px;
   width: 16%;
   display: flex;
-  align-items: center;
   font-size: 14px;
   font-weight: 500;
+}
+section#register .container .row .registration form div div label::before {
+  content: "* ";
+  position: relative;
+  right: 3px;
+  color: #f00;
+  font-weight: bold;
 }
 section#register .container .row .registration form div div input {
   width: 83%;
@@ -180,6 +193,12 @@ section#register .container .row .registration form div div:last-child input {
 }
 section#register .container .row .registration form div div:last-child input:nth-child(2) {
   margin-left: 10px;
+}
+@media screen and (max-width: 391px) {
+  section#register .container .row .registration form div div:last-child {
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
 }
 section#register .container .row .registration .privacy-policy {
   display: flex;
@@ -212,4 +231,31 @@ section#register .container .row .registration .privacy-policy button {
 }
 section#register .container .row .registration .privacy-policy button:hover {
   background-color: #EB4D50;
+}
+@media screen and (max-width: 391px) {
+  section#register .container .row .registration .privacy-policy {
+    display: block;
+  }
+  section#register .container .row .registration .privacy-policy p {
+    width: 100%;
+    padding: 0;
+    margin: 0 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  section#register .container .row .registration .privacy-policy input {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 821px) {
+  section#register .container .row .registration {
+    width: 100%;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 821px) {
+  section#register .container .row {
+    flex-direction: column-reverse;
+  }
 }/*# sourceMappingURL=registerStyle.css.map */

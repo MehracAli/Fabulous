@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+.go-home-head{
+    height: 90px;
+    @media screen and (max-width:821px) {
+        height: 0px;
+    }
+}
 section#go-home{
     background-image: url(/assets/images/products/breadcrumb.png);
     background-attachment: fixed;
@@ -26,5 +32,10 @@ section#go-home{
         &:hover{
             color: #eb4d4b;
         }
+    }
+    @media screen and (max-width:821px) {
+        padding: 40px 0px;
+        background-color: whitesmoke;
+        background-image: none;
     }
 }
