@@ -48,6 +48,7 @@ section#cart .container .when-empty .contunie button:hover {
   background-color: #eb4d4b;
 }
 section#cart .container .table {
+  display: none;
   padding: 0;
   height: -moz-max-content;
   height: max-content;
@@ -55,7 +56,6 @@ section#cart .container .table {
   margin-bottom: 50px;
 }
 section#cart .container .table .cart-table {
-  display: none;
   width: 100%;
   border: solid 0.5px rgb(230, 230, 230);
 }

@@ -133,7 +133,7 @@
             </div>
           </div>
           <div class="logo col-6">
-            <img src="/assets/images/Logo.png" alt="">
+            <a href="../html/home.html"><img src="../images/Logo.png" alt=""></a>
           </div>
           <div class="login-cart d-flex col-3">
             <div class="login">
@@ -160,11 +160,11 @@
                     <span>Language:</span>
                     <ul>
                       <li>
-                        <img src="/assets/images/home/languages/en-gb.png" alt="">
+                        <img src="../images/home/languages/en-gb.png" alt="">
                         <a href="">English</a>
                       </li>
                       <li>
-                        <img src="/assets/images/home/languages/ar.png" alt="">
+                        <img src="../images/home/languages/ar.png" alt="">
                         <a href="">English</a>
                       </li>
                     </ul>
@@ -211,8 +211,8 @@
                   </li>
                 </ul>
                 <div class="buttons">
-                  <button><a href="/assets/html/cart.html">VIEW CART</a></button>
-                  <button>CHECKOUT</button>
+                  <button><a href="../html/cart.html">VIEW CART</a></button>
+                  <button><a href="">CHECKOUT</a></button>
                 </div>
               </div>
             </div>
@@ -241,8 +241,8 @@
       <div class="container">
         <div class="row" style="width: 100%">
           <div class="logo col-lg-3 col-md-3 col-sm-3 d-flex">
-            <a href="/assets/html/home.html">
-              <img src="/assets/images/Logo.png" alt="logo" />
+            <a href="../html/home.html">
+              <img src="../images/Logo.png" alt="logo" />
             </a>
           </div>
           <div class="nav-bar col-lg-7 col-md-7 col-sm-12 d-flex col-md-">
@@ -389,7 +389,7 @@
                     <li>
                       <a href="" class="d-flex">
                         <img
-                          src="/assets/images/home/languages/en-gb.png"
+                          src="../images/home/languages/en-gb.png"
                           alt="eng"
                         />
                         <span>English</span>
@@ -398,7 +398,7 @@
                     <li>
                       <a href="" class="d-flex">
                         <img
-                          src="/assets/images/home/languages/ar.png"
+                          src="../images/home/languages/ar.png"
                           alt="arab"
                         />
                         <span>Arabic</span>
@@ -481,13 +481,13 @@
     <section id="go-home">
         <div class="d-flex">
           <div class="home">
-            <a href="/assets/html/home.html" target="_blank">
+            <a href="../html/home.html" target="_blank">
               <i class="fa fa-home"></i>
             </a>
           </div>
           <div style="margin: 0 10px;">|</div>
           <div>
-            <a href="/assets/html/product.html">
+            <a href="../html/product.html">
               <span>Shopping Cart</span>
             </a>
           </div>
@@ -501,7 +501,7 @@
           </div>
           <div class="contunie">
             <button>
-              <a href="/assets/html/home.html">CONTUNIE</a>
+              <a href="../html/home.html">CONTUNIE</a>
             </button>
           </div>
         </div>
@@ -913,22 +913,22 @@
               >
               <div class="pay-cards col-lg-6 col-sm-12">
                 <img
-                  src="/assets/images/home/payCards/american-express-44x30.png"
+                  src="../images/home/payCards/american-express-44x30.png"
                   alt=""
                 />
                 <img
-                  src="/assets/images/home/payCards/discover-44x30.png"
+                  src="../images/home/payCards/discover-44x30.png"
                   alt=""
                 />
                 <img
-                  src="/assets/images/home/payCards/google-wallet-44x30.png"
+                  src="../images/home/payCards/google-wallet-44x30.png"
                   alt=""
                 />
                 <img
-                  src="/assets/images/home/payCards/mastercard-44x30.png"
+                  src="../images/home/payCards/mastercard-44x30.png"
                   alt=""
                 />
-                <img src="/assets/images/home/payCards/paypal-44x30.png" alt="" />
+                <img src="../images/home/payCards/paypal-44x30.png" alt="" />
               </div>
             </div>
           </div>
@@ -963,7 +963,6 @@
             document.querySelector(".table").style.display = "none"
             document.querySelector(".cd-mid .when-empty-cart").style.display = "flex"
             document.querySelector("section#cart .when-empty").style.display = "flex"
-            console.log("test");
           } else {
             basket.forEach((product) => {
               CartBasketList(product)
@@ -976,7 +975,7 @@
         let total=0;
         function CartBasketList(product) {
         total += parseInt(product.price*product.count);
-        document.querySelector(".table").style.display = "table"
+        document.querySelector(".table").style.display = "block"
         document.querySelector(".to-do-next").style.display = "block"
         document.querySelector(".to-do-next #total").innerText = `$${total}`
         const productHtml = `
@@ -998,10 +997,10 @@
           </tr>
         `;
         cartBasketList.innerHTML += productHtml;
+        console.log(cartBasketList.innerHTML);
       }
       function ifCartEmpty() {
       let basket = JSON.parse(localStorage.getItem("basket"));
-      console.log(basket);
        if (!basket.length){
         document.querySelector("section#cart .when-empty").style.display = "flex"
         document.querySelector(".table").style.display = "none"

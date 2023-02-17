@@ -46,12 +46,12 @@ section#cart{
             }
         }
         .table{
+            display: none;
             padding: 0;
             height: max-content;
             overflow-x: scroll;
             margin-bottom: 50px;
             .cart-table{
-                display: none;
                 width: 100%;
                 border: solid 0.5px rgb(230, 230, 230);
                 thead{
