@@ -181,7 +181,7 @@ div#mini-head .container .row .login-cart .mini-cart-drop {
   position: fixed;
   top: 0;
   right: 0;
-  width: 80%;
+  width: 50%;
   height: 100vh;
   padding: 0 15px;
   border-left: solid 1px rgb(240, 240, 240);
@@ -196,17 +196,54 @@ div#mini-head .container .row .login-cart .mini-cart-drop .top {
   padding: 15px 0;
 }
 div#mini-head .container .row .login-cart .mini-cart-drop .mid {
-  height: 40%;
+  overflow-x: hidden;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  height: 40%;
+  width: 100%;
 }
 div#mini-head .container .row .login-cart .mini-cart-drop .mid ul {
-  margin: 0;
-  padding: 0;
+  width: 100%;
+  height: 100%;
   list-style: none;
+  padding: 0;
+  margin: 0;
+  color: gray;
+}
+div#mini-head .container .row .login-cart .mini-cart-drop .mid ul li.when-empty-cart {
+  position: relative;
+  top: 50%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+div#mini-head .container .row .login-cart .mini-cart-drop .mid ul li.text {
+  padding: 15px 0 75px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: solid 0.5px rgb(240, 240, 240);
+}
+div#mini-head .container .row .login-cart .mini-cart-drop .mid ul li.text .image {
+  width: 30%;
+}
+div#mini-head .container .row .login-cart .mini-cart-drop .mid ul li.text .image img {
+  width: 100px;
+  height: 100px;
+}
+div#mini-head .container .row .login-cart .mini-cart-drop .mid ul li.text .delete {
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+div#mini-head .container .row .login-cart .mini-cart-drop .mid ul li.text .delete i {
+  font-size: 15px;
 }
 div#mini-head .container .row .login-cart .mini-cart-drop .bottom {
+  background-color: white;
+  padding: 10px;
   position: sticky;
   bottom: 0;
   height: 30%;
@@ -584,6 +621,7 @@ header .container .search-cart-login .cart .cart-drop .cd-mid ul {
 header .container .search-cart-login .cart .cart-drop .cd-mid ul li.when-empty-cart {
   position: relative;
   top: 50%;
+  display: flex;
   justify-content: center;
   width: 100%;
 }

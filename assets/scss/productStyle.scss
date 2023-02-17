@@ -78,6 +78,7 @@ section#product-detail{
                     }
                     .description-reviews{
                         .step-item{
+                            cursor: pointer;
                             padding: 20px 10px;
                             border-bottom: solid 0.5px rgb(230, 230, 230);
                             border-top: solid 0.5px rgb(230, 230, 230);
@@ -97,7 +98,7 @@ section#product-detail{
                                 }
                                 i{
                                     transition: 0.5s;
-                                    font-size: 13px
+                                    font-size: 13px;
                                 }
                                 .active-i{
                                     transform: rotateZ(180deg);

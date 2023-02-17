@@ -1,5 +1,6 @@
 let buttons = document.querySelectorAll(".prdct .to-cart");
-let basketList = document.querySelector("header .cd-mid .basket-list");
+let basketList = document.querySelector(".cd-mid .basket-list");
+let miniBasketList = document.querySelector(".mid .mini-basket-list")
 let cartBasketList = document.querySelector(".cart-table tbody");
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -8,10 +9,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (!basket || !basket.length) {
     localStorage.setItem("basket", JSON.stringify([]));
-    document.querySelector(".cd-mid .when-empty-cart").style.display = "flex"
-    console.log(document.querySelector(".cd-mid .when-empty-cart"));
+    document.querySelector(".when-empty-cart").style.display = "flex"
+    console.log(document.querySelector(".when-empty-cart"));
   } else {
-    document.querySelector(".cd-mid .when-empty-cart").style.display = "none"
+    document.querySelectorAll(".when-empty-cart").forEach(element =>{
+      element.style.display = "none"
+    })
     basket.forEach((product) => {
       BasketList(product);
     });
@@ -23,7 +26,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 buttons.forEach((button) => {
   button.addEventListener("click", function () {
-    document.querySelector(".cd-mid .when-empty-cart").style.display = "none"
+    document.querySelectorAll(".when-empty-cart").forEach(element =>{
+      element.style.display = "none"
+    })
     let product = GetProductDatas(this);
     let basketStr = localStorage.getItem("basket");
     let basket = JSON.parse(basketStr);
@@ -80,7 +85,8 @@ function BasketList(product) {
   </li>
 `;
   basketList.innerHTML += productHtml;
-  let trash = basketList.querySelectorAll(".delete i");
+  miniBasketList.innerHTML += productHtml;
+  let trash = document.querySelectorAll(".delete i");
   trash.forEach((Element) => {
     Element.addEventListener("click", function () {
       let basket = JSON.parse(localStorage.getItem("basket"));
@@ -107,15 +113,19 @@ function BasketList(product) {
 }
 function ifEmpty(basket) {
   if (!basket.length){
-    document.querySelector(".cd-mid .when-empty-cart").style.display = "flex"
+    document.querySelectorAll(".when-empty-cart").forEach(element =>{
+      element.style.display = "flex"
+    })
   }
 }
 
 function ProductCount(basket) {
-  let basketCount = document.querySelector(".product-count");
-  basketCount.innerText = basket.reduce((total, product) => {
-    return (total += product.count);
-  }, 0);
+  let basketCount = document.querySelectorAll(".product-count");
+  basketCount.forEach(element => {
+    element.innerText = basket.reduce((total, product) => {
+      return (total += product.count);
+    }, 0);
+  })
 }
 
 function SubTotal(totalPrice, vat, ecoTax) {
@@ -141,7 +151,7 @@ function VAT(totalPrice, ecoTax) {
 }
 
 function TotalPrice(basket) {
-  let totalPrice = document.querySelector(".cd-btm .total");
+  let totalPrice = document.querySelector(".total");
   totalPrice.innerHTML = `${basket.reduce((total, product) => {
     return (total += parseInt(product.price * product.count));
   }, 0)}$`

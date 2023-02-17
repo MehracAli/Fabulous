@@ -84,6 +84,7 @@ section#product-detail .container .row .photos .mini-photo-description .owl-caro
   top: 40px;
 }
 section#product-detail .container .row .photos .mini-photo-description .description-reviews .step-item {
+  cursor: pointer;
   padding: 20px 10px;
   border-bottom: solid 0.5px rgb(230, 230, 230);
   border-top: solid 0.5px rgb(230, 230, 230);
