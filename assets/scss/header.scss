@@ -241,6 +241,9 @@ div#mini-head{
                                         font-size: 15px;
                                     }
                                 }
+                                @media screen and (max-width:821px) {
+                                    padding: 15px 0 15px;
+                                }
                             }
                         }
                     }
@@ -663,6 +666,9 @@ header{
                                     i{
                                         font-size: 15px;
                                     }
+                                }
+                                @media screen and (max-width:821px) {
+                                    padding: 15px 0 15px;
                                 }
                             }
                         }

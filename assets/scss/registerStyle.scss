@@ -24,6 +24,18 @@ section#register{
                       letter-spacing: 1px;
                       font-size: 16px;
                       font-weight: 400;
+                      display: flex;
+                      justify-content: space-between;
+                      i{
+                          transition: 0.5s;
+                          display: none;
+                          @media screen and (max-width:391px) {
+                            display: block;
+                          }
+                      }
+                      .active-i{
+                          transform: rotateZ(-180deg);
+                      }
                     }
                   }
                   .body{
@@ -54,6 +66,18 @@ section#register{
                       letter-spacing: 1px;
                       font-size: 16px;
                       font-weight: 400;
+                      display: flex;
+                      justify-content: space-between;
+                      i{
+                          transition: 0.5s;
+                          display: none;
+                          @media screen and (max-width:391px) {
+                            display: block;
+                          }
+                      }
+                      .active-i{
+                          transform: rotateZ(-180deg);
+                      }
                     }
                   }
                   .body{
@@ -91,6 +115,18 @@ section#register{
                       letter-spacing: 1px;
                       font-size: 16px;
                       font-weight: 400;
+                      display: flex;
+                      justify-content: space-between;
+                      i{
+                          transition: 0.5s;
+                          display: none;
+                          @media screen and (max-width:391px) {
+                            display: block;
+                          }
+                      }
+                      .active-i{
+                          transform: rotateZ(-180deg);
+                      }
                     }
                   }
                   .body{

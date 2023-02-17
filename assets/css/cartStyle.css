@@ -175,6 +175,14 @@ section#cart .container .to-do-next .accordion-total .accordion .step-item .step
   padding: 10px 15px;
   font-weight: 500;
   font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+section#cart .container .to-do-next .accordion-total .accordion .step-item .step-top i {
+  transition: 0.5s;
+}
+section#cart .container .to-do-next .accordion-total .accordion .step-item .step-top .active-i {
+  transform: rotateZ(-180deg);
 }
 section#cart .container .to-do-next .accordion-total .accordion .step-item .step-bottom {
   display: none;

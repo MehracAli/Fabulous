@@ -246,6 +246,11 @@ div#mini-head .container .row .login-cart .mini-cart-drop .mid ul li.text .delet
 div#mini-head .container .row .login-cart .mini-cart-drop .mid ul li.text .delete i {
   font-size: 15px;
 }
+@media screen and (max-width: 821px) {
+  div#mini-head .container .row .login-cart .mini-cart-drop .mid ul li.text {
+    padding: 15px 0 15px;
+  }
+}
 div#mini-head .container .row .login-cart .mini-cart-drop .bottom {
   background-color: white;
   padding: 10px;
@@ -657,6 +662,11 @@ header .container .search-cart-login .cart .cart-drop .cd-mid ul li.text .delete
 }
 header .container .search-cart-login .cart .cart-drop .cd-mid ul li.text .delete i {
   font-size: 15px;
+}
+@media screen and (max-width: 821px) {
+  header .container .search-cart-login .cart .cart-drop .cd-mid ul li.text {
+    padding: 15px 0 15px;
+  }
 }
 header .container .search-cart-login .cart .cart-drop .cd-btm {
   position: sticky;

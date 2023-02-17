@@ -27,6 +27,20 @@ section#register .container .row .left-bar .categories .head h5 {
   letter-spacing: 1px;
   font-size: 16px;
   font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+}
+section#register .container .row .left-bar .categories .head h5 i {
+  transition: 0.5s;
+  display: none;
+}
+@media screen and (max-width: 391px) {
+  section#register .container .row .left-bar .categories .head h5 i {
+    display: block;
+  }
+}
+section#register .container .row .left-bar .categories .head h5 .active-i {
+  transform: rotateZ(-180deg);
 }
 section#register .container .row .left-bar .categories .body {
   padding: 0 15px;
@@ -59,6 +73,20 @@ section#register .container .row .left-bar .bestsellers .head h5 {
   letter-spacing: 1px;
   font-size: 16px;
   font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+}
+section#register .container .row .left-bar .bestsellers .head h5 i {
+  transition: 0.5s;
+  display: none;
+}
+@media screen and (max-width: 391px) {
+  section#register .container .row .left-bar .bestsellers .head h5 i {
+    display: block;
+  }
+}
+section#register .container .row .left-bar .bestsellers .head h5 .active-i {
+  transform: rotateZ(-180deg);
 }
 section#register .container .row .left-bar .bestsellers .body {
   padding: 15px;
@@ -98,6 +126,20 @@ section#register .container .row .left-bar .latest-products .head h5 {
   letter-spacing: 1px;
   font-size: 16px;
   font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+}
+section#register .container .row .left-bar .latest-products .head h5 i {
+  transition: 0.5s;
+  display: none;
+}
+@media screen and (max-width: 391px) {
+  section#register .container .row .left-bar .latest-products .head h5 i {
+    display: block;
+  }
+}
+section#register .container .row .left-bar .latest-products .head h5 .active-i {
+  transform: rotateZ(-180deg);
 }
 section#register .container .row .left-bar .latest-products .body {
   padding: 15px;
