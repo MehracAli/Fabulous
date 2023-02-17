@@ -19,6 +19,20 @@ section#product-detail{
                 display: none;
             }
             .photos{
+                .mini-title{
+                    display: none;
+                    text-align: center;
+                    margin-bottom: 20px;
+                    h6{
+                        font-size: 24px;
+                    }
+                    span{
+                        font-size: 18px;
+                    }
+                    @media screen and (max-width:391px) {
+                        display: block;
+                    }
+                }
                 background-color: white;
                 width: 60%;
                 .big-photo{
@@ -223,6 +237,9 @@ section#product-detail{
                                         padding: 8px 20px;
                                         transition: 0.5s;
                                         color: white;
+                                        @media screen and (max-width:391px) {
+                                            margin-top: 15px;
+                                        }
                                        }
                                     }
                                 }
@@ -230,7 +247,9 @@ section#product-detail{
                         }
                     }
                 }
-                
+                @media screen and (max-width:391px) {
+                    width: 100%;
+                }
             }
             .details{
                 position: sticky;
@@ -245,6 +264,9 @@ section#product-detail{
                     h1{
                         font-size: 30px;
                         font-weight: 500;
+                    }
+                    @media screen and (max-width:391px) {
+                        display: none;
                     }
                 }
                 .share{
@@ -308,6 +330,9 @@ section#product-detail{
                         font-size: 22px;
                         font-weight: 500;
                         color: #232323;
+                        @media screen and (max-width:391px) {
+                            display: none;
+                        }
                     }
                     span{
                         font-size: 13px;
@@ -397,6 +422,13 @@ section#product-detail{
                         }
                     }
                 }
+                @media screen and (max-width:391px) {
+                    margin-top: 30px;
+                    width: 100%;
+                }
+            }
+            @media screen and (max-width:391px) {
+                flex-direction: column;
             }
         }
     }
@@ -513,6 +545,10 @@ section#product-slide{
                                         background-color: #eb4d4b;
                                         fill: white;
                                     }
+                                    @media screen and (max-width:391px) {
+                                        width: 20px;
+                                        height: 20px;
+                                    }
                                 }
                                 .view{
                                   position: relative;
@@ -536,6 +572,12 @@ section#product-slide{
                                   opacity: 0;
                                 }
                             }
+                            @media screen and (min-width:391px) and (max-width:821px) {
+                                height: 230px;
+                            }
+                            @media screen and (max-width:391px) {
+                                height: 160px;
+                            }
                         }
                         &:hover .view{
                           transform: translateX(-60px);
@@ -553,6 +595,9 @@ section#product-slide{
                             padding: 10px;
                             h4{
                                 font-size: 16px;
+                                @media screen and (max-width:391px) {
+                                    font-size: 14px;
+                                }
                             }
                             p{
                                 font-weight: 500;
@@ -571,6 +616,13 @@ section#product-slide{
                                 font-weight: 400;
                                 letter-spacing: 0.5px;
                                 padding: 10px 21px;
+                                @media screen and (max-width:391px) {
+                                    left: 28px;
+                                    padding: 10px 15px;
+                                }
+                                @media screen and (min-width:391px) and (max-width: 821px) {
+                                    left: 24%;
+                                }
                             }
                         }
                     }

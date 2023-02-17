@@ -25,6 +25,22 @@ section#product-detail .container .row .photos {
   background-color: white;
   width: 60%;
 }
+section#product-detail .container .row .photos .mini-title {
+  display: none;
+  text-align: center;
+  margin-bottom: 20px;
+}
+section#product-detail .container .row .photos .mini-title h6 {
+  font-size: 24px;
+}
+section#product-detail .container .row .photos .mini-title span {
+  font-size: 18px;
+}
+@media screen and (max-width: 391px) {
+  section#product-detail .container .row .photos .mini-title {
+    display: block;
+  }
+}
 section#product-detail .container .row .photos .big-photo {
   width: 100%;
   overflow: hidden;
@@ -211,6 +227,16 @@ section#product-detail .container .row .photos .mini-photo-description .descript
   transition: 0.5s;
   color: white;
 }
+@media screen and (max-width: 391px) {
+  section#product-detail .container .row .photos .mini-photo-description .description-reviews .step-2 .sect-down .write-review .button button {
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 391px) {
+  section#product-detail .container .row .photos {
+    width: 100%;
+  }
+}
 section#product-detail .container .row .details {
   position: sticky;
   top: 0;
@@ -226,6 +252,11 @@ section#product-detail .container .row .details .title {
 section#product-detail .container .row .details .title h1 {
   font-size: 30px;
   font-weight: 500;
+}
+@media screen and (max-width: 391px) {
+  section#product-detail .container .row .details .title {
+    display: none;
+  }
 }
 section#product-detail .container .row .details .share {
   display: flex;
@@ -288,6 +319,11 @@ section#product-detail .container .row .details .price h4 {
   font-size: 22px;
   font-weight: 500;
   color: #232323;
+}
+@media screen and (max-width: 391px) {
+  section#product-detail .container .row .details .price h4 {
+    display: none;
+  }
 }
 section#product-detail .container .row .details .price span {
   font-size: 13px;
@@ -375,6 +411,17 @@ section#product-detail .container .row .details .about .frames .frame h6:nth-chi
   padding: 7px 0 0;
   background-color: transparent;
   color: #666;
+}
+@media screen and (max-width: 391px) {
+  section#product-detail .container .row .details {
+    margin-top: 30px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 391px) {
+  section#product-detail .container .row {
+    flex-direction: column;
+  }
 }
 
 section#product-slide {
@@ -490,6 +537,12 @@ section#product-slide .container .the-products .slide .item .prdct .image .wish-
   background-color: #eb4d4b;
   fill: white;
 }
+@media screen and (max-width: 391px) {
+  section#product-slide .container .the-products .slide .item .prdct .image .wish-view .icon {
+    width: 20px;
+    height: 20px;
+  }
+}
 section#product-slide .container .the-products .slide .item .prdct .image .wish-view .view {
   position: relative;
   right: -60px;
@@ -511,6 +564,16 @@ section#product-slide .container .the-products .slide .item .prdct .image .wish-
   transition: 0.9s;
   opacity: 0;
 }
+@media screen and (min-width: 391px) and (max-width: 821px) {
+  section#product-slide .container .the-products .slide .item .prdct .image {
+    height: 230px;
+  }
+}
+@media screen and (max-width: 391px) {
+  section#product-slide .container .the-products .slide .item .prdct .image {
+    height: 160px;
+  }
+}
 section#product-slide .container .the-products .slide .item .prdct:hover .view {
   transform: translateX(-60px);
   opacity: 1 !important;
@@ -529,6 +592,11 @@ section#product-slide .container .the-products .slide .item .prdct .caption {
 section#product-slide .container .the-products .slide .item .prdct .caption h4 {
   font-size: 16px;
 }
+@media screen and (max-width: 391px) {
+  section#product-slide .container .the-products .slide .item .prdct .caption h4 {
+    font-size: 14px;
+  }
+}
 section#product-slide .container .the-products .slide .item .prdct .caption p {
   font-weight: 500;
   color: #eb4d4b;
@@ -545,4 +613,15 @@ section#product-slide .container .the-products .slide .item .prdct .caption butt
   font-weight: 400;
   letter-spacing: 0.5px;
   padding: 10px 21px;
+}
+@media screen and (max-width: 391px) {
+  section#product-slide .container .the-products .slide .item .prdct .caption button {
+    left: 28px;
+    padding: 10px 15px;
+  }
+}
+@media screen and (min-width: 391px) and (max-width: 821px) {
+  section#product-slide .container .the-products .slide .item .prdct .caption button {
+    left: 24%;
+  }
 }/*# sourceMappingURL=productStyle.css.map */
